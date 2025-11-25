@@ -31,3 +31,5 @@ C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.D
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Reports.AuditTrailListControl.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Dashboard.Controls.UpNavControl.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Users.AddUserForm.resources
+C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Users.DeleteUserForm.resources
+C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Users.EditUserForm.resources
