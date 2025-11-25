@@ -1,0 +1,712 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|c:\\users\\ronni\\desktop\\dsafinalrequirement\\forms\\users\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\users\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|c:\\users\\ronni\\desktop\\dsafinalrequirement\\forms\\users\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\users\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\dashboard\\maindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\dashboard\\maindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|c:\\users\\ronni\\desktop\\dsafinalrequirement\\forms\\users\\usermanagementcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\users\\usermanagementcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\users\\usermanagementcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\users\\usermanagementcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\users\\usermanagementcontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\users\\usermanagementcontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\dashboard\\maindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\dashboard\\maindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|DSAFinalRequirement||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\dashboard\\dashboardcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\dashboard\\dashboardcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\database\\connections\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:database\\connections\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\controls\\upnavcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\controls\\upnavcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\dashboard\\dashboardcontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\dashboard\\dashboardcontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\controls\\upnavcontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\controls\\upnavcontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\controls\\upnavcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\controls\\upnavcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\dashboard\\maindashboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\dashboard\\maindashboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\dashboard\\dashboardcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\dashboard\\dashboardcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\reports\\audittraillistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\reports\\audittraillistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\sales\\salescontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\sales\\salescontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\users\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\users\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\classes\\helpers\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:classes\\helpers\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\users\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\users\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\users\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\users\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\categories\\categorycrudcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\categories\\categorycrudcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\categories\\categorylistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\categories\\categorylistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\inventory\\lowstocksalertcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\inventory\\lowstocksalertcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\inventory\\inventoryadjustmentlistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\inventory\\inventoryadjustmentlistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\products\\productslistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\products\\productslistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\products\\productcrudcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\products\\productcrudcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\reports\\salesreportcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\reports\\salesreportcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\sales\\transactiondetailcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\sales\\transactiondetailcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\sales\\transactioncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\sales\\transactioncontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\shared\\loadingscreencontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\shared\\loadingscreencontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\shared\\confirmdialogcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\shared\\confirmdialogcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\shared\\alertmodalcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\shared\\alertmodalcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\suppliers\\supplierlistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\suppliers\\supplierlistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\suppliers\\suppliercrudcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\suppliers\\suppliercrudcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\database\\queries\\queryhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:database\\queries\\queryhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\users\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\users\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\inventory\\lowstocksalertcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\inventory\\lowstocksalertcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\products\\productcrudcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\products\\productcrudcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\shared\\alertmodalcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\shared\\alertmodalcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\shared\\loadingscreencontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\shared\\loadingscreencontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\shared\\loadingscreencontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\shared\\loadingscreencontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddUserForm.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\AddUserForm.cs",
+              "RelativeDocumentMoniker": "Forms\\Users\\AddUserForm.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\AddUserForm.cs",
+              "RelativeToolTip": "Forms\\Users\\AddUserForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T09:36:49.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddUserForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\AddUserForm.cs",
+              "RelativeDocumentMoniker": "Forms\\Users\\AddUserForm.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\AddUserForm.cs [Design]",
+              "RelativeToolTip": "Forms\\Users\\AddUserForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T09:28:44.734Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainDashboardForm.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\MainDashboardForm.cs",
+              "RelativeDocumentMoniker": "Forms\\Dashboard\\MainDashboardForm.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\MainDashboardForm.cs",
+              "RelativeToolTip": "Forms\\Dashboard\\MainDashboardForm.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDYAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T05:56:47.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserManagementControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\UserManagementControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Users\\UserManagementControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\UserManagementControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Users\\UserManagementControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:36:25.786Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserManagementControl.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\UserManagementControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Users\\UserManagementControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\UserManagementControl.cs",
+              "RelativeToolTip": "Forms\\Users\\UserManagementControl.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:37:26.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAASwBQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T09:40:00.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserManagementControl.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\UserManagementControl.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\Users\\UserManagementControl.Designer.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\UserManagementControl.Designer.cs",
+              "RelativeToolTip": "Forms\\Users\\UserManagementControl.Designer.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T14:33:23.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainDashboardForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\MainDashboardForm.cs",
+              "RelativeDocumentMoniker": "Forms\\Dashboard\\MainDashboardForm.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\MainDashboardForm.cs [Design]",
+              "RelativeToolTip": "Forms\\Dashboard\\MainDashboardForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T10:44:44.796Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DSAFinalRequirement",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\DSAFinalRequirement.csproj",
+              "RelativeDocumentMoniker": "DSAFinalRequirement.csproj",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\DSAFinalRequirement.csproj",
+              "RelativeToolTip": "DSAFinalRequirement.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-23T09:51:38.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DashboardControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\DashboardControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Dashboard\\DashboardControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\DashboardControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Dashboard\\DashboardControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T13:09:35.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DatabaseConnection.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Database\\Connections\\DatabaseConnection.cs",
+              "RelativeDocumentMoniker": "Database\\Connections\\DatabaseConnection.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Database\\Connections\\DatabaseConnection.cs",
+              "RelativeToolTip": "Database\\Connections\\DatabaseConnection.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T08:16:23.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UpNavControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Controls\\UpNavControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Controls\\UpNavControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Controls\\UpNavControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Controls\\UpNavControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T13:47:06.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UpNavControl.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Controls\\UpNavControl.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\Controls\\UpNavControl.Designer.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Controls\\UpNavControl.Designer.cs",
+              "RelativeToolTip": "Forms\\Controls\\UpNavControl.Designer.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAArwC0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T13:55:23.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DashboardControl.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\DashboardControl.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\Dashboard\\DashboardControl.Designer.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\DashboardControl.Designer.cs",
+              "RelativeToolTip": "Forms\\Dashboard\\DashboardControl.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T14:09:49.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UpNavControl.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Controls\\UpNavControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Controls\\UpNavControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Controls\\UpNavControl.cs",
+              "RelativeToolTip": "Forms\\Controls\\UpNavControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T13:48:40.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainDashboardForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\MainDashboardForm.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\Dashboard\\MainDashboardForm.Designer.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\MainDashboardForm.Designer.cs",
+              "RelativeToolTip": "Forms\\Dashboard\\MainDashboardForm.Designer.cs",
+              "ViewState": "AgIAAKABAAAAAAAAAAAAAKABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:03:51.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuditTrailListControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Reports\\AuditTrailListControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Reports\\AuditTrailListControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Reports\\AuditTrailListControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Reports\\AuditTrailListControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T09:22:53.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DashboardControl.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\DashboardControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Dashboard\\DashboardControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\DashboardControl.cs",
+              "RelativeToolTip": "Forms\\Dashboard\\DashboardControl.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAmwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T13:12:54.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SalesControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\SalesControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Sales\\SalesControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\SalesControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Sales\\SalesControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T12:21:24.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Forms\\Users\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\LoginForm.cs",
+              "RelativeToolTip": "Forms\\Users\\LoginForm.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T09:15:50.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Session.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Classes\\Helpers\\Session.cs",
+              "RelativeDocumentMoniker": "Classes\\Helpers\\Session.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Classes\\Helpers\\Session.cs",
+              "RelativeToolTip": "Classes\\Helpers\\Session.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T08:41:53.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\Users\\LoginForm.Designer.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\LoginForm.Designer.cs",
+              "RelativeToolTip": "Forms\\Users\\LoginForm.Designer.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAYwHMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T08:51:10.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Forms\\Users\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\LoginForm.cs [Design]",
+              "RelativeToolTip": "Forms\\Users\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T08:55:46.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CategoryCrudControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\CategoryCrudControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Categories\\CategoryCrudControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\CategoryCrudControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Categories\\CategoryCrudControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T08:28:11.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CategoryListControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\CategoryListControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Categories\\CategoryListControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\CategoryListControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Categories\\CategoryListControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T08:17:46.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LowStocksAlertControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Inventory\\LowStocksAlertControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Inventory\\LowStocksAlertControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Inventory\\LowStocksAlertControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Inventory\\LowStocksAlertControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T09:16:13.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "InventoryAdjustmentListControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Inventory\\InventoryAdjustmentListControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Inventory\\InventoryAdjustmentListControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Inventory\\InventoryAdjustmentListControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Inventory\\InventoryAdjustmentListControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T09:03:26.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ProductsListControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Products\\ProductsListControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Products\\ProductsListControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Products\\ProductsListControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Products\\ProductsListControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T07:33:11.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ProductCrudControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Products\\ProductCrudControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Products\\ProductCrudControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Products\\ProductCrudControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Products\\ProductCrudControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T07:51:59.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SalesReportControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Reports\\SalesReportControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Reports\\SalesReportControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Reports\\SalesReportControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Reports\\SalesReportControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T07:38:18.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TransactionDetailControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\TransactionDetailControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Sales\\TransactionDetailControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\TransactionDetailControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Sales\\TransactionDetailControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T11:31:24.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "TransactionControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\TransactionControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Sales\\TransactionControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\TransactionControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Sales\\TransactionControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T11:31:13.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ConfirmDialogControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Shared\\ConfirmDialogControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Shared\\ConfirmDialogControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Shared\\ConfirmDialogControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Shared\\ConfirmDialogControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T11:30:40.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AlertModalControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Shared\\AlertModalControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Shared\\AlertModalControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Shared\\AlertModalControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Shared\\AlertModalControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T11:30:31.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "LoadingScreenControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Shared\\LoadingScreenControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Shared\\LoadingScreenControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Shared\\LoadingScreenControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Shared\\LoadingScreenControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:56:46.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "SupplierCrudControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Suppliers\\SupplierCrudControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Suppliers\\SupplierCrudControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Suppliers\\SupplierCrudControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Suppliers\\SupplierCrudControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T08:42:38.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "SupplierListControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Suppliers\\SupplierListControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Suppliers\\SupplierListControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Suppliers\\SupplierListControl.cs [Design]",
+              "RelativeToolTip": "Forms\\Suppliers\\SupplierListControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T08:35:22.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "QueryHelper.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Database\\Queries\\QueryHelper.cs",
+              "RelativeDocumentMoniker": "Database\\Queries\\QueryHelper.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Database\\Queries\\QueryHelper.cs",
+              "RelativeToolTip": "Database\\Queries\\QueryHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T08:30:29.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "LoginForm.resx",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\LoginForm.resx",
+              "RelativeDocumentMoniker": "Forms\\Users\\LoginForm.resx",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\LoginForm.resx",
+              "RelativeToolTip": "Forms\\Users\\LoginForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-11-23T08:51:13.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "LowStocksAlertControl.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Inventory\\LowStocksAlertControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Inventory\\LowStocksAlertControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Inventory\\LowStocksAlertControl.cs",
+              "RelativeToolTip": "Forms\\Inventory\\LowStocksAlertControl.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADgvwoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T12:18:00.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ProductCrudControl.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Products\\ProductCrudControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Products\\ProductCrudControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Products\\ProductCrudControl.cs",
+              "RelativeToolTip": "Forms\\Products\\ProductCrudControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T07:55:11.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AlertModalControl.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Shared\\AlertModalControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Shared\\AlertModalControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Shared\\AlertModalControl.cs",
+              "RelativeToolTip": "Forms\\Shared\\AlertModalControl.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T07:20:20.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "LoadingScreenControl.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Shared\\LoadingScreenControl.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\Shared\\LoadingScreenControl.Designer.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Shared\\LoadingScreenControl.Designer.cs",
+              "RelativeToolTip": "Forms\\Shared\\LoadingScreenControl.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T07:03:46.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "LoadingScreenControl.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Shared\\LoadingScreenControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Shared\\LoadingScreenControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Shared\\LoadingScreenControl.cs",
+              "RelativeToolTip": "Forms\\Shared\\LoadingScreenControl.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T07:01:18.239Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

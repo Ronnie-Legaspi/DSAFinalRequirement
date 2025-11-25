@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37289D8C-029B-4717-AC94-09516FD7C583}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DSAFinalRequirement</RootNamespace>
+    <AssemblyName>DSAFinalRequirement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>5</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Helpers\Session.cs" />
+    <Compile Include="Database\Connections\DatabaseConnection.cs" />
+    <Compile Include="Database\Queries\QueryHelper.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Categories\CategoryCrudControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Categories\CategoryCrudControl.Designer.cs">
+      <DependentUpon>CategoryCrudControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Categories\CategoryListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Categories\CategoryListControl.Designer.cs">
+      <DependentUpon>CategoryListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\UpNavControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UpNavControl.Designer.cs">
+      <DependentUpon>UpNavControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashboard\DashboardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard\DashboardControl.Designer.cs">
+      <DependentUpon>DashboardControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashboard\MainDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard\MainDashboardForm.Designer.cs">
+      <DependentUpon>MainDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventory\InventoryAdjustmentListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\InventoryAdjustmentListControl.Designer.cs">
+      <DependentUpon>InventoryAdjustmentListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventory\LowStocksAlertControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\LowStocksAlertControl.Designer.cs">
+      <DependentUpon>LowStocksAlertControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Products\ProductCrudControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Products\ProductCrudControl.Designer.cs">
+      <DependentUpon>ProductCrudControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Products\ProductsListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Products\ProductsListControl.Designer.cs">
+      <DependentUpon>ProductsListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\AuditTrailListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\AuditTrailListControl.Designer.cs">
+      <DependentUpon>AuditTrailListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\SalesReportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\SalesReportControl.Designer.cs">
+      <DependentUpon>SalesReportControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sales\SalesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Sales\SalesControl.Designer.cs">
+      <DependentUpon>SalesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sales\TransactionDetailControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Sales\TransactionDetailControl.Designer.cs">
+      <DependentUpon>TransactionDetailControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Shared\AlertModalControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Shared\AlertModalControl.Designer.cs">
+      <DependentUpon>AlertModalControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Shared\ConfirmDialogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Shared\ConfirmDialogControl.Designer.cs">
+      <DependentUpon>ConfirmDialogControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Shared\LoadingScreenControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Shared\LoadingScreenControl.Designer.cs">
+      <DependentUpon>LoadingScreenControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Suppliers\SupplierCrudControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Suppliers\SupplierCrudControl.Designer.cs">
+      <DependentUpon>SupplierCrudControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Suppliers\SupplierListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Suppliers\SupplierListControl.Designer.cs">
+      <DependentUpon>SupplierListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sales\TransactionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Sales\TransactionControl.Designer.cs">
+      <DependentUpon>TransactionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\AddUserForm.Designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\UserManagementControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\UserManagementControl.Designer.cs">
+      <DependentUpon>UserManagementControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Categories\CategoryCrudControl.resx">
+      <DependentUpon>CategoryCrudControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Categories\CategoryListControl.resx">
+      <DependentUpon>CategoryListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\UpNavControl.resx">
+      <DependentUpon>UpNavControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashboard\DashboardControl.resx">
+      <DependentUpon>DashboardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashboard\MainDashboardForm.resx">
+      <DependentUpon>MainDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\InventoryAdjustmentListControl.resx">
+      <DependentUpon>InventoryAdjustmentListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\LowStocksAlertControl.resx">
+      <DependentUpon>LowStocksAlertControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Products\ProductCrudControl.resx">
+      <DependentUpon>ProductCrudControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Products\ProductsListControl.resx">
+      <DependentUpon>ProductsListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\AuditTrailListControl.resx">
+      <DependentUpon>AuditTrailListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\SalesReportControl.resx">
+      <DependentUpon>SalesReportControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sales\SalesControl.resx">
+      <DependentUpon>SalesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sales\TransactionDetailControl.resx">
+      <DependentUpon>TransactionDetailControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Shared\AlertModalControl.resx">
+      <DependentUpon>AlertModalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Shared\ConfirmDialogControl.resx">
+      <DependentUpon>ConfirmDialogControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Shared\LoadingScreenControl.resx">
+      <DependentUpon>LoadingScreenControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Suppliers\SupplierCrudControl.resx">
+      <DependentUpon>SupplierCrudControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Suppliers\SupplierListControl.resx">
+      <DependentUpon>SupplierListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sales\TransactionControl.resx">
+      <DependentUpon>TransactionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Users\AddUserForm.resx">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Users\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Users\UserManagementControl.resx">
+      <DependentUpon>UserManagementControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Fots\" />
+    <Folder Include="Classes\Controllers\" />
+    <Folder Include="Classes\Security\" />
+    <Folder Include="Classes\Servives\" />
+    <Folder Include="Database\Models\" />
+    <Folder Include="Forms\Settings\" />
+    <Folder Include="Logs\AppLogs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Icons\icons8-dashboard-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Icons\icons8-profile-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Icons\icons8-dashboard-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Icons\icons8-bell-96.png" />
+    <Content Include="Assets\Icons\GreenCircle.png" />
+    <Content Include="Assets\Icons\RedCircle.png" />
+    <Content Include="Assets\Images\Ron.jpg" />
+    <Content Include="Database\inventory_db.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
