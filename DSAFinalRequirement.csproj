@@ -58,16 +58,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Categories\CategoryCrudControl.cs">
+    <Compile Include="Forms\Controls\CategoryListControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Categories\CategoryCrudControl.Designer.cs">
-      <DependentUpon>CategoryCrudControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Categories\CategoryListControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Categories\CategoryListControl.Designer.cs">
+    <Compile Include="Forms\Controls\CategoryListControl.Designer.cs">
       <DependentUpon>CategoryListControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Controls\UpNavControl.cs">
@@ -154,11 +148,23 @@
     <Compile Include="Forms\Shared\LoadingScreenControl.Designer.cs">
       <DependentUpon>LoadingScreenControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Suppliers\SupplierCrudControl.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Forms\Suppliers\AddSupplierForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Suppliers\SupplierCrudControl.Designer.cs">
-      <DependentUpon>SupplierCrudControl.cs</DependentUpon>
+    <Compile Include="Forms\Suppliers\AddSupplierForm.Designer.cs">
+      <DependentUpon>AddSupplierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Suppliers\DeleteSupplierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Suppliers\DeleteSupplierForm.Designer.cs">
+      <DependentUpon>DeleteSupplierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Suppliers\EditSupplierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Suppliers\EditSupplierForm.Designer.cs">
+      <DependentUpon>EditSupplierForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Suppliers\SupplierListControl.cs">
       <SubType>UserControl</SubType>
@@ -204,10 +210,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Categories\CategoryCrudControl.resx">
-      <DependentUpon>CategoryCrudControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Categories\CategoryListControl.resx">
+    <EmbeddedResource Include="Forms\Controls\CategoryListControl.resx">
       <DependentUpon>CategoryListControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Controls\UpNavControl.resx">
@@ -252,8 +255,14 @@
     <EmbeddedResource Include="Forms\Shared\LoadingScreenControl.resx">
       <DependentUpon>LoadingScreenControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Suppliers\SupplierCrudControl.resx">
-      <DependentUpon>SupplierCrudControl.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Suppliers\AddSupplierForm.resx">
+      <DependentUpon>AddSupplierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Suppliers\DeleteSupplierForm.resx">
+      <DependentUpon>DeleteSupplierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Suppliers\EditSupplierForm.resx">
+      <DependentUpon>EditSupplierForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Suppliers\SupplierListControl.resx">
       <DependentUpon>SupplierListControl.cs</DependentUpon>
@@ -301,10 +310,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\Fots\" />
+    <Folder Include="Assets\Images\CategoryImages\" />
     <Folder Include="Classes\Controllers\" />
     <Folder Include="Classes\Security\" />
     <Folder Include="Classes\Servives\" />
     <Folder Include="Database\Models\" />
+    <Folder Include="Forms\Categories\" />
     <Folder Include="Forms\Settings\" />
     <Folder Include="Logs\AppLogs\" />
   </ItemGroup>

@@ -1,4 +1,6 @@
 ﻿using DSAFinalRequirement.Database.Connections;
+using DSAFinalRequirement.Forms.Dashboard;
+using DSAFinalRequirement.Forms.Users;
 using System;
 using System.Data;
 using System.Data.OleDb;
@@ -14,7 +16,17 @@ namespace DSAFinalRequirement.Forms.Suppliers
         {
             InitializeComponent();
             LoadSuppliers();
+
+            btnAddSupplier.Click += BtnAddSupplier_Click;
+            btnEditSupplier.Click += BtnEditSupplier_Click;
+            btnDeleteSupplier.Click += BtnDeleteSupplier_Click;
+            btnRefresh.Click += BtnRefresh_Click1;
+            btnSearchSupplier.Click += btnSearchSupplier_Click;
         }
+
+        
+
+
 
         // -------------------------
         // LOAD SUPPLIERS TO DATAGRIDVIEW
@@ -140,5 +152,141 @@ namespace DSAFinalRequirement.Forms.Suppliers
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        // __________________________
+        // CRUD BUTTONS 
+        // ___________________+___________
+
+        // ADD SUPPLIER
+        private void BtnAddSupplier_Click(object sender, EventArgs e)
+        {
+            AddSupplierForm addForm = new AddSupplierForm();
+            if (addForm.ShowDialog() == DialogResult.OK)
+            {
+                LoadSuppliers();
+                // call mainDashboard.ShowStatus
+                var dash = (MainDashboardForm)Application.OpenForms["MainDashboardForm"];
+                if (dash != null)
+                {
+                    dash.ShowStatus("Supplier Added Successfully");
+                }
+            }
+        }
+
+        // -------------------------
+        // EDIT Supplier
+        // -------------------------
+        private void BtnEditSupplier_Click(object sender, EventArgs e)
+        {
+            int? supplierId = GetSelectedUserID();
+
+            if (supplierId == null)
+            {
+                MessageBox.Show("No user selected. Please select a user first.",
+                    "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            EditSupplierForm editForm = new EditSupplierForm(supplierId.Value);
+            if (editForm.ShowDialog() == DialogResult.OK)
+            {
+                LoadSuppliers();
+
+                // Call MainDashboardForm.ShowStatus
+                var dash = (MainDashboardForm)Application.OpenForms["MainDashboardForm"];
+                if (dash != null)
+                {
+                    dash.ShowStatus("Supplier updated successfully!");
+                }
+            }
+
+        }
+
+        // -------------------------
+        // Delete Supplier
+        // -------------------------
+        private void BtnDeleteSupplier_Click(object sender, EventArgs e)
+        {
+            int? supplierId = GetSelectedUserID();
+
+            if (supplierId == null)
+            {
+                MessageBox.Show("No Supplier selected. Please select a user first.",
+                    "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DeleteSupplierForm editForm = new DeleteSupplierForm(supplierId.Value);
+            if (editForm.ShowDialog() == DialogResult.OK)
+            {
+                LoadSuppliers();
+
+                // Call MainDashboardForm.ShowStatus
+                var dash = (MainDashboardForm)Application.OpenForms["MainDashboardForm"];
+                if (dash != null)
+                {
+                    dash.ShowStatus("Supplier Deleted successfully!");
+                }
+            }
+
+        }
+
+
+        // REFRESH SUUPLIERS DGV
+        public void BtnRefresh_Click1(object sender, EventArgs e)
+        {
+            LoadSuppliers();
+
+        }
+
+        // Search button 
+        private void btnSearchSupplier_Click(object sender, EventArgs e)
+        {
+            string searchTerm = txtSearchSupplier.Text.Trim().ToLower();
+
+            if (string.IsNullOrEmpty(searchTerm))
+            {
+                LoadSuppliers();
+                return;
+            }
+
+            foreach (DataGridViewRow row in dgvSuppliers.Rows)
+            {
+                // Skip the new row placeholder
+                if (row.IsNewRow) continue;
+
+                bool isVisible = false;
+
+                string username = row.Cells["SupplierName"].Value?.ToString().ToLower() ?? "";
+                string fullname = row.Cells["SupplierName"].Value?.ToString().ToLower() ?? "";
+                string email = row.Cells["Email"].Value?.ToString().ToLower() ?? "";
+
+                if (username.Contains(searchTerm) || fullname.Contains(searchTerm) || email.Contains(searchTerm))
+                {
+                    isVisible = true;
+                }
+
+                row.Visible = isVisible;
+            }
+        }
+
+        // -------------------------
+        // SELECTED USER ID HELPER
+        // -------------------------
+        private int? GetSelectedUserID()
+        {
+            if (dgvSuppliers.SelectedRows.Count == 0)
+                return null;
+
+            try
+            {
+                return Convert.ToInt32(dgvSuppliers.SelectedRows[0].Cells["SupplierID"].Value);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        
     }
 }

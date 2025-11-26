@@ -96,7 +96,7 @@ namespace DSAFinalRequirement.Forms.Dashboard
                 { btnDashboard, new DashboardControl() },
                 { btnInventory, new InventoryAdjustmentListControl() },
                 { btnProducts, new ProductsListControl() },
-                { btnCategories, new CategoryCrudControl() },
+                { btnCategories, new CategoryListControl() },
                 { btnSuppliers, new SupplierListControl() },
                 { btnUsers, new UserManagementControl() },
                 { btnSales, new SalesControl() },
