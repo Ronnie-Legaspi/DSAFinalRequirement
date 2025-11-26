@@ -58,7 +58,7 @@
             // 
             // btnSearchSupplier
             // 
-            this.btnSearchSupplier.Location = new System.Drawing.Point(901, 54);
+            this.btnSearchSupplier.Location = new System.Drawing.Point(1028, 58);
             this.btnSearchSupplier.Name = "btnSearchSupplier";
             this.btnSearchSupplier.Size = new System.Drawing.Size(52, 48);
             this.btnSearchSupplier.TabIndex = 28;
@@ -69,7 +69,7 @@
             // 
             this.txtSearchSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchSupplier.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtSearchSupplier.Location = new System.Drawing.Point(565, 54);
+            this.txtSearchSupplier.Location = new System.Drawing.Point(692, 58);
             this.txtSearchSupplier.Name = "txtSearchSupplier";
             this.txtSearchSupplier.Size = new System.Drawing.Size(330, 45);
             this.txtSearchSupplier.TabIndex = 27;
@@ -77,7 +77,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(432, 50);
+            this.btnRefresh.Location = new System.Drawing.Point(559, 54);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(127, 48);
             this.btnRefresh.TabIndex = 26;
@@ -86,7 +86,7 @@
             // 
             // btnDeleteSupplier
             // 
-            this.btnDeleteSupplier.Location = new System.Drawing.Point(299, 50);
+            this.btnDeleteSupplier.Location = new System.Drawing.Point(426, 54);
             this.btnDeleteSupplier.Name = "btnDeleteSupplier";
             this.btnDeleteSupplier.Size = new System.Drawing.Size(127, 48);
             this.btnDeleteSupplier.TabIndex = 25;
@@ -95,7 +95,7 @@
             // 
             // btnEditSupplier
             // 
-            this.btnEditSupplier.Location = new System.Drawing.Point(166, 50);
+            this.btnEditSupplier.Location = new System.Drawing.Point(293, 54);
             this.btnEditSupplier.Name = "btnEditSupplier";
             this.btnEditSupplier.Size = new System.Drawing.Size(127, 48);
             this.btnEditSupplier.TabIndex = 24;
@@ -104,7 +104,7 @@
             // 
             // btnAddSupplier
             // 
-            this.btnAddSupplier.Location = new System.Drawing.Point(33, 50);
+            this.btnAddSupplier.Location = new System.Drawing.Point(160, 54);
             this.btnAddSupplier.Name = "btnAddSupplier";
             this.btnAddSupplier.Size = new System.Drawing.Size(127, 48);
             this.btnAddSupplier.TabIndex = 23;
@@ -122,11 +122,11 @@
             this.Email,
             this.Address,
             this.DateAdded});
-            this.dgvSuppliers.Location = new System.Drawing.Point(32, 125);
+            this.dgvSuppliers.Location = new System.Drawing.Point(13, 108);
             this.dgvSuppliers.Name = "dgvSuppliers";
             this.dgvSuppliers.RowHeadersWidth = 51;
             this.dgvSuppliers.RowTemplate.Height = 24;
-            this.dgvSuppliers.Size = new System.Drawing.Size(920, 510);
+            this.dgvSuppliers.Size = new System.Drawing.Size(1069, 527);
             this.dgvSuppliers.TabIndex = 22;
             // 
             // SupplierID
@@ -199,7 +199,7 @@
             this.Controls.Add(this.btnAddSupplier);
             this.Controls.Add(this.dgvSuppliers);
             this.Name = "SupplierListControl";
-            this.Size = new System.Drawing.Size(983, 683);
+            this.Size = new System.Drawing.Size(1085, 676);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSuppliers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
