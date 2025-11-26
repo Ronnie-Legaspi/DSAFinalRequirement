@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|c:\\users\\ronni\\desktop\\dsafinalrequirement\\forms\\suppliers\\supplierlistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\suppliers\\supplierlistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\users\\usermanagementcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|c:\\users\\ronni\\desktop\\dsafinalrequirement\\forms\\users\\usermanagementcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\users\\usermanagementcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\users\\usermanagementcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\users\\usermanagementcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\suppliers\\supplierlistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\suppliers\\supplierlistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\users\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -201,11 +201,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "UserManagementControl.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\UserManagementControl.cs",
               "RelativeDocumentMoniker": "Forms\\Users\\UserManagementControl.cs",
@@ -214,11 +214,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-22T06:37:26.348Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserManagementControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\UserManagementControl.cs",
               "RelativeDocumentMoniker": "Forms\\Users\\UserManagementControl.cs",
@@ -226,7 +227,8 @@
               "RelativeToolTip": "Forms\\Users\\UserManagementControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T16:04:14.287Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -258,15 +260,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SupplierListControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Suppliers\\SupplierListControl.cs",
               "RelativeDocumentMoniker": "Forms\\Suppliers\\SupplierListControl.cs",
               "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Suppliers\\SupplierListControl.cs [Design]",
               "RelativeToolTip": "Forms\\Suppliers\\SupplierListControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T08:35:22.456Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-22T08:35:22.456Z"
             },
             {
               "$type": "Document",
