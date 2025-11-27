@@ -33,19 +33,13 @@
             this.txtSearchAdjustment = new System.Windows.Forms.TextBox();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnDeleteAdjustMent = new System.Windows.Forms.Button();
-            this.dgvAdjustments = new System.Windows.Forms.DataGridView();
+            this.dgvInventoryAdjustments = new System.Windows.Forms.DataGridView();
             this.AdjustmentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QuantityChanged = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DateAdjusted = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbTransationIDFilter = new System.Windows.Forms.ComboBox();
-            this.cmbUserIDFilter = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cmbAdjustmentIDFilter = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAdjustments)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventoryAdjustments)).BeginInit();
             this.SuspendLayout();
             // 
             // lblAdkustmentsStatus
@@ -95,21 +89,21 @@
             this.btnDeleteAdjustMent.Text = "btnDeleteSupplier";
             this.btnDeleteAdjustMent.UseVisualStyleBackColor = true;
             // 
-            // dgvAdjustments
+            // dgvInventoryAdjustments
             // 
-            this.dgvAdjustments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAdjustments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvInventoryAdjustments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInventoryAdjustments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.AdjustmentID,
             this.ProductID,
             this.QuantityChanged,
             this.UserID,
             this.DateAdjusted});
-            this.dgvAdjustments.Location = new System.Drawing.Point(33, 129);
-            this.dgvAdjustments.Name = "dgvAdjustments";
-            this.dgvAdjustments.RowHeadersWidth = 51;
-            this.dgvAdjustments.RowTemplate.Height = 24;
-            this.dgvAdjustments.Size = new System.Drawing.Size(920, 510);
-            this.dgvAdjustments.TabIndex = 32;
+            this.dgvInventoryAdjustments.Location = new System.Drawing.Point(33, 129);
+            this.dgvInventoryAdjustments.Name = "dgvInventoryAdjustments";
+            this.dgvInventoryAdjustments.RowHeadersWidth = 51;
+            this.dgvInventoryAdjustments.RowTemplate.Height = 24;
+            this.dgvInventoryAdjustments.Size = new System.Drawing.Size(920, 510);
+            this.dgvInventoryAdjustments.TabIndex = 32;
             // 
             // AdjustmentID
             // 
@@ -151,76 +145,19 @@
             this.DateAdjusted.ReadOnly = true;
             this.DateAdjusted.Width = 125;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(622, 93);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 16);
-            this.label2.TabIndex = 43;
-            this.label2.Text = "Filter by ProductID:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(348, 90);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 16);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "Filter by UserID:";
-            // 
-            // cmbTransationIDFilter
-            // 
-            this.cmbTransationIDFilter.FormattingEnabled = true;
-            this.cmbTransationIDFilter.Location = new System.Drawing.Point(772, 91);
-            this.cmbTransationIDFilter.Name = "cmbTransationIDFilter";
-            this.cmbTransationIDFilter.Size = new System.Drawing.Size(179, 24);
-            this.cmbTransationIDFilter.TabIndex = 41;
-            // 
-            // cmbUserIDFilter
-            // 
-            this.cmbUserIDFilter.FormattingEnabled = true;
-            this.cmbUserIDFilter.Location = new System.Drawing.Point(456, 93);
-            this.cmbUserIDFilter.Name = "cmbUserIDFilter";
-            this.cmbUserIDFilter.Size = new System.Drawing.Size(145, 24);
-            this.cmbUserIDFilter.TabIndex = 40;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 93);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 16);
-            this.label3.TabIndex = 45;
-            this.label3.Text = "Filter by AdjustmentID:";
-            // 
-            // cmbAdjustmentIDFilter
-            // 
-            this.cmbAdjustmentIDFilter.FormattingEnabled = true;
-            this.cmbAdjustmentIDFilter.Location = new System.Drawing.Point(177, 93);
-            this.cmbAdjustmentIDFilter.Name = "cmbAdjustmentIDFilter";
-            this.cmbAdjustmentIDFilter.Size = new System.Drawing.Size(145, 24);
-            this.cmbAdjustmentIDFilter.TabIndex = 44;
-            // 
             // InventoryAdjustmentListControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.cmbAdjustmentIDFilter);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cmbTransationIDFilter);
-            this.Controls.Add(this.cmbUserIDFilter);
             this.Controls.Add(this.lblAdkustmentsStatus);
             this.Controls.Add(this.btnSearchAdjustment);
             this.Controls.Add(this.txtSearchAdjustment);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnDeleteAdjustMent);
-            this.Controls.Add(this.dgvAdjustments);
+            this.Controls.Add(this.dgvInventoryAdjustments);
             this.Name = "InventoryAdjustmentListControl";
             this.Size = new System.Drawing.Size(983, 683);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAdjustments)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventoryAdjustments)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,17 +170,11 @@
         private System.Windows.Forms.TextBox txtSearchAdjustment;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnDeleteAdjustMent;
-        private System.Windows.Forms.DataGridView dgvAdjustments;
+        private System.Windows.Forms.DataGridView dgvInventoryAdjustments;
         private System.Windows.Forms.DataGridViewTextBoxColumn AdjustmentID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
         private System.Windows.Forms.DataGridViewTextBoxColumn QuantityChanged;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserID;
         private System.Windows.Forms.DataGridViewTextBoxColumn DateAdjusted;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cmbTransationIDFilter;
-        private System.Windows.Forms.ComboBox cmbUserIDFilter;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cmbAdjustmentIDFilter;
     }
 }

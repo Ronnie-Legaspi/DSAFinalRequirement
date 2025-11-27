@@ -162,6 +162,7 @@
             this.btnRefresh.TabIndex = 10;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnDeleteProduct
             // 
@@ -171,6 +172,7 @@
             this.btnDeleteProduct.TabIndex = 9;
             this.btnDeleteProduct.Text = "btnDeleteProduct";
             this.btnDeleteProduct.UseVisualStyleBackColor = true;
+            this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
             // 
             // btnEditProduct
             // 
@@ -189,6 +191,7 @@
             this.btnAddProduct.TabIndex = 7;
             this.btnAddProduct.Text = "btnAddProduct";
             this.btnAddProduct.UseVisualStyleBackColor = true;
+            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // cmbCategoryFilter
             // 

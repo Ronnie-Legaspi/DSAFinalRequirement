@@ -1,4 +1,6 @@
 ﻿using DSAFinalRequirement.Database.Connections;
+using DSAFinalRequirement.Forms.Categories;
+using DSAFinalRequirement.Forms.Dashboard;
 using System;
 using System.Data.OleDb;
 using System.Drawing;
@@ -13,6 +15,9 @@ namespace DSAFinalRequirement.Forms.Products
         {
             InitializeComponent();
             LoadProducts();
+            btnAddProduct.Click += btnAddProduct_Click;
+            btnEditProduct.Click += btnEditProduct_Click;
+            btnDeleteProduct.Click += btnDeleteProduct_Click;
         }
 
         private void LoadProducts()
@@ -109,6 +114,91 @@ namespace DSAFinalRequirement.Forms.Products
                 MessageBox.Show("Error loading Products:\n" + ex.Message,
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        // -----------------------
+        // Add PRODUCT BUTTON 
+        // -----------------------
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            AddProductForm addForm = new AddProductForm();
+            if (addForm.ShowDialog() == DialogResult.OK)
+            {
+                LoadProducts();
+                var dash = (MainDashboardForm)Application.OpenForms["MainDashboardForm"];
+                if (dash != null)
+                    dash.ShowStatus("Product Added Successfully!");
+            }
+
+        }
+
+        // -----------------------
+        // Edit PRODUCT BUTTON 
+        // -----------------------
+        private void btnEditProduct_Click(object sender, EventArgs e)
+        {
+            int? productId = GetSelectedProductID();
+            if (productId == null)
+            {
+                MessageBox.Show("No Product selected. Please select a Category first.",
+                    "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            EditProductForm editForm = new EditProductForm(productId.Value);
+            if (editForm.ShowDialog() == DialogResult.OK)
+            {
+                LoadProducts();
+                var dash = (MainDashboardForm)Application.OpenForms["MainDashboardForm"];
+                if (dash != null)
+                    dash.ShowStatus("Product updated successfully!");
+            }
+        }
+
+        // ______________________________
+        // DELETE SELECTED PRODUCT 
+        // _____________________________
+        private void btnDeleteProduct_Click(object sender, EventArgs e)
+        {
+            int? productId = GetSelectedProductID();
+            if (productId == null)
+            {
+                MessageBox.Show("No Product selected. Please select a category first.",
+                    "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DeleteProductForm delForm = new DeleteProductForm(productId.Value);
+            if (delForm.ShowDialog() == DialogResult.OK)
+            {
+                LoadProducts();
+                var dash = (MainDashboardForm)Application.OpenForms["MainDashboardForm"];
+                if (dash != null)
+                    dash.ShowStatus("Product deleted successfully!");
+            }
+        }
+
+        // ------------------------------
+        // Get Selected Category ID
+        // ------------------------------
+        private int? GetSelectedProductID()
+        {
+            if (dgvProducts.SelectedRows.Count == 0)
+                return null;
+
+            try
+            {
+                return Convert.ToInt32(dgvProducts.SelectedRows[0].Cells["ProductID"].Value);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            LoadProducts();
         }
     }
 }

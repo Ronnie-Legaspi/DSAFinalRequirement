@@ -34,3 +34,4 @@ C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.S
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Suppliers.DeleteSupplierForm.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.exe.config
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Categories.EditCategoryForm.resources
+C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Reports.DeleteTransactionForm.resources

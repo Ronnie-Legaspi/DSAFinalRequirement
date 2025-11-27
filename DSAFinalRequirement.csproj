@@ -100,6 +100,12 @@
     <Compile Include="Forms\Dashboard\MainDashboardForm.Designer.cs">
       <DependentUpon>MainDashboardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Inventory\DeleteAdjustmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\DeleteAdjustmentForm.Designer.cs">
+      <DependentUpon>DeleteAdjustmentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Inventory\InventoryAdjustmentListControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -112,6 +118,24 @@
     <Compile Include="Forms\Inventory\LowStocksAlertControl.Designer.cs">
       <DependentUpon>LowStocksAlertControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Products\AddProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Products\AddProductForm.Designer.cs">
+      <DependentUpon>AddProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Products\DeleteProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Products\DeleteProductForm.Designer.cs">
+      <DependentUpon>DeleteProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Products\EditProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Products\EditProductForm.Designer.cs">
+      <DependentUpon>EditProductForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Products\ProductsListControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +147,12 @@
     </Compile>
     <Compile Include="Forms\Reports\AuditTrailListControl.Designer.cs">
       <DependentUpon>AuditTrailListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\DeleteTransactionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\DeleteTransactionForm.Designer.cs">
+      <DependentUpon>DeleteTransactionForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Reports\SalesReportControl.cs">
       <SubType>UserControl</SubType>
@@ -249,6 +279,9 @@
     <EmbeddedResource Include="Forms\Reports\AuditTrailListControl.resx">
       <DependentUpon>AuditTrailListControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\DeleteTransactionForm.resx">
+      <DependentUpon>DeleteTransactionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reports\SalesReportControl.resx">
       <DependentUpon>SalesReportControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -323,6 +356,7 @@
   <ItemGroup>
     <Folder Include="Assets\Fots\" />
     <Folder Include="Assets\Images\CategoryImages\" />
+    <Folder Include="Assets\Images\ProductImages\" />
     <Folder Include="Assets\Images\UserImages\" />
     <Folder Include="Classes\Controllers\" />
     <Folder Include="Classes\Security\" />

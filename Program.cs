@@ -19,7 +19,7 @@ namespace DSAFinalRequirement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainDashboardForm());
+            Application.Run(new LoginForm());
         }
     }
 }

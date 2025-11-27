@@ -28,42 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnSearchProduct = new System.Windows.Forms.Button();
             this.txtProductSearch = new System.Windows.Forms.TextBox();
-            this.dgvProductResults = new System.Windows.Forms.DataGridView();
+            this.dgvProducts = new System.Windows.Forms.DataGridView();
             this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductImage = new System.Windows.Forms.DataGridViewImageColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nudQuantity = new System.Windows.Forms.NumericUpDown();
             this.btnAddToCart = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnRefresh = new System.Windows.Forms.Button();
+            this.dgvCart = new System.Windows.Forms.DataGridView();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnRefreshs = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblTotalItems = new System.Windows.Forms.Label();
-            this.lblTotalAmount = new System.Windows.Forms.Label();
-            this.lblVatAmount = new System.Windows.Forms.Label();
-            this.lblGrandTotal = new System.Windows.Forms.Label();
+            this.lblChange = new System.Windows.Forms.Label();
+            this.btnCompleteTransaction = new System.Windows.Forms.Button();
+            this.lblCashReceived = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnNewSale = new System.Windows.Forms.Button();
-            this.btnRemoveItem = new System.Windows.Forms.Button();
-            this.btnRefreshProducts = new System.Windows.Forms.Button();
+            this.lblGrandTotal = new System.Windows.Forms.Label();
+            this.lblVatAmount = new System.Windows.Forms.Label();
+            this.lblTotalAmount = new System.Windows.Forms.Label();
+            this.lblTotalItems = new System.Windows.Forms.Label();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.lblSaleStatus = new System.Windows.Forms.Label();
-            this.btnCompleteTransaction = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductResults)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtCashReceived = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCart)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,22 +89,21 @@
             this.txtProductSearch.TabIndex = 35;
             this.txtProductSearch.Text = "Search Supplier";
             // 
-            // dgvProductResults
+            // dgvProducts
             // 
-            this.dgvProductResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductResults.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductID,
             this.ProductImage,
             this.Category,
             this.Price,
             this.Stock});
-            this.dgvProductResults.Location = new System.Drawing.Point(16, 72);
-            this.dgvProductResults.Name = "dgvProductResults";
-            this.dgvProductResults.RowHeadersWidth = 51;
-            this.dgvProductResults.RowTemplate.Height = 24;
-            this.dgvProductResults.Size = new System.Drawing.Size(679, 236);
-            this.dgvProductResults.TabIndex = 37;
-            this.dgvProductResults.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTransactions_CellContentClick);
+            this.dgvProducts.Location = new System.Drawing.Point(16, 72);
+            this.dgvProducts.Name = "dgvProducts";
+            this.dgvProducts.RowHeadersWidth = 51;
+            this.dgvProducts.RowTemplate.Height = 24;
+            this.dgvProducts.Size = new System.Drawing.Size(679, 236);
+            this.dgvProducts.TabIndex = 37;
             // 
             // ProductID
             // 
@@ -145,12 +147,12 @@
             this.Stock.ReadOnly = true;
             this.Stock.Width = 125;
             // 
-            // numericUpDown1
+            // nudQuantity
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(15, 328);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(153, 22);
-            this.numericUpDown1.TabIndex = 38;
+            this.nudQuantity.Location = new System.Drawing.Point(15, 328);
+            this.nudQuantity.Name = "nudQuantity";
+            this.nudQuantity.Size = new System.Drawing.Size(153, 22);
+            this.nudQuantity.TabIndex = 38;
             // 
             // btnAddToCart
             // 
@@ -161,30 +163,21 @@
             this.btnAddToCart.Text = "Add To Cart";
             this.btnAddToCart.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvCart
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn1,
             this.ProductName,
             this.Quantity,
             this.UnitPrice,
             this.Subtotal});
-            this.dataGridView1.Location = new System.Drawing.Point(16, 370);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(679, 248);
-            this.dataGridView1.TabIndex = 40;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Location = new System.Drawing.Point(439, 18);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(127, 48);
-            this.btnRefresh.TabIndex = 41;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.dgvCart.Location = new System.Drawing.Point(16, 370);
+            this.dgvCart.Name = "dgvCart";
+            this.dgvCart.RowHeadersWidth = 51;
+            this.dgvCart.RowTemplate.Height = 24;
+            this.dgvCart.Size = new System.Drawing.Size(679, 248);
+            this.dgvCart.TabIndex = 40;
             // 
             // dataGridViewImageColumn1
             // 
@@ -227,11 +220,21 @@
             this.Subtotal.ReadOnly = true;
             this.Subtotal.Width = 125;
             // 
+            // btnRefreshs
+            // 
+            this.btnRefreshs.Location = new System.Drawing.Point(439, 18);
+            this.btnRefreshs.Name = "btnRefreshs";
+            this.btnRefreshs.Size = new System.Drawing.Size(127, 48);
+            this.btnRefreshs.TabIndex = 41;
+            this.btnRefreshs.Text = "Refresh";
+            this.btnRefreshs.UseVisualStyleBackColor = true;
+            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.txtCashReceived);
+            this.panel1.Controls.Add(this.lblChange);
             this.panel1.Controls.Add(this.btnCompleteTransaction);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.lblCashReceived);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnNewSale);
@@ -244,41 +247,42 @@
             this.panel1.Size = new System.Drawing.Size(253, 546);
             this.panel1.TabIndex = 42;
             // 
-            // lblTotalItems
+            // lblChange
             // 
-            this.lblTotalItems.AutoSize = true;
-            this.lblTotalItems.Location = new System.Drawing.Point(22, 76);
-            this.lblTotalItems.Name = "lblTotalItems";
-            this.lblTotalItems.Size = new System.Drawing.Size(84, 16);
-            this.lblTotalItems.TabIndex = 0;
-            this.lblTotalItems.Text = "lblTotalItems";
+            this.lblChange.AutoSize = true;
+            this.lblChange.Location = new System.Drawing.Point(22, 349);
+            this.lblChange.Name = "lblChange";
+            this.lblChange.Size = new System.Drawing.Size(57, 16);
+            this.lblChange.TabIndex = 45;
+            this.lblChange.Text = "Change:";
             // 
-            // lblTotalAmount
+            // btnCompleteTransaction
             // 
-            this.lblTotalAmount.AutoSize = true;
-            this.lblTotalAmount.Location = new System.Drawing.Point(22, 111);
-            this.lblTotalAmount.Name = "lblTotalAmount";
-            this.lblTotalAmount.Size = new System.Drawing.Size(97, 16);
-            this.lblTotalAmount.TabIndex = 1;
-            this.lblTotalAmount.Text = "lblTotalAmount";
+            this.btnCompleteTransaction.Location = new System.Drawing.Point(16, 415);
+            this.btnCompleteTransaction.Name = "btnCompleteTransaction";
+            this.btnCompleteTransaction.Size = new System.Drawing.Size(202, 48);
+            this.btnCompleteTransaction.TabIndex = 44;
+            this.btnCompleteTransaction.Text = "btnCompleteTransaction";
+            this.btnCompleteTransaction.UseVisualStyleBackColor = true;
             // 
-            // lblVatAmount
+            // lblCashReceived
             // 
-            this.lblVatAmount.AutoSize = true;
-            this.lblVatAmount.Location = new System.Drawing.Point(22, 156);
-            this.lblVatAmount.Name = "lblVatAmount";
-            this.lblVatAmount.Size = new System.Drawing.Size(86, 16);
-            this.lblVatAmount.TabIndex = 2;
-            this.lblVatAmount.Text = "lblVatAmount";
+            this.lblCashReceived.AutoSize = true;
+            this.lblCashReceived.Location = new System.Drawing.Point(22, 315);
+            this.lblCashReceived.Name = "lblCashReceived";
+            this.lblCashReceived.Size = new System.Drawing.Size(103, 16);
+            this.lblCashReceived.TabIndex = 6;
+            this.lblCashReceived.Text = "Cash Recieved:";
             // 
-            // lblGrandTotal
+            // label2
             // 
-            this.lblGrandTotal.AutoSize = true;
-            this.lblGrandTotal.Location = new System.Drawing.Point(22, 204);
-            this.lblGrandTotal.Name = "lblGrandTotal";
-            this.lblGrandTotal.Size = new System.Drawing.Size(89, 16);
-            this.lblGrandTotal.TabIndex = 3;
-            this.lblGrandTotal.Text = "lblGrandTotal";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(19, 259);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 31);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Payment";
             // 
             // label1
             // 
@@ -299,23 +303,59 @@
             this.btnNewSale.Text = "btnNewSale";
             this.btnNewSale.UseVisualStyleBackColor = true;
             // 
-            // btnRemoveItem
+            // lblGrandTotal
             // 
-            this.btnRemoveItem.Location = new System.Drawing.Point(439, 314);
-            this.btnRemoveItem.Name = "btnRemoveItem";
-            this.btnRemoveItem.Size = new System.Drawing.Size(127, 48);
-            this.btnRemoveItem.TabIndex = 44;
-            this.btnRemoveItem.Text = "Remove";
-            this.btnRemoveItem.UseVisualStyleBackColor = true;
+            this.lblGrandTotal.AutoSize = true;
+            this.lblGrandTotal.Location = new System.Drawing.Point(22, 204);
+            this.lblGrandTotal.Name = "lblGrandTotal";
+            this.lblGrandTotal.Size = new System.Drawing.Size(89, 16);
+            this.lblGrandTotal.TabIndex = 3;
+            this.lblGrandTotal.Text = "lblGrandTotal";
             // 
-            // btnRefreshProducts
+            // lblVatAmount
             // 
-            this.btnRefreshProducts.Location = new System.Drawing.Point(302, 314);
-            this.btnRefreshProducts.Name = "btnRefreshProducts";
-            this.btnRefreshProducts.Size = new System.Drawing.Size(127, 48);
-            this.btnRefreshProducts.TabIndex = 45;
-            this.btnRefreshProducts.Text = "Refresh";
-            this.btnRefreshProducts.UseVisualStyleBackColor = true;
+            this.lblVatAmount.AutoSize = true;
+            this.lblVatAmount.Location = new System.Drawing.Point(22, 156);
+            this.lblVatAmount.Name = "lblVatAmount";
+            this.lblVatAmount.Size = new System.Drawing.Size(86, 16);
+            this.lblVatAmount.TabIndex = 2;
+            this.lblVatAmount.Text = "lblVatAmount";
+            // 
+            // lblTotalAmount
+            // 
+            this.lblTotalAmount.AutoSize = true;
+            this.lblTotalAmount.Location = new System.Drawing.Point(22, 111);
+            this.lblTotalAmount.Name = "lblTotalAmount";
+            this.lblTotalAmount.Size = new System.Drawing.Size(97, 16);
+            this.lblTotalAmount.TabIndex = 1;
+            this.lblTotalAmount.Text = "lblTotalAmount";
+            // 
+            // lblTotalItems
+            // 
+            this.lblTotalItems.AutoSize = true;
+            this.lblTotalItems.Location = new System.Drawing.Point(22, 76);
+            this.lblTotalItems.Name = "lblTotalItems";
+            this.lblTotalItems.Size = new System.Drawing.Size(84, 16);
+            this.lblTotalItems.TabIndex = 0;
+            this.lblTotalItems.Text = "lblTotalItems";
+            // 
+            // btnRemove
+            // 
+            this.btnRemove.Location = new System.Drawing.Point(439, 314);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(127, 48);
+            this.btnRemove.TabIndex = 44;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(302, 314);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(127, 48);
+            this.btnRefresh.TabIndex = 45;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -332,26 +372,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(8, 8);
             this.flowLayoutPanel1.TabIndex = 46;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 259);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 31);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Payment";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 316);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 16);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Cash Recieved:";
-            // 
             // lblSaleStatus
             // 
             this.lblSaleStatus.AutoSize = true;
@@ -361,23 +381,18 @@
             this.lblSaleStatus.TabIndex = 7;
             this.lblSaleStatus.Text = "lblSaleStatus";
             // 
-            // btnCompleteTransaction
+            // txtCashReceived
             // 
-            this.btnCompleteTransaction.Location = new System.Drawing.Point(16, 415);
-            this.btnCompleteTransaction.Name = "btnCompleteTransaction";
-            this.btnCompleteTransaction.Size = new System.Drawing.Size(202, 48);
-            this.btnCompleteTransaction.TabIndex = 44;
-            this.btnCompleteTransaction.Text = "btnCompleteTransaction";
-            this.btnCompleteTransaction.UseVisualStyleBackColor = true;
+            this.txtCashReceived.Location = new System.Drawing.Point(141, 315);
+            this.txtCashReceived.Name = "txtCashReceived";
+            this.txtCashReceived.Size = new System.Drawing.Size(100, 22);
+            this.txtCashReceived.TabIndex = 46;
             // 
-            // label4
+            // contextMenuStrip1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(22, 349);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 16);
-            this.label4.TabIndex = 45;
-            this.label4.Text = "Change:";
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // SalesControl
             // 
@@ -386,21 +401,21 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.lblSaleStatus);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.btnRefreshProducts);
-            this.Controls.Add(this.btnRemoveItem);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnRemove);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnRefreshs);
+            this.Controls.Add(this.dgvCart);
             this.Controls.Add(this.btnAddToCart);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.dgvProductResults);
+            this.Controls.Add(this.nudQuantity);
+            this.Controls.Add(this.dgvProducts);
             this.Controls.Add(this.btnSearchProduct);
             this.Controls.Add(this.txtProductSearch);
             this.Name = "SalesControl";
             this.Size = new System.Drawing.Size(983, 683);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductResults)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCart)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -412,21 +427,21 @@
 
         private System.Windows.Forms.Button btnSearchProduct;
         private System.Windows.Forms.TextBox txtProductSearch;
-        private System.Windows.Forms.DataGridView dgvProductResults;
+        private System.Windows.Forms.DataGridView dgvProducts;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
         private System.Windows.Forms.DataGridViewImageColumn ProductImage;
         private System.Windows.Forms.DataGridViewTextBoxColumn Category;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn Stock;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nudQuantity;
         private System.Windows.Forms.Button btnAddToCart;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvCart;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn UnitPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn Subtotal;
-        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnRefreshs;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblGrandTotal;
         private System.Windows.Forms.Label lblVatAmount;
@@ -434,14 +449,16 @@
         private System.Windows.Forms.Label lblTotalItems;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnNewSale;
-        private System.Windows.Forms.Button btnRemoveItem;
+        private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnRefreshProducts;
+        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblCashReceived;
         private System.Windows.Forms.Label lblSaleStatus;
         private System.Windows.Forms.Button btnCompleteTransaction;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblChange;
+        private System.Windows.Forms.TextBox txtCashReceived;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
