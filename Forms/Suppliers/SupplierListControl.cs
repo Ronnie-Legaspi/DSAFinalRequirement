@@ -96,7 +96,7 @@ namespace DSAFinalRequirement.Forms.Suppliers
 
                             if (!string.IsNullOrEmpty(imgFile))
                             {
-                                string imgPath = Path.Combine(projectRoot, "Assets", "Images", imgFile);
+                                string imgPath = Path.Combine(projectRoot, "Assets", "Images", "SupplierImages", imgFile);
                                 if (File.Exists(imgPath))
                                     supplierImage = Image.FromFile(imgPath);
                             }

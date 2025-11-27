@@ -5,54 +5,54 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
-namespace DSAFinalRequirement.Forms.Users
+namespace DSAFinalRequirement.Forms.Categories
 {
-    public partial class DeleteUserForm : Form
+    public partial class DeleteCategoryForm : Form
     {
-        private int userId;
-        private string username;
-        private string userImageFile = "";
+        private int categoryId;
+        private string categoryName;
+        private string categoryImageFile = "";
 
-        public DeleteUserForm(int userId)
+        public DeleteCategoryForm(int categoryId)
         {
             InitializeComponent();
-            this.userId = userId;
-            LoadUserData();
+            this.categoryId = categoryId;
+            LoadCategoryData();
 
             btnDelete.Click += btnDelete_Click;
             btnCancel.Click += btnCancel_Click;
+
         }
 
         // -------------------------
-        // Load User Info
+        // Load Category Info
         // -------------------------
-        private void LoadUserData()
+        private void LoadCategoryData()
         {
             try
             {
                 using (OleDbConnection conn = DatabaseConnection.GetConnection())
                 {
-                    string query = "SELECT Username, UserImage FROM Users WHERE UserID = ?";
+                    string query = "SELECT CategoryName, CategoryImage FROM Categories WHERE CategoryID = ?";
                     using (OleDbCommand cmd = new OleDbCommand(query, conn))
                     {
-                        cmd.Parameters.AddWithValue("?", userId); // use ? for Access
-
+                        cmd.Parameters.AddWithValue("@CategoryID", categoryId);
                         using (OleDbDataReader reader = cmd.ExecuteReader())
                         {
                             if (reader.Read())
                             {
-                                username = reader["Username"].ToString();
-                                userImageFile = reader["UserImage"].ToString();
+                                categoryName = reader["CategoryName"].ToString();
+                                categoryImageFile = reader["CategoryImage"].ToString();
 
-                                txtUsername.Text = username;
+                                txtCategoryName.Text = categoryName;
 
                                 string projectRoot = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\.."));
-                                string imgPath = Path.Combine(projectRoot, "Assets", "Images", userImageFile);
+                                string imgPath = Path.Combine(projectRoot, "Assets", "Images", "CategoryImages", categoryImageFile);
 
                                 if (File.Exists(imgPath))
                                 {
-                                    picUserImage.Image = Image.FromFile(imgPath);
-                                    picUserImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                                    picCategoryImage.Image = Image.FromFile(imgPath);
+                                    picCategoryImage.SizeMode = PictureBoxSizeMode.StretchImage;
                                 }
                             }
                         }
@@ -61,17 +61,17 @@ namespace DSAFinalRequirement.Forms.Users
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error loading user:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error loading category:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         // -------------------------
-        // Delete User
+        // Delete Category
         // -------------------------
         private void btnDelete_Click(object sender, EventArgs e)
         {
             var result = MessageBox.Show(
-                $"Are you sure you want to delete user '{username}'?",
+                $"Are you sure you want to delete category '{categoryName}'?",
                 "Confirm Delete",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning);
@@ -82,21 +82,21 @@ namespace DSAFinalRequirement.Forms.Users
                 {
                     using (OleDbConnection conn = DatabaseConnection.GetConnection())
                     {
-                        string query = "DELETE FROM Users WHERE UserID = ?";
+                        string query = "DELETE FROM Categories WHERE CategoryID = ?";
                         using (OleDbCommand cmd = new OleDbCommand(query, conn))
                         {
-                            cmd.Parameters.AddWithValue("?", userId); // use ? for Access
+                            cmd.Parameters.AddWithValue("@CategoryID", categoryId);
                             cmd.ExecuteNonQuery();
                         }
                     }
 
-                    MessageBox.Show("User deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Category deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.DialogResult = DialogResult.OK;
                     this.Close();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error deleting user:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error deleting category:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

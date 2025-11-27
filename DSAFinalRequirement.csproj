@@ -58,11 +58,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Controls\CategoryListControl.cs">
+    <Compile Include="Forms\Categories\AddCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Categories\AddCategoryForm.Designer.cs">
+      <DependentUpon>AddCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Categories\CategoryListControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Controls\CategoryListControl.Designer.cs">
+    <Compile Include="Forms\Categories\CategoryListControl.Designer.cs">
       <DependentUpon>CategoryListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Categories\DeleteCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Categories\DeleteCategoryForm.Designer.cs">
+      <DependentUpon>DeleteCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Categories\EditCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Categories\EditCategoryForm.Designer.cs">
+      <DependentUpon>EditCategoryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Controls\UpNavControl.cs">
       <SubType>UserControl</SubType>
@@ -93,12 +111,6 @@
     </Compile>
     <Compile Include="Forms\Inventory\LowStocksAlertControl.Designer.cs">
       <DependentUpon>LowStocksAlertControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Products\ProductCrudControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Products\ProductCrudControl.Designer.cs">
-      <DependentUpon>ProductCrudControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Products\ProductsListControl.cs">
       <SubType>UserControl</SubType>
@@ -210,8 +222,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Controls\CategoryListControl.resx">
+    <EmbeddedResource Include="Forms\Categories\CategoryListControl.resx">
       <DependentUpon>CategoryListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Categories\EditCategoryForm.resx">
+      <DependentUpon>EditCategoryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Controls\UpNavControl.resx">
       <DependentUpon>UpNavControl.cs</DependentUpon>
@@ -227,9 +242,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Inventory\LowStocksAlertControl.resx">
       <DependentUpon>LowStocksAlertControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Products\ProductCrudControl.resx">
-      <DependentUpon>ProductCrudControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Products\ProductsListControl.resx">
       <DependentUpon>ProductsListControl.cs</DependentUpon>
@@ -311,11 +323,11 @@
   <ItemGroup>
     <Folder Include="Assets\Fots\" />
     <Folder Include="Assets\Images\CategoryImages\" />
+    <Folder Include="Assets\Images\UserImages\" />
     <Folder Include="Classes\Controllers\" />
     <Folder Include="Classes\Security\" />
     <Folder Include="Classes\Servives\" />
     <Folder Include="Database\Models\" />
-    <Folder Include="Forms\Categories\" />
     <Folder Include="Forms\Settings\" />
     <Folder Include="Logs\AppLogs\" />
   </ItemGroup>
@@ -331,6 +343,7 @@
   <ItemGroup>
     <None Include="Assets\Icons\icons8-bell-96.png" />
     <Content Include="Assets\Icons\GreenCircle.png" />
+    <Content Include="Assets\Icons\BrokenImage.png" />
     <Content Include="Assets\Icons\SearchIcon.png" />
     <Content Include="Assets\Icons\RedCircle.png" />
     <Content Include="Assets\Images\Ron.jpg" />

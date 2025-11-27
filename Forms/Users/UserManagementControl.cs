@@ -84,30 +84,9 @@ namespace DSAFinalRequirement.Forms.Users
                 return;
             }
 
-            DialogResult dr = MessageBox.Show(
-                "Are you sure you want to delete this user?",
-                "Confirm Delete",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question);
-
-            if (dr != DialogResult.Yes) return;
-
-            try
+            DeleteUserForm delForm = new DeleteUserForm(userId.Value);
+            if (delForm.ShowDialog() == DialogResult.OK)
             {
-                using (OleDbConnection conn = DatabaseConnection.GetConnection())
-                {
-                    string query = "DELETE FROM Users WHERE UserID = @id";
-
-                    using (OleDbCommand cmd = new OleDbCommand(query, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@id", userId.Value);
-                        cmd.ExecuteNonQuery();
-                    }
-                }
-
-                MessageBox.Show("User deleted successfully!", "Success",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 LoadUsers();
 
                 // Show status on MainDashboardForm
@@ -117,12 +96,8 @@ namespace DSAFinalRequirement.Forms.Users
                     dash.ShowStatus("User deleted successfully!");
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error deleting user:\n" + ex.Message,
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
+
 
         // REFRESH DATAGRIDVIEW
         public void BtnRefresh_Click(object sender, EventArgs e)
@@ -218,7 +193,7 @@ namespace DSAFinalRequirement.Forms.Users
 
                             if (!string.IsNullOrEmpty(imgFile))
                             {
-                                string imgPath = Path.Combine(projectRoot, "Assets", "Images", imgFile);
+                                string imgPath = Path.Combine(projectRoot, "Assets", "Images", "UserImages", imgFile);
                                 if (File.Exists(imgPath))
                                     userImage = Image.FromFile(imgPath);
                             }

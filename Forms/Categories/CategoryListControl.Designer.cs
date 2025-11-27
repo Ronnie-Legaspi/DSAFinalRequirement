@@ -146,6 +146,7 @@
             this.btnEditCategory.TabIndex = 14;
             this.btnEditCategory.Text = "btnEditCategory";
             this.btnEditCategory.UseVisualStyleBackColor = true;
+            this.btnEditCategory.Click += new System.EventHandler(this.btnEditCategory_Click);
             // 
             // btnAddCategory
             // 
@@ -155,6 +156,7 @@
             this.btnAddCategory.TabIndex = 13;
             this.btnAddCategory.Text = "btnAddCategory";
             this.btnAddCategory.UseVisualStyleBackColor = true;
+            this.btnAddCategory.Click += new System.EventHandler(this.btnAddCategory_Click);
             // 
             // lblCategoryStatus
             // 

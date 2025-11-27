@@ -13,7 +13,6 @@ C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.C
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Dashboard.MainDashboardForm.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Inventory.InventoryAdjustmentListControl.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Inventory.LowStocksAlertControl.resources
-C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Products.ProductCrudControl.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Products.ProductsListControl.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Reports.SalesReportControl.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Sales.SalesControl.resources
@@ -24,7 +23,6 @@ C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.S
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Suppliers.SupplierListControl.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Transactions.TransactionControl.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Users.UserManagementControl.resources
-C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.exe.config
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Dashboard.DashboardControl.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Reports.AuditTrailListControl.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Dashboard.Controls.UpNavControl.resources
@@ -34,3 +32,5 @@ C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.U
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Suppliers.AddSupplierForm.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Suppliers.EditSupplierForm.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Suppliers.DeleteSupplierForm.resources
+C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.exe.config
+C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Categories.EditCategoryForm.resources

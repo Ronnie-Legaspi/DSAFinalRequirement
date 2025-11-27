@@ -48,7 +48,7 @@ namespace DSAFinalRequirement.Forms.Users
                 selectedImageFile = Path.GetFileName(ofd.FileName);
 
                 string projectRoot = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\.."));
-                string targetPath = Path.Combine(projectRoot, "Assets", "Images", selectedImageFile);
+                string targetPath = Path.Combine(projectRoot, "Assets", "Images", "UserImages", selectedImageFile);
 
                 try
                 {

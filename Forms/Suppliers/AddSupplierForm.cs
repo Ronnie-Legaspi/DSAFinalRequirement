@@ -147,7 +147,7 @@ namespace DSAFinalRequirement.Forms.Suppliers
                     // SAVE IMAGE TO PROJECT
                     // -----------------------
                     string projectRoot = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\.."));
-                    string folderPath = Path.Combine(projectRoot, "Assets", "Images");
+                    string folderPath = Path.Combine(projectRoot, "Assets", "Images", "SupplierImages");
 
                     if (!Directory.Exists(folderPath))
                         Directory.CreateDirectory(folderPath);
