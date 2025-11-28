@@ -2,15 +2,30 @@
 {
     partial class LoginForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        // === UI CONTROL DECLARATIONS ===
+        private System.Windows.Forms.Panel panelHeader;
+        private System.Windows.Forms.Panel panelLoginCard;
+
+        private System.Windows.Forms.PictureBox pbAppLogo;
+        private System.Windows.Forms.PictureBox pbUserIcon;
+        private System.Windows.Forms.PictureBox pbPassIcon;
+
+        private System.Windows.Forms.Label lblSystemTitle;
+        private System.Windows.Forms.Label lblLoginTitle;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Label lblErrorMessage;
+
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
+
+        private System.Windows.Forms.Button btnLogin;
+
+        private System.Windows.Forms.RadioButton rbAdmin;
+        private System.Windows.Forms.RadioButton rbStaff;
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,114 +35,213 @@
             base.Dispose(disposing);
         }
 
+
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
+            this.panelHeader = new System.Windows.Forms.Panel();
+            this.pbAppLogo = new System.Windows.Forms.PictureBox();
+            this.lblSystemTitle = new System.Windows.Forms.Label();
+            this.panelLoginCard = new System.Windows.Forms.Panel();
             this.lblLoginTitle = new System.Windows.Forms.Label();
+            this.pbUserIcon = new System.Windows.Forms.PictureBox();
             this.lblUsername = new System.Windows.Forms.Label();
-            this.lblPassword = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
+            this.pbPassIcon = new System.Windows.Forms.PictureBox();
+            this.lblPassword = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.rbAdmin = new System.Windows.Forms.RadioButton();
+            this.rbStaff = new System.Windows.Forms.RadioButton();
             this.btnLogin = new System.Windows.Forms.Button();
             this.lblErrorMessage = new System.Windows.Forms.Label();
+            this.panelHeader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAppLogo)).BeginInit();
+            this.panelLoginCard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUserIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPassIcon)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panelHeader
+            // 
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(226)))));
+            this.panelHeader.Controls.Add(this.pbAppLogo);
+            this.panelHeader.Controls.Add(this.lblSystemTitle);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(650, 70);
+            this.panelHeader.TabIndex = 0;
+            // 
+            // pbAppLogo
+            // 
+            this.pbAppLogo.Location = new System.Drawing.Point(20, 10);
+            this.pbAppLogo.Name = "pbAppLogo";
+            this.pbAppLogo.Size = new System.Drawing.Size(50, 50);
+            this.pbAppLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAppLogo.TabIndex = 0;
+            this.pbAppLogo.TabStop = false;
+            // 
+            // lblSystemTitle
+            // 
+            this.lblSystemTitle.AutoSize = true;
+            this.lblSystemTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 18F);
+            this.lblSystemTitle.ForeColor = System.Drawing.Color.White;
+            this.lblSystemTitle.Location = new System.Drawing.Point(80, 18);
+            this.lblSystemTitle.Name = "lblSystemTitle";
+            this.lblSystemTitle.Size = new System.Drawing.Size(301, 41);
+            this.lblSystemTitle.TabIndex = 1;
+            this.lblSystemTitle.Text = "INVENTORY SYSTEM";
+            // 
+            // panelLoginCard
+            // 
+            this.panelLoginCard.BackColor = System.Drawing.Color.White;
+            this.panelLoginCard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelLoginCard.Controls.Add(this.lblLoginTitle);
+            this.panelLoginCard.Controls.Add(this.pbUserIcon);
+            this.panelLoginCard.Controls.Add(this.lblUsername);
+            this.panelLoginCard.Controls.Add(this.txtUsername);
+            this.panelLoginCard.Controls.Add(this.pbPassIcon);
+            this.panelLoginCard.Controls.Add(this.lblPassword);
+            this.panelLoginCard.Controls.Add(this.txtPassword);
+            this.panelLoginCard.Controls.Add(this.rbAdmin);
+            this.panelLoginCard.Controls.Add(this.rbStaff);
+            this.panelLoginCard.Controls.Add(this.btnLogin);
+            this.panelLoginCard.Controls.Add(this.lblErrorMessage);
+            this.panelLoginCard.Location = new System.Drawing.Point(125, 120);
+            this.panelLoginCard.Name = "panelLoginCard";
+            this.panelLoginCard.Size = new System.Drawing.Size(400, 330);
+            this.panelLoginCard.TabIndex = 1;
             // 
             // lblLoginTitle
             // 
             this.lblLoginTitle.AutoSize = true;
-            this.lblLoginTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.lblLoginTitle.Location = new System.Drawing.Point(207, 37);
+            this.lblLoginTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.lblLoginTitle.Location = new System.Drawing.Point(130, 20);
             this.lblLoginTitle.Name = "lblLoginTitle";
-            this.lblLoginTitle.Size = new System.Drawing.Size(178, 41);
+            this.lblLoginTitle.Size = new System.Drawing.Size(173, 37);
             this.lblLoginTitle.TabIndex = 0;
-            this.lblLoginTitle.Text = "Login Form";
+            this.lblLoginTitle.Text = "USER LOGIN";
+            // 
+            // pbUserIcon
+            // 
+            this.pbUserIcon.Location = new System.Drawing.Point(40, 90);
+            this.pbUserIcon.Name = "pbUserIcon";
+            this.pbUserIcon.Size = new System.Drawing.Size(24, 24);
+            this.pbUserIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbUserIcon.TabIndex = 1;
+            this.pbUserIcon.TabStop = false;
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(107, 107);
+            this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblUsername.Location = new System.Drawing.Point(70, 90);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(70, 16);
-            this.lblUsername.TabIndex = 1;
+            this.lblUsername.Size = new System.Drawing.Size(87, 23);
+            this.lblUsername.TabIndex = 2;
             this.lblUsername.Text = "Username";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtUsername.Location = new System.Drawing.Point(70, 115);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(260, 30);
+            this.txtUsername.TabIndex = 3;
+            // 
+            // pbPassIcon
+            // 
+            this.pbPassIcon.Location = new System.Drawing.Point(40, 155);
+            this.pbPassIcon.Name = "pbPassIcon";
+            this.pbPassIcon.Size = new System.Drawing.Size(24, 24);
+            this.pbPassIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPassIcon.TabIndex = 4;
+            this.pbPassIcon.TabStop = false;
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(107, 157);
+            this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblPassword.Location = new System.Drawing.Point(70, 155);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(67, 16);
-            this.lblPassword.TabIndex = 2;
+            this.lblPassword.Size = new System.Drawing.Size(80, 23);
+            this.lblPassword.TabIndex = 5;
             this.lblPassword.Text = "Password";
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Location = new System.Drawing.Point(207, 107);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(200, 22);
-            this.txtUsername.TabIndex = 3;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(207, 157);
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtPassword.Location = new System.Drawing.Point(70, 180);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(200, 22);
-            this.txtPassword.TabIndex = 4;
+            this.txtPassword.Size = new System.Drawing.Size(260, 30);
+            this.txtPassword.TabIndex = 6;
             this.txtPassword.UseSystemPasswordChar = true;
+            // 
+            // rbAdmin
+            // 
+            this.rbAdmin.Checked = true;
+            this.rbAdmin.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.rbAdmin.Location = new System.Drawing.Point(70, 220);
+            this.rbAdmin.Name = "rbAdmin";
+            this.rbAdmin.Size = new System.Drawing.Size(104, 24);
+            this.rbAdmin.TabIndex = 7;
+            this.rbAdmin.TabStop = true;
+            this.rbAdmin.Text = "Admin";
+            // 
+            // rbStaff
+            // 
+            this.rbStaff.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.rbStaff.Location = new System.Drawing.Point(180, 220);
+            this.rbStaff.Name = "rbStaff";
+            this.rbStaff.Size = new System.Drawing.Size(104, 24);
+            this.rbStaff.TabIndex = 8;
+            this.rbStaff.Text = "Staff";
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(207, 207);
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(226)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(70, 260);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(100, 30);
-            this.btnLogin.TabIndex = 5;
-            this.btnLogin.Text = "Login";
+            this.btnLogin.Size = new System.Drawing.Size(260, 40);
+            this.btnLogin.TabIndex = 9;
+            this.btnLogin.Text = "LOGIN";
+            this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // lblErrorMessage
             // 
             this.lblErrorMessage.AutoSize = true;
+            this.lblErrorMessage.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblErrorMessage.ForeColor = System.Drawing.Color.Red;
-            this.lblErrorMessage.Location = new System.Drawing.Point(204, 266);
+            this.lblErrorMessage.Location = new System.Drawing.Point(70, 310);
             this.lblErrorMessage.Name = "lblErrorMessage";
-            this.lblErrorMessage.Size = new System.Drawing.Size(93, 16);
-            this.lblErrorMessage.TabIndex = 6;
-            this.lblErrorMessage.Text = "ErrorMessage";
-            this.lblErrorMessage.Visible = false;
+            this.lblErrorMessage.Size = new System.Drawing.Size(0, 20);
+            this.lblErrorMessage.TabIndex = 10;
             // 
             // LoginForm
             // 
-            this.ClientSize = new System.Drawing.Size(572, 418);
-            this.Controls.Add(this.lblLoginTitle);
-            this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.lblErrorMessage);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ClientSize = new System.Drawing.Size(650, 500);
+            this.Controls.Add(this.panelHeader);
+            this.Controls.Add(this.panelLoginCard);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAppLogo)).EndInit();
+            this.panelLoginCard.ResumeLayout(false);
+            this.panelLoginCard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUserIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPassIcon)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
-
         #endregion
-
-        private System.Windows.Forms.Label lblUsername;
-        private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.Label lblLoginTitle;
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Label lblErrorMessage;
     }
 }

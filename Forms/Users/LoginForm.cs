@@ -26,46 +26,52 @@ namespace DSAFinalRequirement.Forms.Users
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text.Trim();
 
-            // Step 1: Basic validation
+            // step 1 Basic Validation 
+
             if (username == "" || password == "")
             {
-                ShowError("Please enter username and password.");
+                ShowError("Please enter Username and Password");
                 return;
             }
 
-            // Step 2: Query user by username
+            // step 2 Query user by username 
             string query = "SELECT UserID, Username, [Password], Role, UserImage, Email FROM Users WHERE Username = ?";
-
             using (OleDbDataReader dr = QueryHelper.ExecuteReader(query,
-                new OleDbParameter("@Username", username)))
+                new OleDbParameter("@username", username)))
             {
                 if (!dr.HasRows)
                 {
-                    ShowError("Username does not exist.");
-                    return;
+                    ShowError("Invalid Credentials.");
                 }
 
                 dr.Read();
 
-                // Step 3: Compare password 
+                // Database values 
                 string dbPassword = dr["Password"].ToString();
+                string dbRole = dr["Role"].ToString();
 
+                // step 3 compare password 
                 if (password != dbPassword)
                 {
-                    ShowError("Incorrect password.");
+                    ShowError("Envalid Credentials");
                     return;
                 }
 
-                // Step 4: Extract user data
+                // Compare selected Role 
+                string selectedRole = rbAdmin.Checked ? "Admin" : "Staff";
+                if (!dbRole.Equals(selectedRole, StringComparison.OrdinalIgnoreCase))
+                {
+                    ShowError("Invalid Credentials");
+                    return;
+                }
+
                 int userID = Convert.ToInt32(dr["UserID"]);
-                string role = dr["Role"].ToString();
                 string userImage = dr["UserImage"].ToString();
                 string email = dr["Email"].ToString();
 
-                // Step 5: Save session
-                SaveSession(userID, username, role, userImage, email);
+                // step 6 Save Session
+                SaveSession(userID, username, dbRole, userImage, email);
 
-                // Step 6: Redirect
                 OpenDashboard();
             }
         }
@@ -94,6 +100,11 @@ namespace DSAFinalRequirement.Forms.Users
         {
             lblErrorMessage.Text = message;
             lblErrorMessage.Visible = true;
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            rbAdmin.Checked = true;
         }
     }
 }
