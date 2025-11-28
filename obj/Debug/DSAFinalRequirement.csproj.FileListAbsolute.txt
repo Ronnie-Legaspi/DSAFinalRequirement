@@ -24,7 +24,6 @@ C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.S
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Transactions.TransactionControl.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Users.UserManagementControl.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Dashboard.DashboardControl.resources
-C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Reports.AuditTrailListControl.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Dashboard.Controls.UpNavControl.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Users.AddUserForm.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Users.DeleteUserForm.resources
@@ -32,6 +31,8 @@ C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.U
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Suppliers.AddSupplierForm.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Suppliers.EditSupplierForm.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Suppliers.DeleteSupplierForm.resources
-C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.exe.config
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Categories.EditCategoryForm.resources
 C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Reports.DeleteTransactionForm.resources
+C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Sales.SalesForm.resources
+C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.Forms.Reports.TransactionsControl.resources
+C:\Users\ronni\Desktop\DSAFinalRequirement\obj\Debug\DSAFinalRequirement.exe.config

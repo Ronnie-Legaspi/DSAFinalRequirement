@@ -5,13 +5,14 @@ using DSAFinalRequirement.Forms.Products;
 using DSAFinalRequirement.Forms.Reports;
 using DSAFinalRequirement.Forms.Sales;
 using DSAFinalRequirement.Forms.Suppliers;
+using DSAFinalRequirement.Forms.Transactions;
 using DSAFinalRequirement.Forms.Users;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Windows.Forms;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DSAFinalRequirement.Forms.Dashboard
 {
@@ -100,7 +101,7 @@ namespace DSAFinalRequirement.Forms.Dashboard
                 { btnSuppliers, new SupplierListControl() },
                 { btnUsers, new UserManagementControl() },
                 { btnSales, new SalesControl() },
-                { btnReports, new AuditTrailListControl() }
+                { btnTransactions, new TransactionsControl() }
             };
 
             // Attach ALL buttons to the same click handler
@@ -118,20 +119,33 @@ namespace DSAFinalRequirement.Forms.Dashboard
         {
             Button clicked = sender as Button;
 
-            // Highlight the clicked button
+            // Highlight selected button
             foreach (var btn in navMap.Keys)
                 btn.BackColor = Color.Transparent;
 
             clicked.BackColor = Color.DodgerBlue;
 
-            // Load the mapped UserControl
+            // Clear previous
             pnlMainContent.Controls.Clear();
 
+            // Load control
             UserControl ctrl = navMap[clicked];
-            ctrl.Dock = DockStyle.Fill;
+
+            // ---- IMPORTANT PART HERE ----
+            // Make UserControl size dictate the panel
+            pnlMainContent.Size = ctrl.Size;      // panel copies UC size
+            ctrl.Dock = DockStyle.Fill;           // and UC fills it properly
+                                                  // --------------------------------
 
             pnlMainContent.Controls.Add(ctrl);
         }
+
+        public void TriggerNav(Button btn)
+        {
+            NavClick(btn, EventArgs.Empty);
+        }
+
+
 
         private void pnlMainContent_Paint(object sender, PaintEventArgs e)
         {

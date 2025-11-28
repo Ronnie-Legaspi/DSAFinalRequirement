@@ -30,18 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dgvTransactions = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblTransactionID = new System.Windows.Forms.Label();
-            this.lblUserID = new System.Windows.Forms.Label();
-            this.lblTotalAmmount = new System.Windows.Forms.Label();
-            this.lblDateOfSale = new System.Windows.Forms.Label();
-            this.lblRewards = new System.Windows.Forms.Label();
             this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductImage = new System.Windows.Forms.DataGridViewImageColumn();
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblRewards = new System.Windows.Forms.Label();
+            this.lblDateOfSale = new System.Windows.Forms.Label();
+            this.lblTotalAmmount = new System.Windows.Forms.Label();
+            this.lblUserID = new System.Windows.Forms.Label();
+            this.lblTransactionID = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransactions)).BeginInit();
             this.panel1.SuspendLayout();
@@ -73,63 +73,6 @@
             this.dgvTransactions.RowTemplate.Height = 24;
             this.dgvTransactions.Size = new System.Drawing.Size(920, 282);
             this.dgvTransactions.TabIndex = 24;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.lblRewards);
-            this.panel1.Controls.Add(this.lblDateOfSale);
-            this.panel1.Controls.Add(this.lblTotalAmmount);
-            this.panel1.Controls.Add(this.lblUserID);
-            this.panel1.Controls.Add(this.lblTransactionID);
-            this.panel1.Location = new System.Drawing.Point(31, 64);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(537, 232);
-            this.panel1.TabIndex = 25;
-            // 
-            // lblTransactionID
-            // 
-            this.lblTransactionID.AutoSize = true;
-            this.lblTransactionID.Location = new System.Drawing.Point(29, 32);
-            this.lblTransactionID.Name = "lblTransactionID";
-            this.lblTransactionID.Size = new System.Drawing.Size(108, 16);
-            this.lblTransactionID.TabIndex = 0;
-            this.lblTransactionID.Text = "lblTransactionID:";
-            // 
-            // lblUserID
-            // 
-            this.lblUserID.AutoSize = true;
-            this.lblUserID.Location = new System.Drawing.Point(29, 67);
-            this.lblUserID.Name = "lblUserID";
-            this.lblUserID.Size = new System.Drawing.Size(55, 16);
-            this.lblUserID.TabIndex = 1;
-            this.lblUserID.Text = "User ID:";
-            // 
-            // lblTotalAmmount
-            // 
-            this.lblTotalAmmount.AutoSize = true;
-            this.lblTotalAmmount.Location = new System.Drawing.Point(29, 102);
-            this.lblTotalAmmount.Name = "lblTotalAmmount";
-            this.lblTotalAmmount.Size = new System.Drawing.Size(100, 16);
-            this.lblTotalAmmount.TabIndex = 2;
-            this.lblTotalAmmount.Text = "Total Ammount:";
-            // 
-            // lblDateOfSale
-            // 
-            this.lblDateOfSale.AutoSize = true;
-            this.lblDateOfSale.Location = new System.Drawing.Point(29, 139);
-            this.lblDateOfSale.Name = "lblDateOfSale";
-            this.lblDateOfSale.Size = new System.Drawing.Size(86, 16);
-            this.lblDateOfSale.TabIndex = 3;
-            this.lblDateOfSale.Text = "Date Of Sale:";
-            // 
-            // lblRewards
-            // 
-            this.lblRewards.AutoSize = true;
-            this.lblRewards.Location = new System.Drawing.Point(29, 182);
-            this.lblRewards.Name = "lblRewards";
-            this.lblRewards.Size = new System.Drawing.Size(61, 16);
-            this.lblRewards.TabIndex = 4;
-            this.lblRewards.Text = "Rewards";
             // 
             // ProductID
             // 
@@ -185,6 +128,63 @@
             this.SubTotal.ReadOnly = true;
             this.SubTotal.Width = 125;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lblRewards);
+            this.panel1.Controls.Add(this.lblDateOfSale);
+            this.panel1.Controls.Add(this.lblTotalAmmount);
+            this.panel1.Controls.Add(this.lblUserID);
+            this.panel1.Controls.Add(this.lblTransactionID);
+            this.panel1.Location = new System.Drawing.Point(31, 64);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(537, 232);
+            this.panel1.TabIndex = 25;
+            // 
+            // lblRewards
+            // 
+            this.lblRewards.AutoSize = true;
+            this.lblRewards.Location = new System.Drawing.Point(29, 182);
+            this.lblRewards.Name = "lblRewards";
+            this.lblRewards.Size = new System.Drawing.Size(61, 16);
+            this.lblRewards.TabIndex = 4;
+            this.lblRewards.Text = "Rewards";
+            // 
+            // lblDateOfSale
+            // 
+            this.lblDateOfSale.AutoSize = true;
+            this.lblDateOfSale.Location = new System.Drawing.Point(29, 139);
+            this.lblDateOfSale.Name = "lblDateOfSale";
+            this.lblDateOfSale.Size = new System.Drawing.Size(86, 16);
+            this.lblDateOfSale.TabIndex = 3;
+            this.lblDateOfSale.Text = "Date Of Sale:";
+            // 
+            // lblTotalAmmount
+            // 
+            this.lblTotalAmmount.AutoSize = true;
+            this.lblTotalAmmount.Location = new System.Drawing.Point(29, 102);
+            this.lblTotalAmmount.Name = "lblTotalAmmount";
+            this.lblTotalAmmount.Size = new System.Drawing.Size(100, 16);
+            this.lblTotalAmmount.TabIndex = 2;
+            this.lblTotalAmmount.Text = "Total Ammount:";
+            // 
+            // lblUserID
+            // 
+            this.lblUserID.AutoSize = true;
+            this.lblUserID.Location = new System.Drawing.Point(29, 67);
+            this.lblUserID.Name = "lblUserID";
+            this.lblUserID.Size = new System.Drawing.Size(55, 16);
+            this.lblUserID.TabIndex = 1;
+            this.lblUserID.Text = "User ID:";
+            // 
+            // lblTransactionID
+            // 
+            this.lblTransactionID.AutoSize = true;
+            this.lblTransactionID.Location = new System.Drawing.Point(29, 32);
+            this.lblTransactionID.Name = "lblTransactionID";
+            this.lblTransactionID.Size = new System.Drawing.Size(108, 16);
+            this.lblTransactionID.TabIndex = 0;
+            this.lblTransactionID.Text = "lblTransactionID:";
+            // 
             // btnClose
             // 
             this.btnClose.Location = new System.Drawing.Point(31, 611);
@@ -198,12 +198,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(47)))));
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvTransactions);
             this.Controls.Add(this.label1);
             this.Name = "TransactionDetailControl";
-            this.Size = new System.Drawing.Size(983, 683);
+            this.Size = new System.Drawing.Size(1012, 700);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransactions)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

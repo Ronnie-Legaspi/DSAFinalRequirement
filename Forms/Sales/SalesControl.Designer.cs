@@ -47,6 +47,7 @@
             this.Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnRefreshs = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtCashReceived = new System.Windows.Forms.TextBox();
             this.lblChange = new System.Windows.Forms.Label();
             this.btnCompleteTransaction = new System.Windows.Forms.Button();
             this.lblCashReceived = new System.Windows.Forms.Label();
@@ -62,7 +63,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblSaleStatus = new System.Windows.Forms.Label();
-            this.txtCashReceived = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
@@ -247,6 +247,13 @@
             this.panel1.Size = new System.Drawing.Size(253, 546);
             this.panel1.TabIndex = 42;
             // 
+            // txtCashReceived
+            // 
+            this.txtCashReceived.Location = new System.Drawing.Point(141, 315);
+            this.txtCashReceived.Name = "txtCashReceived";
+            this.txtCashReceived.Size = new System.Drawing.Size(100, 22);
+            this.txtCashReceived.TabIndex = 46;
+            // 
             // lblChange
             // 
             this.lblChange.AutoSize = true;
@@ -381,13 +388,6 @@
             this.lblSaleStatus.TabIndex = 7;
             this.lblSaleStatus.Text = "lblSaleStatus";
             // 
-            // txtCashReceived
-            // 
-            this.txtCashReceived.Location = new System.Drawing.Point(141, 315);
-            this.txtCashReceived.Name = "txtCashReceived";
-            this.txtCashReceived.Size = new System.Drawing.Size(100, 22);
-            this.txtCashReceived.TabIndex = 46;
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -396,8 +396,8 @@
             // 
             // SalesControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.lblSaleStatus);
             this.Controls.Add(this.panel2);
@@ -412,7 +412,7 @@
             this.Controls.Add(this.btnSearchProduct);
             this.Controls.Add(this.txtProductSearch);
             this.Name = "SalesControl";
-            this.Size = new System.Drawing.Size(983, 683);
+            this.Size = new System.Drawing.Size(1012, 632);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCart)).EndInit();

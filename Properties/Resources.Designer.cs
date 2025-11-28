@@ -63,6 +63,16 @@ namespace DSAFinalRequirement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DailySales {
+            get {
+                object obj = ResourceManager.GetObject("DailySales", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_bell_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-bell-96", resourceCulture);
@@ -103,6 +113,26 @@ namespace DSAFinalRequirement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LoaderImage {
+            get {
+                object obj = ResourceManager.GetObject("LoaderImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoaderImage1 {
+            get {
+                object obj = ResourceManager.GetObject("LoaderImage1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ron {
             get {
                 object obj = ResourceManager.GetObject("Ron", resourceCulture);
@@ -116,6 +146,36 @@ namespace DSAFinalRequirement.Properties {
         internal static System.Drawing.Bitmap SearchIcon {
             get {
                 object obj = ResourceManager.GetObject("SearchIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stocks {
+            get {
+                object obj = ResourceManager.GetObject("Stocks", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TotalProducts {
+            get {
+                object obj = ResourceManager.GetObject("TotalProducts", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Warning__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Warning (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

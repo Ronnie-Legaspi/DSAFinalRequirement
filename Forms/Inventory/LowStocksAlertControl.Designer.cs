@@ -36,12 +36,12 @@
             this.CategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CurrentStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MinimumStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbUserIDFilter = new System.Windows.Forms.ComboBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblStatus = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransactions)).BeginInit();
             this.SuspendLayout();
@@ -123,6 +123,14 @@
             this.MinimumStock.ReadOnly = true;
             this.MinimumStock.Width = 125;
             // 
+            // Status
+            // 
+            this.Status.HeaderText = "Status";
+            this.Status.MinimumWidth = 6;
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
+            this.Status.Width = 125;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -169,14 +177,6 @@
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             // 
-            // Status
-            // 
-            this.Status.HeaderText = "Status";
-            this.Status.MinimumWidth = 6;
-            this.Status.Name = "Status";
-            this.Status.ReadOnly = true;
-            this.Status.Width = 125;
-            // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
@@ -190,6 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(47)))));
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbUserIDFilter);
@@ -199,7 +200,7 @@
             this.Controls.Add(this.dgvTransactions);
             this.Controls.Add(this.lblTitle);
             this.Name = "LowStocksAlertControl";
-            this.Size = new System.Drawing.Size(983, 683);
+            this.Size = new System.Drawing.Size(1012, 700);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransactions)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

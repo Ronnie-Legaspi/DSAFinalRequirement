@@ -16,5 +16,10 @@ namespace DSAFinalRequirement.Forms.Transactions
         {
             InitializeComponent();
         }
+
+        private void TransactionControl_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

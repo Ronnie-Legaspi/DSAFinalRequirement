@@ -242,7 +242,7 @@ namespace DSAFinalRequirement.Forms.Products
 
                 MessageBox.Show("Product added successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.DialogResult = DialogResult.OK;
-                Close();
+                this.Close();
             }
             catch (Exception ex)
             {

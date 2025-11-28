@@ -1,237 +1,254 @@
-﻿namespace DSAFinalRequirement.Forms.Transactions
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace DSAFinalRequirement.Forms.Transactions
 {
     partial class TransactionControl
     {
-        /// <summary> 
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
         #region Component Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.dgvTransactions = new System.Windows.Forms.DataGridView();
-            this.btnSearchTransaction = new System.Windows.Forms.Button();
-            this.txtSearchTransaction = new System.Windows.Forms.TextBox();
+            System.Windows.Forms.DataGridViewCellStyle headerStyle = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle cellStyle = new System.Windows.Forms.DataGridViewCellStyle();
+
+            this.lblHeaderTitle = new System.Windows.Forms.Label();
+            this.lblHeaderDesc = new System.Windows.Forms.Label();
+
+            this.panelTop = new System.Windows.Forms.Panel();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnDeleteSupplier = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbTransationIDFilter = new System.Windows.Forms.ComboBox();
+
+            this.pnlSearch = new System.Windows.Forms.Panel();
+            this.txtSearchTransaction = new System.Windows.Forms.TextBox();
+            this.btnSearchTransaction = new System.Windows.Forms.Button();
+
+            this.lblFilterUserID = new System.Windows.Forms.Label();
             this.cmbUserIDFilter = new System.Windows.Forms.ComboBox();
-            this.lblTransactionStatus = new System.Windows.Forms.Label();
+            this.lblFilterTransactionID = new System.Windows.Forms.Label();
+            this.cmbTransactionIDFilter = new System.Windows.Forms.ComboBox();
+
+            this.dgvTransactions = new System.Windows.Forms.DataGridView();
             this.TransactionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalAmmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DateOfSale = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Remarks = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Action = new System.Windows.Forms.DataGridViewButtonColumn();
+
+            this.lblTransactionStatus = new System.Windows.Forms.Label();
+
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransactions)).BeginInit();
+            this.panelTop.SuspendLayout();
+            this.pnlSearch.SuspendLayout();
             this.SuspendLayout();
+
             // 
-            // dgvTransactions
+            // lblHeaderTitle
             // 
-            this.dgvTransactions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTransactions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.TransactionID,
-            this.UserID,
-            this.TotalAmmount,
-            this.DateOfSale,
-            this.Remarks,
-            this.Action});
-            this.dgvTransactions.Location = new System.Drawing.Point(35, 109);
-            this.dgvTransactions.Name = "dgvTransactions";
-            this.dgvTransactions.RowHeadersWidth = 51;
-            this.dgvTransactions.RowTemplate.Height = 24;
-            this.dgvTransactions.Size = new System.Drawing.Size(920, 510);
-            this.dgvTransactions.TabIndex = 23;
+            this.lblHeaderTitle.AutoSize = true;
+            this.lblHeaderTitle.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
+            this.lblHeaderTitle.ForeColor = Color.White;
+            this.lblHeaderTitle.Location = new Point(20, 10);
+            this.lblHeaderTitle.Name = "lblHeaderTitle";
+            this.lblHeaderTitle.Size = new Size(200, 41);
+            this.lblHeaderTitle.Text = "Transactions";
+
             // 
-            // btnSearchTransaction
+            // lblHeaderDesc
             // 
-            this.btnSearchTransaction.Location = new System.Drawing.Point(903, 16);
-            this.btnSearchTransaction.Name = "btnSearchTransaction";
-            this.btnSearchTransaction.Size = new System.Drawing.Size(52, 48);
-            this.btnSearchTransaction.TabIndex = 34;
-            this.btnSearchTransaction.Text = "Search Icon";
-            this.btnSearchTransaction.UseVisualStyleBackColor = true;
+            this.lblHeaderDesc.AutoSize = true;
+            this.lblHeaderDesc.Font = new Font("Segoe UI", 10F);
+            this.lblHeaderDesc.ForeColor = Color.Silver;
+            this.lblHeaderDesc.Location = new Point(25, 52);
+            this.lblHeaderDesc.Name = "lblHeaderDesc";
+            this.lblHeaderDesc.Size = new Size(400, 19);
+            this.lblHeaderDesc.Text = "View and manage all transactions — search, filter, refresh.";
+
             // 
-            // txtSearchTransaction
+            // panelTop
             // 
-            this.txtSearchTransaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchTransaction.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtSearchTransaction.Location = new System.Drawing.Point(567, 16);
-            this.txtSearchTransaction.Name = "txtSearchTransaction";
-            this.txtSearchTransaction.Size = new System.Drawing.Size(330, 45);
-            this.txtSearchTransaction.TabIndex = 33;
-            this.txtSearchTransaction.Text = "Search Supplier";
+            this.panelTop.BackColor = Color.FromArgb(40, 40, 60);
+            this.panelTop.Controls.Add(this.btnRefresh);
+            this.panelTop.Controls.Add(this.pnlSearch);
+            this.panelTop.Location = new Point(20, 75);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new Size(970, 60);
+
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(434, 12);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(127, 48);
-            this.btnRefresh.TabIndex = 32;
+            this.btnRefresh.BackColor = Color.FromArgb(76, 175, 80);
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            this.btnRefresh.ForeColor = Color.White;
+            this.btnRefresh.Location = new Point(10, 10);
+            this.btnRefresh.Size = new Size(120, 40);
             this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.UseVisualStyleBackColor = false;
+
             // 
-            // btnDeleteSupplier
+            // pnlSearch
             // 
-            this.btnDeleteSupplier.Location = new System.Drawing.Point(290, 13);
-            this.btnDeleteSupplier.Name = "btnDeleteSupplier";
-            this.btnDeleteSupplier.Size = new System.Drawing.Size(127, 48);
-            this.btnDeleteSupplier.TabIndex = 31;
-            this.btnDeleteSupplier.Text = "btnDeleteSupplier";
-            this.btnDeleteSupplier.UseVisualStyleBackColor = true;
+            this.pnlSearch.BackColor = Color.FromArgb(50, 50, 70);
+            this.pnlSearch.Controls.Add(this.txtSearchTransaction);
+            this.pnlSearch.Controls.Add(this.btnSearchTransaction);
+            this.pnlSearch.Location = new Point(650, 10);
+            this.pnlSearch.Size = new Size(310, 40);
+
             // 
-            // label2
+            // txtSearchTransaction
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(626, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 16);
-            this.label2.TabIndex = 38;
-            this.label2.Text = "Filter by TransactionID:";
+            this.txtSearchTransaction.BackColor = Color.FromArgb(50, 50, 70);
+            this.txtSearchTransaction.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSearchTransaction.Font = new Font("Segoe UI", 12F);
+            this.txtSearchTransaction.ForeColor = Color.Silver;
+            this.txtSearchTransaction.Location = new Point(5, 8);
+            this.txtSearchTransaction.Size = new Size(230, 22);
+            this.txtSearchTransaction.Text = "Search Transaction...";
+
             // 
-            // label1
+            // btnSearchTransaction
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(352, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 16);
-            this.label1.TabIndex = 37;
-            this.label1.Text = "Filter by UserID:";
+            this.btnSearchTransaction.BackColor = Color.FromArgb(33, 150, 243);
+            this.btnSearchTransaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchTransaction.FlatAppearance.BorderSize = 0;
+            this.btnSearchTransaction.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            this.btnSearchTransaction.ForeColor = Color.White;
+            this.btnSearchTransaction.Location = new Point(240, 0);
+            this.btnSearchTransaction.Size = new Size(70, 40);
+            this.btnSearchTransaction.Text = "🔍";
+            this.btnSearchTransaction.UseVisualStyleBackColor = false;
+
             // 
-            // cmbTransationIDFilter
+            // lblFilterUserID
             // 
-            this.cmbTransationIDFilter.FormattingEnabled = true;
-            this.cmbTransationIDFilter.Location = new System.Drawing.Point(776, 79);
-            this.cmbTransationIDFilter.Name = "cmbTransationIDFilter";
-            this.cmbTransationIDFilter.Size = new System.Drawing.Size(179, 24);
-            this.cmbTransationIDFilter.TabIndex = 36;
+            this.lblFilterUserID.AutoSize = true;
+            this.lblFilterUserID.ForeColor = Color.Silver;
+            this.lblFilterUserID.Location = new Point(20, 145);
+            this.lblFilterUserID.Text = "Filter by UserID:";
+
             // 
             // cmbUserIDFilter
             // 
-            this.cmbUserIDFilter.FormattingEnabled = true;
-            this.cmbUserIDFilter.Location = new System.Drawing.Point(460, 78);
-            this.cmbUserIDFilter.Name = "cmbUserIDFilter";
-            this.cmbUserIDFilter.Size = new System.Drawing.Size(145, 24);
-            this.cmbUserIDFilter.TabIndex = 35;
+            this.cmbUserIDFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUserIDFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbUserIDFilter.Location = new Point(120, 140);
+            this.cmbUserIDFilter.Size = new Size(140, 24);
+
+            // 
+            // lblFilterTransactionID
+            // 
+            this.lblFilterTransactionID.AutoSize = true;
+            this.lblFilterTransactionID.ForeColor = Color.Silver;
+            this.lblFilterTransactionID.Location = new Point(290, 145);
+            this.lblFilterTransactionID.Text = "Filter by TransactionID:";
+
+            // 
+            // cmbTransactionIDFilter
+            // 
+            this.cmbTransactionIDFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTransactionIDFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbTransactionIDFilter.Location = new Point(440, 140);
+            this.cmbTransactionIDFilter.Size = new Size(140, 24);
+
+            // 
+            // dgvTransactions
+            // 
+            this.dgvTransactions.BackgroundColor = Color.FromArgb(37, 37, 55);
+            this.dgvTransactions.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvTransactions.RowHeadersVisible = false;
+            this.dgvTransactions.RowTemplate.Height = 28;
+            this.dgvTransactions.AllowUserToAddRows = false;
+            this.dgvTransactions.AllowUserToDeleteRows = false;
+            this.dgvTransactions.ReadOnly = true;
+            this.dgvTransactions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvTransactions.EnableHeadersVisualStyles = false;
+            this.dgvTransactions.Location = new Point(20, 180);
+            this.dgvTransactions.Size = new Size(970, 410);
+
+            headerStyle.BackColor = Color.FromArgb(55, 55, 80);
+            headerStyle.ForeColor = Color.White;
+            headerStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            headerStyle.Padding = new Padding(6);
+            this.dgvTransactions.ColumnHeadersDefaultCellStyle = headerStyle;
+
+            cellStyle.BackColor = Color.FromArgb(50, 50, 72);
+            cellStyle.ForeColor = Color.White;
+            cellStyle.SelectionBackColor = Color.FromArgb(70, 70, 100);
+            cellStyle.Padding = new Padding(6);
+            this.dgvTransactions.DefaultCellStyle = cellStyle;
+
+            this.dgvTransactions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+                this.TransactionID,
+                this.UserID,
+                this.TotalAmmount,
+                this.DateOfSale,
+                this.Remarks,
+                this.Action
+            });
+
             // 
             // lblTransactionStatus
             // 
             this.lblTransactionStatus.AutoSize = true;
-            this.lblTransactionStatus.Location = new System.Drawing.Point(38, 650);
-            this.lblTransactionStatus.Name = "lblTransactionStatus";
-            this.lblTransactionStatus.Size = new System.Drawing.Size(113, 16);
-            this.lblTransactionStatus.TabIndex = 40;
-            this.lblTransactionStatus.Text = "lblCategoryStatus";
-            this.lblTransactionStatus.Visible = false;
-            // 
-            // TransactionID
-            // 
-            this.TransactionID.HeaderText = "TransactionID";
-            this.TransactionID.MinimumWidth = 6;
-            this.TransactionID.Name = "TransactionID";
-            this.TransactionID.ReadOnly = true;
-            this.TransactionID.Width = 125;
-            // 
-            // UserID
-            // 
-            this.UserID.HeaderText = "UserID";
-            this.UserID.MinimumWidth = 6;
-            this.UserID.Name = "UserID";
-            this.UserID.ReadOnly = true;
-            this.UserID.Width = 125;
-            // 
-            // TotalAmmount
-            // 
-            this.TotalAmmount.HeaderText = "TotalAmmount";
-            this.TotalAmmount.MinimumWidth = 6;
-            this.TotalAmmount.Name = "TotalAmmount";
-            this.TotalAmmount.ReadOnly = true;
-            this.TotalAmmount.Width = 125;
-            // 
-            // DateOfSale
-            // 
-            this.DateOfSale.HeaderText = "DateOfSale";
-            this.DateOfSale.MinimumWidth = 6;
-            this.DateOfSale.Name = "DateOfSale";
-            this.DateOfSale.ReadOnly = true;
-            this.DateOfSale.Width = 125;
-            // 
-            // Remarks
-            // 
-            this.Remarks.HeaderText = "Remarks";
-            this.Remarks.MinimumWidth = 6;
-            this.Remarks.Name = "Remarks";
-            this.Remarks.ReadOnly = true;
-            this.Remarks.Width = 125;
-            // 
-            // Action
-            // 
-            this.Action.HeaderText = "Action";
-            this.Action.MinimumWidth = 6;
-            this.Action.Name = "Action";
-            this.Action.Text = "View";
-            this.Action.Width = 125;
+            this.lblTransactionStatus.ForeColor = Color.Lime;
+            this.lblTransactionStatus.Location = new Point(20, 600);
+            this.lblTransactionStatus.Text = "Status: Ready";
+
             // 
             // TransactionControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lblTransactionStatus);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cmbTransationIDFilter);
+            this.BackColor = Color.FromArgb(30, 30, 47);
+            this.Controls.Add(this.lblHeaderTitle);
+            this.Controls.Add(this.lblHeaderDesc);
+            this.Controls.Add(this.panelTop);
+            this.Controls.Add(this.lblFilterUserID);
             this.Controls.Add(this.cmbUserIDFilter);
-            this.Controls.Add(this.btnSearchTransaction);
-            this.Controls.Add(this.txtSearchTransaction);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.btnDeleteSupplier);
+            this.Controls.Add(this.lblFilterTransactionID);
+            this.Controls.Add(this.cmbTransactionIDFilter);
             this.Controls.Add(this.dgvTransactions);
+            this.Controls.Add(this.lblTransactionStatus);
             this.Name = "TransactionControl";
-            this.Size = new System.Drawing.Size(983, 683);
+            this.Size = new Size(1012, 632);
+
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransactions)).EndInit();
+            this.panelTop.ResumeLayout(false);
+            this.pnlSearch.ResumeLayout(false);
+            this.pnlSearch.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvTransactions;
-        private System.Windows.Forms.Button btnSearchTransaction;
-        private System.Windows.Forms.TextBox txtSearchTransaction;
+        private System.Windows.Forms.Label lblHeaderTitle;
+        private System.Windows.Forms.Label lblHeaderDesc;
+        private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button btnDeleteSupplier;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cmbTransationIDFilter;
+        private System.Windows.Forms.Panel pnlSearch;
+        private System.Windows.Forms.TextBox txtSearchTransaction;
+        private System.Windows.Forms.Button btnSearchTransaction;
+        private System.Windows.Forms.Label lblFilterUserID;
         private System.Windows.Forms.ComboBox cmbUserIDFilter;
-        private System.Windows.Forms.Label lblTransactionStatus;
+        private System.Windows.Forms.Label lblFilterTransactionID;
+        private System.Windows.Forms.ComboBox cmbTransactionIDFilter;
+        private System.Windows.Forms.DataGridView dgvTransactions;
         private System.Windows.Forms.DataGridViewTextBoxColumn TransactionID;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserID;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalAmmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn DateOfSale;
         private System.Windows.Forms.DataGridViewTextBoxColumn Remarks;
         private System.Windows.Forms.DataGridViewButtonColumn Action;
+        private System.Windows.Forms.Label lblTransactionStatus;
     }
 }

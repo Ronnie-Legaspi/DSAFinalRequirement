@@ -19,7 +19,7 @@ namespace DSAFinalRequirement.Forms.Users
             btnEditUser.Click += BtnEditUser_Click;
             btnDeleteUser.Click += BtnDeleteUser_Click;
             btnRefresh.Click += BtnRefresh_Click;
-            btnSearchUser.Click += btnSearchUser_Click;
+            //search.Click += btnSearchUser_Click;
         }
 
         // -------------------------

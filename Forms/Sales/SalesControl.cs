@@ -24,7 +24,7 @@ namespace DSAFinalRequirement.Forms.Sales
 
             btnAddToCart.Click += BtnAddToCart_Click;
             btnRemove.Click += BtnRemove_Click;
-            btnRefresh.Click += BtnRefresh_Click;
+            //btnRefresh.Click += BtnRefresh_Click;
             btnCompleteTransaction.Click += BtnCompleteTransaction_Click;
             btnNewSale.Click += BtnNewSale_Click;
         }

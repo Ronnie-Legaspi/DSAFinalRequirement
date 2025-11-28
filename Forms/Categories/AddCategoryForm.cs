@@ -14,7 +14,26 @@ namespace DSAFinalRequirement.Forms.Categories
         public AddCategoryForm()
         {
             InitializeComponent();
+            btnBrowseImage.Click -= btnBrowseImage_Click;
+            btnSave.Click -= btnSave_Click;
+            btnCancel.Click -= btnCancel_Click;
+
+            btnBrowseImage.Click += btnBrowseImage_Click;
+            btnSave.Click += btnSave_Click;
+            btnCancel.Click += btnCancel_Click;
         }
+
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+
 
         // -------------------------------
         //  BROWSE IMAGE

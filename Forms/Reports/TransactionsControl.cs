@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace DSAFinalRequirement.Forms.Reports
 {
-    public partial class AuditTrailListControl : UserControl
+    public partial class TransactionsControl : UserControl
     {
-        public AuditTrailListControl()
+        public TransactionsControl()
         {
             InitializeComponent();
             LoadTransactions();

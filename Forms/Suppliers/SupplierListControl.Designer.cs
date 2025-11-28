@@ -1,227 +1,209 @@
-﻿namespace DSAFinalRequirement.Forms.Suppliers
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace DSAFinalRequirement.Forms.Suppliers
 {
     partial class SupplierListControl
     {
-        /// <summary> 
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        private Label lblSupplierStatus;
+        private Button btnSearchSupplier;
+        private TextBox txtSearchSupplier;
+        private Button btnRefresh;
+        private Button btnDeleteSupplier;
+        private Button btnEditSupplier;
+        private Button btnAddSupplier;
+        private DataGridView dgvSuppliers;
+
+        private Label lblTitle;
+        private Label lblDescription;
+
+        private DataGridViewTextBoxColumn SupplierID;
+        private DataGridViewImageColumn SupplierImage;
+        private DataGridViewTextBoxColumn SupplierName;
+        private DataGridViewTextBoxColumn ContactNumber;
+        private DataGridViewTextBoxColumn Email;
+        private DataGridViewTextBoxColumn Address;
+        private DataGridViewTextBoxColumn DateAdded;
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
+
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
-
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.lblSupplierStatus = new System.Windows.Forms.Label();
-            this.btnSearchSupplier = new System.Windows.Forms.Button();
-            this.txtSearchSupplier = new System.Windows.Forms.TextBox();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnDeleteSupplier = new System.Windows.Forms.Button();
-            this.btnEditSupplier = new System.Windows.Forms.Button();
-            this.btnAddSupplier = new System.Windows.Forms.Button();
-            this.dgvSuppliers = new System.Windows.Forms.DataGridView();
-            this.SupplierID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SupplieImage = new System.Windows.Forms.DataGridViewImageColumn();
-            this.SupplierName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ContactNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateAdded = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblSupplierStatus = new Label();
+            this.btnSearchSupplier = new Button();
+            this.txtSearchSupplier = new TextBox();
+            this.btnRefresh = new Button();
+            this.btnDeleteSupplier = new Button();
+            this.btnEditSupplier = new Button();
+            this.btnAddSupplier = new Button();
+            this.dgvSuppliers = new DataGridView();
+
+            this.lblTitle = new Label();
+            this.lblDescription = new Label();
+
+            this.SupplierID = new DataGridViewTextBoxColumn();
+            this.SupplierImage = new DataGridViewImageColumn();
+            this.SupplierName = new DataGridViewTextBoxColumn();
+            this.ContactNumber = new DataGridViewTextBoxColumn();
+            this.Email = new DataGridViewTextBoxColumn();
+            this.Address = new DataGridViewTextBoxColumn();
+            this.DateAdded = new DataGridViewTextBoxColumn();
+
             ((System.ComponentModel.ISupportInitialize)(this.dgvSuppliers)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblSupplierStatus
-            // 
-            this.lblSupplierStatus.AutoSize = true;
-            this.lblSupplierStatus.Location = new System.Drawing.Point(30, 638);
-            this.lblSupplierStatus.Name = "lblSupplierStatus";
-            this.lblSupplierStatus.Size = new System.Drawing.Size(113, 16);
-            this.lblSupplierStatus.TabIndex = 31;
-            this.lblSupplierStatus.Text = "lblCategoryStatus";
-            this.lblSupplierStatus.Visible = false;
-            // 
-            // btnSearchSupplier
-            // 
-            this.btnSearchSupplier.Location = new System.Drawing.Point(1028, 58);
-            this.btnSearchSupplier.Name = "btnSearchSupplier";
-            this.btnSearchSupplier.Size = new System.Drawing.Size(52, 48);
-            this.btnSearchSupplier.TabIndex = 28;
-            this.btnSearchSupplier.Text = "Search Icon";
-            this.btnSearchSupplier.UseVisualStyleBackColor = true;
-            // 
-            // txtSearchSupplier
-            // 
-            this.txtSearchSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchSupplier.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtSearchSupplier.Location = new System.Drawing.Point(692, 58);
-            this.txtSearchSupplier.Name = "txtSearchSupplier";
-            this.txtSearchSupplier.Size = new System.Drawing.Size(330, 45);
-            this.txtSearchSupplier.TabIndex = 27;
-            this.txtSearchSupplier.Text = "Search Supplier";
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Location = new System.Drawing.Point(559, 54);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(127, 48);
-            this.btnRefresh.TabIndex = 26;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            // 
-            // btnDeleteSupplier
-            // 
-            this.btnDeleteSupplier.Location = new System.Drawing.Point(426, 54);
-            this.btnDeleteSupplier.Name = "btnDeleteSupplier";
-            this.btnDeleteSupplier.Size = new System.Drawing.Size(127, 48);
-            this.btnDeleteSupplier.TabIndex = 25;
-            this.btnDeleteSupplier.Text = "btnDeleteSupplier";
-            this.btnDeleteSupplier.UseVisualStyleBackColor = true;
-            // 
-            // btnEditSupplier
-            // 
-            this.btnEditSupplier.Location = new System.Drawing.Point(293, 54);
-            this.btnEditSupplier.Name = "btnEditSupplier";
-            this.btnEditSupplier.Size = new System.Drawing.Size(127, 48);
-            this.btnEditSupplier.TabIndex = 24;
-            this.btnEditSupplier.Text = "btnEditSupplier";
-            this.btnEditSupplier.UseVisualStyleBackColor = true;
-            // 
-            // btnAddSupplier
-            // 
-            this.btnAddSupplier.Location = new System.Drawing.Point(160, 54);
-            this.btnAddSupplier.Name = "btnAddSupplier";
-            this.btnAddSupplier.Size = new System.Drawing.Size(127, 48);
-            this.btnAddSupplier.TabIndex = 23;
-            this.btnAddSupplier.Text = "btnAddSupplier";
-            this.btnAddSupplier.UseVisualStyleBackColor = true;
-            // 
-            // dgvSuppliers
-            // 
-            this.dgvSuppliers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSuppliers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SupplierID,
-            this.SupplieImage,
-            this.SupplierName,
-            this.ContactNumber,
-            this.Email,
-            this.Address,
-            this.DateAdded});
-            this.dgvSuppliers.Location = new System.Drawing.Point(13, 108);
-            this.dgvSuppliers.Name = "dgvSuppliers";
-            this.dgvSuppliers.RowHeadersWidth = 51;
-            this.dgvSuppliers.RowTemplate.Height = 24;
-            this.dgvSuppliers.Size = new System.Drawing.Size(1069, 527);
-            this.dgvSuppliers.TabIndex = 22;
-            // 
-            // SupplierID
-            // 
-            this.SupplierID.HeaderText = "SupplierID";
-            this.SupplierID.MinimumWidth = 6;
-            this.SupplierID.Name = "SupplierID";
-            this.SupplierID.ReadOnly = true;
-            this.SupplierID.Width = 125;
-            // 
-            // SupplieImage
-            // 
-            this.SupplieImage.HeaderText = "SupplieImage";
-            this.SupplieImage.MinimumWidth = 6;
-            this.SupplieImage.Name = "SupplieImage";
-            this.SupplieImage.ReadOnly = true;
-            this.SupplieImage.Width = 125;
-            // 
-            // SupplierName
-            // 
-            this.SupplierName.HeaderText = "SupplierName";
-            this.SupplierName.MinimumWidth = 6;
-            this.SupplierName.Name = "SupplierName";
-            this.SupplierName.ReadOnly = true;
-            this.SupplierName.Width = 125;
-            // 
-            // ContactNumber
-            // 
-            this.ContactNumber.HeaderText = "ContactNumber";
-            this.ContactNumber.MinimumWidth = 6;
-            this.ContactNumber.Name = "ContactNumber";
-            this.ContactNumber.ReadOnly = true;
-            this.ContactNumber.Width = 125;
-            // 
-            // Email
-            // 
+
+            // MAIN CONTAINER
+            this.BackColor = Color.FromArgb(30, 30, 47);
+            this.Size = new Size(1012, 700);
+            this.Margin = new Padding(0);
+
+            // ==========================================================
+            // TITLE LABEL
+            // ==========================================================
+            this.lblTitle.Text = "SUPPLIERS";
+            this.lblTitle.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
+            this.lblTitle.ForeColor = Color.White;
+            this.lblTitle.Location = new Point(30, 10);
+            this.lblTitle.AutoSize = true;
+
+            // DESCRIPTION LABEL
+            this.lblDescription.Text = "Manage your suppliers, update information, and maintain your supply chain efficiently.";
+            this.lblDescription.Font = new Font("Segoe UI", 11F);
+            this.lblDescription.ForeColor = Color.LightGray;
+            this.lblDescription.Location = new Point(32, 50);
+            this.lblDescription.AutoSize = true;
+
+            // ==========================================================
+            // DATAGRIDVIEW
+            // ==========================================================
+            this.dgvSuppliers.Location = new Point(34, 170);
+            this.dgvSuppliers.Size = new Size(940, 460);
+            this.dgvSuppliers.BackgroundColor = Color.FromArgb(45, 45, 60);
+            this.dgvSuppliers.BorderStyle = BorderStyle.None;
+            this.dgvSuppliers.GridColor = Color.FromArgb(70, 70, 90);
+
+            this.dgvSuppliers.EnableHeadersVisualStyles = false;
+            this.dgvSuppliers.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(60, 60, 80);
+            this.dgvSuppliers.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            this.dgvSuppliers.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+
+            this.dgvSuppliers.DefaultCellStyle.BackColor = Color.FromArgb(50, 50, 70);
+            this.dgvSuppliers.DefaultCellStyle.ForeColor = Color.White;
+            this.dgvSuppliers.DefaultCellStyle.SelectionBackColor = Color.FromArgb(100, 100, 160);
+
+            this.dgvSuppliers.RowTemplate.Height = 45;
+            this.dgvSuppliers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            this.dgvSuppliers.MultiSelect = false;
+
+            this.dgvSuppliers.Columns.AddRange(new DataGridViewColumn[]
+            {
+                this.SupplierID,
+                this.SupplierImage,
+                this.SupplierName,
+                this.ContactNumber,
+                this.Email,
+                this.Address,
+                this.DateAdded
+            });
+
+            // Columns
+            this.SupplierID.HeaderText = "Supplier ID";
+            this.SupplierID.Width = 120;
+
+            this.SupplierImage.HeaderText = "Image";
+            this.SupplierImage.Width = 110;
+
+            this.SupplierName.HeaderText = "Supplier Name";
+            this.SupplierName.Width = 180;
+
+            this.ContactNumber.HeaderText = "Contact No.";
+            this.ContactNumber.Width = 140;
+
             this.Email.HeaderText = "Email";
-            this.Email.MinimumWidth = 6;
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            this.Email.Width = 125;
-            // 
-            // Address
-            // 
+            this.Email.Width = 160;
+
             this.Address.HeaderText = "Address";
-            this.Address.MinimumWidth = 6;
-            this.Address.Name = "Address";
-            this.Address.ReadOnly = true;
-            this.Address.Width = 125;
-            // 
-            // DateAdded
-            // 
-            this.DateAdded.HeaderText = "DateAdded";
-            this.DateAdded.MinimumWidth = 6;
-            this.DateAdded.Name = "DateAdded";
-            this.DateAdded.ReadOnly = true;
-            this.DateAdded.Width = 125;
-            // 
-            // SupplierListControl
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Controls.Add(this.lblSupplierStatus);
-            this.Controls.Add(this.btnSearchSupplier);
-            this.Controls.Add(this.txtSearchSupplier);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.btnDeleteSupplier);
-            this.Controls.Add(this.btnEditSupplier);
-            this.Controls.Add(this.btnAddSupplier);
+            this.Address.Width = 180;
+
+            this.DateAdded.HeaderText = "Date Added";
+            this.DateAdded.Width = 150;
+
+            // ==========================================================
+            // BUTTON STYLE HELPER
+            // ==========================================================
+            void StyleButton(Button btn, Color color)
+            {
+                btn.BackColor = color;
+                btn.ForeColor = Color.White;
+                btn.FlatStyle = FlatStyle.Flat;
+                btn.FlatAppearance.BorderSize = 0;
+                btn.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+                btn.Size = new Size(140, 48);
+                btn.Cursor = Cursors.Hand;
+            }
+
+            // BUTTONS
+            this.btnAddSupplier.Text = "Add Supplier";
+            this.btnAddSupplier.Location = new Point(35, 95);
+            StyleButton(this.btnAddSupplier, Color.FromArgb(50, 150, 80));
+
+            this.btnEditSupplier.Text = "Edit Supplier";
+            this.btnEditSupplier.Location = new Point(185, 95);
+            StyleButton(this.btnEditSupplier, Color.FromArgb(60, 120, 200));
+
+            this.btnDeleteSupplier.Text = "Delete";
+            this.btnDeleteSupplier.Location = new Point(335, 95);
+            StyleButton(this.btnDeleteSupplier, Color.FromArgb(200, 50, 50));
+
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.Location = new Point(485, 95);
+            StyleButton(this.btnRefresh, Color.FromArgb(80, 80, 100));
+
+            // SEARCH BAR
+            this.txtSearchSupplier.Font = new Font("Segoe UI", 12F);
+            this.txtSearchSupplier.ForeColor = Color.Gray;
+            this.txtSearchSupplier.Text = "Search Supplier";
+            this.txtSearchSupplier.Location = new Point(630, 100);
+            this.txtSearchSupplier.Size = new Size(260, 34);
+
+            this.btnSearchSupplier.Text = "🔍";
+            this.btnSearchSupplier.Location = new Point(900, 100);
+            this.btnSearchSupplier.Size = new Size(50, 34);
+            this.btnSearchSupplier.BackColor = Color.FromArgb(60, 60, 80);
+            this.btnSearchSupplier.ForeColor = Color.White;
+            this.btnSearchSupplier.FlatStyle = FlatStyle.Flat;
+            this.btnSearchSupplier.FlatAppearance.BorderSize = 0;
+
+            // STATUS LABEL
+            this.lblSupplierStatus.AutoSize = true;
+            this.lblSupplierStatus.ForeColor = Color.White;
+            this.lblSupplierStatus.Location = new Point(34, 640);
+            this.lblSupplierStatus.Visible = false;
+
+            // ADD CONTROLS
+            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.dgvSuppliers);
-            this.Name = "SupplierListControl";
-            this.Size = new System.Drawing.Size(1085, 676);
+            this.Controls.Add(this.btnAddSupplier);
+            this.Controls.Add(this.btnEditSupplier);
+            this.Controls.Add(this.btnDeleteSupplier);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.txtSearchSupplier);
+            this.Controls.Add(this.btnSearchSupplier);
+            this.Controls.Add(this.lblSupplierStatus);
+
             ((System.ComponentModel.ISupportInitialize)(this.dgvSuppliers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
-
-        #endregion
-
-        private System.Windows.Forms.Label lblSupplierStatus;
-        private System.Windows.Forms.Button btnSearchSupplier;
-        private System.Windows.Forms.TextBox txtSearchSupplier;
-        private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button btnDeleteSupplier;
-        private System.Windows.Forms.Button btnEditSupplier;
-        private System.Windows.Forms.Button btnAddSupplier;
-        private System.Windows.Forms.DataGridView dgvSuppliers;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SupplierID;
-        private System.Windows.Forms.DataGridViewImageColumn SupplieImage;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SupplierName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ContactNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Address;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DateAdded;
     }
 }

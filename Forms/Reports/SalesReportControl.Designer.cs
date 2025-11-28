@@ -34,14 +34,14 @@
             this.rbMonthly = new System.Windows.Forms.RadioButton();
             this.lblFrom = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dtFrom = new System.Windows.Forms.DateTimePicker();
-            this.lblTo = new System.Windows.Forms.Label();
-            this.dtTo = new System.Windows.Forms.DateTimePicker();
             this.btnGenerateReport = new System.Windows.Forms.Button();
+            this.dtTo = new System.Windows.Forms.DateTimePicker();
+            this.lblTo = new System.Windows.Forms.Label();
+            this.dtFrom = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblTotalTransactions = new System.Windows.Forms.Label();
-            this.lblTotalSalesAmount = new System.Windows.Forms.Label();
             this.lblTotalItemsSold = new System.Windows.Forms.Label();
+            this.lblTotalSalesAmount = new System.Windows.Forms.Label();
+            this.lblTotalTransactions = new System.Windows.Forms.Label();
             this.dgvProductResults = new System.Windows.Forms.DataGridView();
             this.TransactionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DateOfSale = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -121,12 +121,21 @@
             this.panel1.Size = new System.Drawing.Size(485, 257);
             this.panel1.TabIndex = 5;
             // 
-            // dtFrom
+            // btnGenerateReport
             // 
-            this.dtFrom.Location = new System.Drawing.Point(36, 55);
-            this.dtFrom.Name = "dtFrom";
-            this.dtFrom.Size = new System.Drawing.Size(200, 22);
-            this.dtFrom.TabIndex = 5;
+            this.btnGenerateReport.Location = new System.Drawing.Point(36, 181);
+            this.btnGenerateReport.Name = "btnGenerateReport";
+            this.btnGenerateReport.Size = new System.Drawing.Size(156, 46);
+            this.btnGenerateReport.TabIndex = 8;
+            this.btnGenerateReport.Text = "Generate Report";
+            this.btnGenerateReport.UseVisualStyleBackColor = true;
+            // 
+            // dtTo
+            // 
+            this.dtTo.Location = new System.Drawing.Point(45, 138);
+            this.dtTo.Name = "dtTo";
+            this.dtTo.Size = new System.Drawing.Size(200, 22);
+            this.dtTo.TabIndex = 7;
             // 
             // lblTo
             // 
@@ -137,21 +146,12 @@
             this.lblTo.TabIndex = 6;
             this.lblTo.Text = "lblTo";
             // 
-            // dtTo
+            // dtFrom
             // 
-            this.dtTo.Location = new System.Drawing.Point(45, 138);
-            this.dtTo.Name = "dtTo";
-            this.dtTo.Size = new System.Drawing.Size(200, 22);
-            this.dtTo.TabIndex = 7;
-            // 
-            // btnGenerateReport
-            // 
-            this.btnGenerateReport.Location = new System.Drawing.Point(36, 181);
-            this.btnGenerateReport.Name = "btnGenerateReport";
-            this.btnGenerateReport.Size = new System.Drawing.Size(156, 46);
-            this.btnGenerateReport.TabIndex = 8;
-            this.btnGenerateReport.Text = "Generate Report";
-            this.btnGenerateReport.UseVisualStyleBackColor = true;
+            this.dtFrom.Location = new System.Drawing.Point(36, 55);
+            this.dtFrom.Name = "dtFrom";
+            this.dtFrom.Size = new System.Drawing.Size(200, 22);
+            this.dtFrom.TabIndex = 5;
             // 
             // panel2
             // 
@@ -163,14 +163,14 @@
             this.panel2.Size = new System.Drawing.Size(303, 257);
             this.panel2.TabIndex = 6;
             // 
-            // lblTotalTransactions
+            // lblTotalItemsSold
             // 
-            this.lblTotalTransactions.AutoSize = true;
-            this.lblTotalTransactions.Location = new System.Drawing.Point(27, 35);
-            this.lblTotalTransactions.Name = "lblTotalTransactions";
-            this.lblTotalTransactions.Size = new System.Drawing.Size(130, 16);
-            this.lblTotalTransactions.TabIndex = 9;
-            this.lblTotalTransactions.Text = "lblTotalTransactions";
+            this.lblTotalItemsSold.AutoSize = true;
+            this.lblTotalItemsSold.Location = new System.Drawing.Point(27, 138);
+            this.lblTotalItemsSold.Name = "lblTotalItemsSold";
+            this.lblTotalItemsSold.Size = new System.Drawing.Size(112, 16);
+            this.lblTotalItemsSold.TabIndex = 11;
+            this.lblTotalItemsSold.Text = "lblTotalItemsSold";
             // 
             // lblTotalSalesAmount
             // 
@@ -181,14 +181,14 @@
             this.lblTotalSalesAmount.TabIndex = 10;
             this.lblTotalSalesAmount.Text = "lblTotalSalesAmount";
             // 
-            // lblTotalItemsSold
+            // lblTotalTransactions
             // 
-            this.lblTotalItemsSold.AutoSize = true;
-            this.lblTotalItemsSold.Location = new System.Drawing.Point(27, 138);
-            this.lblTotalItemsSold.Name = "lblTotalItemsSold";
-            this.lblTotalItemsSold.Size = new System.Drawing.Size(112, 16);
-            this.lblTotalItemsSold.TabIndex = 11;
-            this.lblTotalItemsSold.Text = "lblTotalItemsSold";
+            this.lblTotalTransactions.AutoSize = true;
+            this.lblTotalTransactions.Location = new System.Drawing.Point(27, 35);
+            this.lblTotalTransactions.Name = "lblTotalTransactions";
+            this.lblTotalTransactions.Size = new System.Drawing.Size(130, 16);
+            this.lblTotalTransactions.TabIndex = 9;
+            this.lblTotalTransactions.Text = "lblTotalTransactions";
             // 
             // dgvProductResults
             // 
@@ -277,6 +277,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(47)))));
             this.Controls.Add(this.btnExportExcel);
             this.Controls.Add(this.btnExportPDF);
             this.Controls.Add(this.dgvProductResults);
@@ -287,7 +288,7 @@
             this.Controls.Add(this.rbWeekly);
             this.Controls.Add(this.rbDaily);
             this.Name = "SalesReportControl";
-            this.Size = new System.Drawing.Size(983, 683);
+            this.Size = new System.Drawing.Size(1012, 700);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

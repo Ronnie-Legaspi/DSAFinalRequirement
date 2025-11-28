@@ -46,7 +46,7 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
-            this.btnReports = new System.Windows.Forms.Button();
+            this.btnTransactions = new System.Windows.Forms.Button();
             this.btnSales = new System.Windows.Forms.Button();
             this.btnSuppliers = new System.Windows.Forms.Button();
             this.btnCategories = new System.Windows.Forms.Button();
@@ -94,7 +94,7 @@
             this.pnlSideNav.Controls.Add(this.lblUsername);
             this.pnlSideNav.Controls.Add(this.btnLogout);
             this.pnlSideNav.Controls.Add(this.btnSettings);
-            this.pnlSideNav.Controls.Add(this.btnReports);
+            this.pnlSideNav.Controls.Add(this.btnTransactions);
             this.pnlSideNav.Controls.Add(this.btnSales);
             this.pnlSideNav.Controls.Add(this.btnSuppliers);
             this.pnlSideNav.Controls.Add(this.btnCategories);
@@ -104,7 +104,7 @@
             this.pnlSideNav.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSideNav.Location = new System.Drawing.Point(0, 0);
             this.pnlSideNav.Name = "pnlSideNav";
-            this.pnlSideNav.Size = new System.Drawing.Size(227, 753);
+            this.pnlSideNav.Size = new System.Drawing.Size(227, 953);
             this.pnlSideNav.TabIndex = 0;
             this.pnlSideNav.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSideNav_Paint);
             // 
@@ -302,20 +302,20 @@
             this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSettings.UseVisualStyleBackColor = false;
             // 
-            // btnReports
+            // btnTransactions
             // 
-            this.btnReports.BackColor = System.Drawing.Color.Transparent;
-            this.btnReports.FlatAppearance.BorderSize = 0;
-            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReports.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReports.Location = new System.Drawing.Point(3, 504);
-            this.btnReports.Name = "btnReports";
-            this.btnReports.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.btnReports.Size = new System.Drawing.Size(221, 53);
-            this.btnReports.TabIndex = 6;
-            this.btnReports.Text = "Reports";
-            this.btnReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReports.UseVisualStyleBackColor = false;
+            this.btnTransactions.BackColor = System.Drawing.Color.Transparent;
+            this.btnTransactions.FlatAppearance.BorderSize = 0;
+            this.btnTransactions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTransactions.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTransactions.Location = new System.Drawing.Point(3, 504);
+            this.btnTransactions.Name = "btnTransactions";
+            this.btnTransactions.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnTransactions.Size = new System.Drawing.Size(221, 53);
+            this.btnTransactions.TabIndex = 6;
+            this.btnTransactions.Text = "Transactions";
+            this.btnTransactions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTransactions.UseVisualStyleBackColor = false;
             // 
             // btnSales
             // 
@@ -430,9 +430,9 @@
             // 
             // pnlMainContent
             // 
-            this.pnlMainContent.Location = new System.Drawing.Point(236, 65);
+            this.pnlMainContent.Location = new System.Drawing.Point(230, 65);
             this.pnlMainContent.Name = "pnlMainContent";
-            this.pnlMainContent.Size = new System.Drawing.Size(1085, 676);
+            this.pnlMainContent.Size = new System.Drawing.Size(1346, 880);
             this.pnlMainContent.TabIndex = 5;
             // 
             // panel3
@@ -443,13 +443,13 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(227, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1106, 59);
+            this.panel3.Size = new System.Drawing.Size(1355, 63);
             this.panel3.TabIndex = 6;
             // 
             // pbNotification
             // 
             this.pbNotification.Image = global::DSAFinalRequirement.Properties.Resources.icons8_bell_96;
-            this.pbNotification.Location = new System.Drawing.Point(1059, 12);
+            this.pbNotification.Location = new System.Drawing.Point(1314, 16);
             this.pbNotification.Name = "pbNotification";
             this.pbNotification.Size = new System.Drawing.Size(35, 35);
             this.pbNotification.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -460,7 +460,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1333, 753);
+            this.ClientSize = new System.Drawing.Size(1582, 953);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pnlMainContent);
             this.Controls.Add(this.flowLayoutPanel2);
@@ -498,8 +498,8 @@
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Button btnInventory;
         private System.Windows.Forms.Button btnSuppliers;
-        private System.Windows.Forms.Button btnSales;
-        private System.Windows.Forms.Button btnReports;
+        public System.Windows.Forms.Button btnSales;
+        public System.Windows.Forms.Button btnTransactions;
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.PictureBox pbUserImage;
@@ -520,7 +520,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.Panel pnlMainContent;
+        public System.Windows.Forms.Panel pnlMainContent;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pbNotification;
     }

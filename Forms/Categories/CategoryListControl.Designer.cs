@@ -1,207 +1,243 @@
-﻿namespace DSAFinalRequirement.Forms.Categories
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace DSAFinalRequirement.Forms.Categories
 {
     partial class CategoryListControl
     {
-        /// <summary> 
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        private Label lblHeaderTitle;
+        private Label lblHeaderDesc;
+        private Panel panelTop;
+        private Button btnAddCategory;
+        private Button btnEditCategory;
+        private Button btnDeleteCategory;
+        private Button btnRefresh;
+        private TextBox txtSearchCategory;
+        private Button btnSearchCategory;
+
+        private DataGridView dgvCategories;
+        private Label lblCategoryStatus;
+
+        private DataGridViewTextBoxColumn CategoryID;
+        private DataGridViewTextBoxColumn CategoryName;
+        private DataGridViewImageColumn CategoryImage;
+        private DataGridViewTextBoxColumn Description;
+        private DataGridViewTextBoxColumn DateCreated;
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
-
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.dgvCategories = new System.Windows.Forms.DataGridView();
-            this.CategoryID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CategoryImage = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateCreated = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSearchCategory = new System.Windows.Forms.Button();
-            this.txtSearchCategory = new System.Windows.Forms.TextBox();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnDeleteCategory = new System.Windows.Forms.Button();
-            this.btnEditCategory = new System.Windows.Forms.Button();
-            this.btnAddCategory = new System.Windows.Forms.Button();
-            this.lblCategoryStatus = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle headerStyle = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle cellStyle = new System.Windows.Forms.DataGridViewCellStyle();
+
+            this.lblHeaderTitle = new Label();
+            this.lblHeaderDesc = new Label();
+            this.panelTop = new Panel();
+
+            this.btnAddCategory = new Button();
+            this.btnEditCategory = new Button();
+            this.btnDeleteCategory = new Button();
+            this.btnRefresh = new Button();
+            this.txtSearchCategory = new TextBox();
+            this.btnSearchCategory = new Button();
+
+            this.dgvCategories = new DataGridView();
+            this.CategoryID = new DataGridViewTextBoxColumn();
+            this.CategoryName = new DataGridViewTextBoxColumn();
+            this.CategoryImage = new DataGridViewImageColumn();
+            this.Description = new DataGridViewTextBoxColumn();
+            this.DateCreated = new DataGridViewTextBoxColumn();
+
+            this.lblCategoryStatus = new Label();
+
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategories)).BeginInit();
+            this.panelTop.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // dgvCategories
-            // 
-            this.dgvCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCategories.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CategoryID,
-            this.CategoryName,
-            this.CategoryImage,
-            this.Description,
-            this.DateCreated});
-            this.dgvCategories.Location = new System.Drawing.Point(34, 139);
-            this.dgvCategories.Name = "dgvCategories";
-            this.dgvCategories.RowHeadersWidth = 51;
-            this.dgvCategories.RowTemplate.Height = 24;
-            this.dgvCategories.Size = new System.Drawing.Size(920, 510);
-            this.dgvCategories.TabIndex = 1;
-            // 
-            // CategoryID
-            // 
-            this.CategoryID.HeaderText = "CategoryID";
-            this.CategoryID.MinimumWidth = 6;
-            this.CategoryID.Name = "CategoryID";
-            this.CategoryID.Width = 125;
-            // 
-            // CategoryName
-            // 
-            this.CategoryName.HeaderText = "CategoryName";
-            this.CategoryName.MinimumWidth = 6;
-            this.CategoryName.Name = "CategoryName";
-            this.CategoryName.ReadOnly = true;
-            this.CategoryName.Width = 125;
-            // 
-            // CategoryImage
-            // 
-            this.CategoryImage.HeaderText = "CategoryImage";
-            this.CategoryImage.MinimumWidth = 6;
-            this.CategoryImage.Name = "CategoryImage";
-            this.CategoryImage.ReadOnly = true;
-            this.CategoryImage.Width = 125;
-            // 
-            // Description
-            // 
+
+            // =========================================================
+            // HEADER TITLE
+            // =========================================================
+            this.lblHeaderTitle.AutoSize = true;
+            this.lblHeaderTitle.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
+            this.lblHeaderTitle.ForeColor = Color.White;
+            this.lblHeaderTitle.Location = new Point(25, 15);
+            this.lblHeaderTitle.Text = "Categories";
+
+            // =========================================================
+            // HEADER DESCRIPTION
+            // =========================================================
+            this.lblHeaderDesc.AutoSize = true;
+            this.lblHeaderDesc.Font = new Font("Segoe UI", 11F);
+            this.lblHeaderDesc.ForeColor = Color.Silver;
+            this.lblHeaderDesc.Location = new Point(28, 60);
+            this.lblHeaderDesc.Text = "Manage all product categories used in the system.";
+
+            // =========================================================
+            // TOP PANEL
+            // =========================================================
+            this.panelTop.BackColor = Color.FromArgb(40, 40, 60);
+            this.panelTop.Location = new Point(30, 95);
+            this.panelTop.Size = new Size(920, 60);
+
+            this.panelTop.Controls.Add(this.btnAddCategory);
+            this.panelTop.Controls.Add(this.btnEditCategory);
+            this.panelTop.Controls.Add(this.btnDeleteCategory);
+            this.panelTop.Controls.Add(this.btnRefresh);
+            this.panelTop.Controls.Add(this.txtSearchCategory);
+            this.panelTop.Controls.Add(this.btnSearchCategory);
+
+            // =========================================================
+            // BUTTON: ADD
+            // =========================================================
+            this.btnAddCategory.Text = "+ Add";
+            this.btnAddCategory.BackColor = Color.FromArgb(0, 174, 114);
+            this.btnAddCategory.ForeColor = Color.White;
+            this.btnAddCategory.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            this.btnAddCategory.FlatStyle = FlatStyle.Flat;
+            this.btnAddCategory.FlatAppearance.BorderSize = 0;
+            this.btnAddCategory.Location = new Point(10, 11);
+            this.btnAddCategory.Size = new Size(120, 38);
+
+            // =========================================================
+            // BUTTON: EDIT
+            // =========================================================
+            this.btnEditCategory.Text = "✎ Edit";
+            this.btnEditCategory.BackColor = Color.FromArgb(55, 115, 228);
+            this.btnEditCategory.ForeColor = Color.White;
+            this.btnEditCategory.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            this.btnEditCategory.FlatStyle = FlatStyle.Flat;
+            this.btnEditCategory.FlatAppearance.BorderSize = 0;
+            this.btnEditCategory.Location = new Point(140, 11);
+            this.btnEditCategory.Size = new Size(120, 38);
+
+            // =========================================================
+            // BUTTON: DELETE
+            // =========================================================
+            this.btnDeleteCategory.Text = "🗑 Delete";
+            this.btnDeleteCategory.BackColor = Color.FromArgb(220, 53, 69);
+            this.btnDeleteCategory.ForeColor = Color.White;
+            this.btnDeleteCategory.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            this.btnDeleteCategory.FlatStyle = FlatStyle.Flat;
+            this.btnDeleteCategory.FlatAppearance.BorderSize = 0;
+            this.btnDeleteCategory.Location = new Point(270, 11);
+            this.btnDeleteCategory.Size = new Size(120, 38);
+
+            // =========================================================
+            // BUTTON: REFRESH
+            // =========================================================
+            this.btnRefresh.Text = "↻ Refresh";
+            this.btnRefresh.BackColor = Color.FromArgb(80, 80, 100);
+            this.btnRefresh.ForeColor = Color.White;
+            this.btnRefresh.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            this.btnRefresh.FlatStyle = FlatStyle.Flat;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.Location = new Point(400, 11);
+            this.btnRefresh.Size = new Size(120, 38);
+
+            // =========================================================
+            // SEARCH BOX
+            // =========================================================
+            this.txtSearchCategory.Font = new Font("Segoe UI", 14F);
+            this.txtSearchCategory.ForeColor = Color.Gray;
+            this.txtSearchCategory.Text = "Search Category";
+            this.txtSearchCategory.Location = new Point(530, 12);
+            this.txtSearchCategory.Size = new Size(300, 35);
+
+            // =========================================================
+            // SEARCH BUTTON
+            // =========================================================
+            this.btnSearchCategory.Text = "🔍";
+            this.btnSearchCategory.Font = new Font("Segoe UI", 14F);
+            this.btnSearchCategory.BackColor = Color.FromArgb(55, 55, 80);
+            this.btnSearchCategory.ForeColor = Color.White;
+            this.btnSearchCategory.FlatStyle = FlatStyle.Flat;
+            this.btnSearchCategory.FlatAppearance.BorderSize = 0;
+            this.btnSearchCategory.Size = new Size(45, 35);
+            this.btnSearchCategory.Location = new Point(835, 12);
+
+            // =========================================================
+            // DATAGRIDVIEW
+            // =========================================================
+            this.dgvCategories.Location = new Point(30, 170);
+            this.dgvCategories.Size = new Size(920, 460);
+            this.dgvCategories.BackgroundColor = Color.FromArgb(37, 37, 55);
+            this.dgvCategories.BorderStyle = BorderStyle.None;
+
+            headerStyle.BackColor = Color.FromArgb(55, 55, 80);
+            headerStyle.ForeColor = Color.White;
+            headerStyle.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            this.dgvCategories.ColumnHeadersDefaultCellStyle = headerStyle;
+            this.dgvCategories.EnableHeadersVisualStyles = false;
+
+            cellStyle.BackColor = Color.FromArgb(50, 50, 72);
+            cellStyle.ForeColor = Color.White;
+            cellStyle.SelectionBackColor = Color.FromArgb(70, 70, 100);
+            this.dgvCategories.DefaultCellStyle = cellStyle;
+
+            this.dgvCategories.RowTemplate.Height = 60;
+            this.dgvCategories.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+            this.dgvCategories.Columns.AddRange(new DataGridViewColumn[]
+            {
+                this.CategoryID,
+                this.CategoryName,
+                this.CategoryImage,
+                this.Description,
+                this.DateCreated
+            });
+
+            // Grid Columns
+            this.CategoryID.HeaderText = "ID";
+            this.CategoryID.Width = 80;
+
+            this.CategoryName.HeaderText = "Category Name";
+            this.CategoryName.Width = 180;
+
+            this.CategoryImage.HeaderText = "Image";
+            this.CategoryImage.Width = 120;
+            this.CategoryImage.ImageLayout = DataGridViewImageCellLayout.Zoom;
+
             this.Description.HeaderText = "Description";
-            this.Description.MinimumWidth = 6;
-            this.Description.Name = "Description";
-            this.Description.ReadOnly = true;
-            this.Description.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Description.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Description.Width = 125;
-            // 
-            // DateCreated
-            // 
-            this.DateCreated.HeaderText = "DateCreated";
-            this.DateCreated.MinimumWidth = 6;
-            this.DateCreated.Name = "DateCreated";
-            this.DateCreated.ReadOnly = true;
-            this.DateCreated.Width = 125;
-            // 
-            // btnSearchCategory
-            // 
-            this.btnSearchCategory.Location = new System.Drawing.Point(903, 47);
-            this.btnSearchCategory.Name = "btnSearchCategory";
-            this.btnSearchCategory.Size = new System.Drawing.Size(52, 48);
-            this.btnSearchCategory.TabIndex = 18;
-            this.btnSearchCategory.Text = "Search Icon";
-            this.btnSearchCategory.UseVisualStyleBackColor = true;
-            // 
-            // txtSearchCategory
-            // 
-            this.txtSearchCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchCategory.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtSearchCategory.Location = new System.Drawing.Point(567, 47);
-            this.txtSearchCategory.Name = "txtSearchCategory";
-            this.txtSearchCategory.Size = new System.Drawing.Size(330, 45);
-            this.txtSearchCategory.TabIndex = 17;
-            this.txtSearchCategory.Text = "Search Product";
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Location = new System.Drawing.Point(434, 43);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(127, 48);
-            this.btnRefresh.TabIndex = 16;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            // 
-            // btnDeleteCategory
-            // 
-            this.btnDeleteCategory.Location = new System.Drawing.Point(301, 43);
-            this.btnDeleteCategory.Name = "btnDeleteCategory";
-            this.btnDeleteCategory.Size = new System.Drawing.Size(127, 48);
-            this.btnDeleteCategory.TabIndex = 15;
-            this.btnDeleteCategory.Text = "btnDeleteCategory";
-            this.btnDeleteCategory.UseVisualStyleBackColor = true;
-            // 
-            // btnEditCategory
-            // 
-            this.btnEditCategory.Location = new System.Drawing.Point(168, 43);
-            this.btnEditCategory.Name = "btnEditCategory";
-            this.btnEditCategory.Size = new System.Drawing.Size(127, 48);
-            this.btnEditCategory.TabIndex = 14;
-            this.btnEditCategory.Text = "btnEditCategory";
-            this.btnEditCategory.UseVisualStyleBackColor = true;
-            this.btnEditCategory.Click += new System.EventHandler(this.btnEditCategory_Click);
-            // 
-            // btnAddCategory
-            // 
-            this.btnAddCategory.Location = new System.Drawing.Point(35, 43);
-            this.btnAddCategory.Name = "btnAddCategory";
-            this.btnAddCategory.Size = new System.Drawing.Size(127, 48);
-            this.btnAddCategory.TabIndex = 13;
-            this.btnAddCategory.Text = "btnAddCategory";
-            this.btnAddCategory.UseVisualStyleBackColor = true;
-            this.btnAddCategory.Click += new System.EventHandler(this.btnAddCategory_Click);
-            // 
-            // lblCategoryStatus
-            // 
+            this.Description.Width = 250;
+
+            this.DateCreated.HeaderText = "Date Created";
+            this.DateCreated.Width = 150;
+
+            // =========================================================
+            // STATUS LABEL
+            // =========================================================
             this.lblCategoryStatus.AutoSize = true;
-            this.lblCategoryStatus.Location = new System.Drawing.Point(32, 652);
-            this.lblCategoryStatus.Name = "lblCategoryStatus";
-            this.lblCategoryStatus.Size = new System.Drawing.Size(113, 16);
-            this.lblCategoryStatus.TabIndex = 21;
-            this.lblCategoryStatus.Text = "lblCategoryStatus";
+            this.lblCategoryStatus.ForeColor = Color.White;
+            this.lblCategoryStatus.Location = new Point(30, 650);
             this.lblCategoryStatus.Visible = false;
-            // 
-            // CategoryListControl
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lblCategoryStatus);
-            this.Controls.Add(this.btnSearchCategory);
-            this.Controls.Add(this.txtSearchCategory);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.btnDeleteCategory);
-            this.Controls.Add(this.btnEditCategory);
-            this.Controls.Add(this.btnAddCategory);
+
+            // =========================================================
+            // MAIN CONTROL
+            // =========================================================
+            this.BackColor = Color.FromArgb(30, 30, 47);
+            this.Controls.Add(this.lblHeaderTitle);
+            this.Controls.Add(this.lblHeaderDesc);
+            this.Controls.Add(this.panelTop);
             this.Controls.Add(this.dgvCategories);
+            this.Controls.Add(this.lblCategoryStatus);
+
             this.Name = "CategoryListControl";
-            this.Size = new System.Drawing.Size(983, 683);
+            this.Size = new Size(1012, 700);
+
+            this.panelTop.ResumeLayout(false);
+            this.panelTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategories)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
-
-        #endregion
-
-        private System.Windows.Forms.DataGridView dgvCategories;
-        private System.Windows.Forms.Button btnSearchCategory;
-        private System.Windows.Forms.TextBox txtSearchCategory;
-        private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button btnDeleteCategory;
-        private System.Windows.Forms.Button btnEditCategory;
-        private System.Windows.Forms.Button btnAddCategory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CategoryID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CategoryName;
-        private System.Windows.Forms.DataGridViewImageColumn CategoryImage;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DateCreated;
-        private System.Windows.Forms.Label lblCategoryStatus;
     }
 }
