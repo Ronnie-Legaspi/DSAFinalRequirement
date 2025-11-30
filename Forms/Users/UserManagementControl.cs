@@ -1,5 +1,7 @@
 ﻿using DSAFinalRequirement.Database.Connections;
 using DSAFinalRequirement.Forms.Dashboard;
+using DSAFinalRequirement.Classes.Helpers;
+
 using System;
 using System.Data.OleDb;
 using System.Drawing;
@@ -13,6 +15,7 @@ namespace DSAFinalRequirement.Forms.Users
         public UserManagementControl()
         {
             InitializeComponent();
+            RoleType();
             LoadUsers();
 
             btnAddUser.Click += BtnAddUser_Click;
@@ -21,7 +24,12 @@ namespace DSAFinalRequirement.Forms.Users
             btnRefresh.Click += BtnRefresh_Click;
             //search.Click += btnSearchUser_Click;
         }
-
+        private void RoleType()
+        {
+            btnAddUser.Visible = RoleHelper.IsAdmin();
+            btnEditUser.Visible = RoleHelper.IsAdmin();
+            btnDeleteUser.Visible = RoleHelper.IsAdmin();
+        }
         // -------------------------
         // ADD USER
         // -------------------------

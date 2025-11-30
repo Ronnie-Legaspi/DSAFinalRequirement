@@ -95,12 +95,12 @@
             this.pnlSideNav.Controls.Add(this.btnLogout);
             this.pnlSideNav.Controls.Add(this.btnSettings);
             this.pnlSideNav.Controls.Add(this.btnTransactions);
-            this.pnlSideNav.Controls.Add(this.btnSales);
             this.pnlSideNav.Controls.Add(this.btnSuppliers);
             this.pnlSideNav.Controls.Add(this.btnCategories);
             this.pnlSideNav.Controls.Add(this.btnProducts);
             this.pnlSideNav.Controls.Add(this.btnInventory);
             this.pnlSideNav.Controls.Add(this.btnDashboard);
+            this.pnlSideNav.Controls.Add(this.btnSales);
             this.pnlSideNav.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSideNav.Location = new System.Drawing.Point(0, 0);
             this.pnlSideNav.Name = "pnlSideNav";
@@ -323,7 +323,7 @@
             this.btnSales.FlatAppearance.BorderSize = 0;
             this.btnSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSales.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSales.Location = new System.Drawing.Point(3, 445);
+            this.btnSales.Location = new System.Drawing.Point(6, 150);
             this.btnSales.Name = "btnSales";
             this.btnSales.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnSales.Size = new System.Drawing.Size(221, 53);
@@ -383,7 +383,7 @@
             this.btnInventory.FlatAppearance.BorderSize = 0;
             this.btnInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInventory.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInventory.Location = new System.Drawing.Point(3, 150);
+            this.btnInventory.Location = new System.Drawing.Point(3, 448);
             this.btnInventory.Name = "btnInventory";
             this.btnInventory.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnInventory.Size = new System.Drawing.Size(221, 53);

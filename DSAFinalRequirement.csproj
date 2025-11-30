@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Helpers\RoleHelper.cs" />
     <Compile Include="Classes\Helpers\Session.cs" />
     <Compile Include="Database\Connections\DatabaseConnection.cs" />
     <Compile Include="Database\Queries\QueryHelper.cs" />

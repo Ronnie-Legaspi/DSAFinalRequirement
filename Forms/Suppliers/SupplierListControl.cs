@@ -1,4 +1,5 @@
-﻿using DSAFinalRequirement.Database.Connections;
+﻿using DSAFinalRequirement.Classes.Helpers;
+using DSAFinalRequirement.Database.Connections;
 using DSAFinalRequirement.Forms.Dashboard;
 using DSAFinalRequirement.Forms.Users;
 using System;
@@ -15,6 +16,8 @@ namespace DSAFinalRequirement.Forms.Suppliers
         public SupplierListControl()
         {
             InitializeComponent();
+
+            RoleType();
             LoadSuppliers();
 
             btnAddSupplier.Click += BtnAddSupplier_Click;
@@ -24,7 +27,13 @@ namespace DSAFinalRequirement.Forms.Suppliers
             btnSearchSupplier.Click += btnSearchSupplier_Click;
         }
 
-        
+        private void RoleType()
+        {
+            btnAddSupplier.Visible = RoleHelper.IsAdmin();
+            btnDeleteSupplier.Visible = RoleHelper.IsAdmin();
+            btnEditSupplier.Visible = RoleHelper.IsAdmin();
+            pnlCrudButtons.Visible = RoleHelper.IsAdmin();
+        }
 
 
 

@@ -7,6 +7,7 @@ using DSAFinalRequirement.Forms.Shared;
 using System;
 using System.Data.OleDb;
 using System.Drawing;
+using System.Management.Instrumentation;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,6 +18,7 @@ namespace DSAFinalRequirement.Forms.Dashboard
         public DashboardControl()
         {
             InitializeComponent();
+            RoleType();
 
             // Load initial data
             RefreshDashboard();
@@ -26,6 +28,18 @@ namespace DSAFinalRequirement.Forms.Dashboard
 
             btnOpenSales.Click -= btnOpenSales_Click;
             btnOpenSales.Click += btnOpenSales_Click;
+        }
+        private void RoleType()
+        {
+            btnAddProduct.Visible = RoleHelper.IsAdmin();
+            btnReports.Visible = RoleHelper.IsAdmin();
+
+            if (RoleHelper.IsStaff())
+            {
+                btnOpenSales.Location = new Point(18, 568);
+                btnOpenSales.Size = new Size(684, 53);
+            }
+            
         }
 
         private void LoadUserSession()

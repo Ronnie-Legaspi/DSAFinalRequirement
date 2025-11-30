@@ -119,29 +119,50 @@ namespace DSAFinalRequirement.Forms.Users
             // =========================================
             // BUTTON STYLE HELPER
             // =========================================
-            void StyleButton(Button btn, Color color)
-            {
-                btn.BackColor = color;
-                btn.ForeColor = Color.White;
-                btn.FlatStyle = FlatStyle.Flat;
-                btn.FlatAppearance.BorderSize = 0;
-                btn.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-                btn.Size = new Size(140, 48);
-                btn.Cursor = Cursors.Hand;
-            }
+            // ADD USER BUTTON
+            btnAddUser.Text = "Add User";
+            btnAddUser.Location = new System.Drawing.Point(35, 95);
+            btnAddUser.BackColor = System.Drawing.Color.FromArgb(50, 150, 80);
+            btnAddUser.ForeColor = System.Drawing.Color.White;
+            btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnAddUser.FlatAppearance.BorderSize = 0;
+            btnAddUser.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            btnAddUser.Size = new System.Drawing.Size(140, 48);
+            btnAddUser.Cursor = System.Windows.Forms.Cursors.Hand;
 
-            // BUTTONS
-            this.btnAddUser.Text = "Add User"; StyleButton(this.btnAddUser, Color.FromArgb(50, 150, 80));
-            this.btnAddUser.Location = new Point(35, 95);
+            // EDIT USER BUTTON
+            btnEditUser.Text = "Edit User";
+            btnEditUser.Location = new System.Drawing.Point(185, 95);
+            btnEditUser.BackColor = System.Drawing.Color.FromArgb(60, 120, 200);
+            btnEditUser.ForeColor = System.Drawing.Color.White;
+            btnEditUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnEditUser.FlatAppearance.BorderSize = 0;
+            btnEditUser.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            btnEditUser.Size = new System.Drawing.Size(140, 48);
+            btnEditUser.Cursor = System.Windows.Forms.Cursors.Hand;
 
-            this.btnEditUser.Text = "Edit User"; StyleButton(this.btnEditUser, Color.FromArgb(60, 120, 200));
-            this.btnEditUser.Location = new Point(185, 95);
+            // DELETE USER BUTTON
+            btnDeleteUser.Text = "Delete";
+            btnDeleteUser.Location = new System.Drawing.Point(335, 95);
+            btnDeleteUser.BackColor = System.Drawing.Color.FromArgb(200, 50, 50);
+            btnDeleteUser.ForeColor = System.Drawing.Color.White;
+            btnDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnDeleteUser.FlatAppearance.BorderSize = 0;
+            btnDeleteUser.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            btnDeleteUser.Size = new System.Drawing.Size(140, 48);
+            btnDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
 
-            this.btnDeleteUser.Text = "Delete"; StyleButton(this.btnDeleteUser, Color.FromArgb(200, 50, 50));
-            this.btnDeleteUser.Location = new Point(335, 95);
+            // REFRESH BUTTON
+            btnRefresh.Text = "Refresh";
+            btnRefresh.Location = new System.Drawing.Point(485, 95);
+            btnRefresh.BackColor = System.Drawing.Color.FromArgb(80, 80, 100);
+            btnRefresh.ForeColor = System.Drawing.Color.White;
+            btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnRefresh.FlatAppearance.BorderSize = 0;
+            btnRefresh.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            btnRefresh.Size = new System.Drawing.Size(140, 48);
+            btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
 
-            this.btnRefresh.Text = "Refresh"; StyleButton(this.btnRefresh, Color.FromArgb(80, 80, 100));
-            this.btnRefresh.Location = new Point(485, 95);
 
             // SEARCH
             this.txtSearchUser.Font = new Font("Segoe UI", 12F);

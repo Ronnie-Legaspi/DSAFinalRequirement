@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.btnSearchProduct = new System.Windows.Forms.Button();
-            this.txtProductSearch = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgvProducts = new System.Windows.Forms.DataGridView();
             this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductImage = new System.Windows.Forms.DataGridViewImageColumn();
@@ -72,6 +72,7 @@
             // 
             // btnSearchProduct
             // 
+            this.btnSearchProduct.Enabled = false;
             this.btnSearchProduct.Location = new System.Drawing.Point(908, 21);
             this.btnSearchProduct.Name = "btnSearchProduct";
             this.btnSearchProduct.Size = new System.Drawing.Size(52, 48);
@@ -79,15 +80,16 @@
             this.btnSearchProduct.Text = "Search Icon";
             this.btnSearchProduct.UseVisualStyleBackColor = true;
             // 
-            // txtProductSearch
+            // txtSearch
             // 
-            this.txtProductSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtProductSearch.Location = new System.Drawing.Point(572, 21);
-            this.txtProductSearch.Name = "txtProductSearch";
-            this.txtProductSearch.Size = new System.Drawing.Size(330, 45);
-            this.txtProductSearch.TabIndex = 35;
-            this.txtProductSearch.Text = "Search Supplier";
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtSearch.Location = new System.Drawing.Point(572, 21);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(330, 45);
+            this.txtSearch.TabIndex = 35;
+            this.txtSearch.Text = "Search Supplier";
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // dgvProducts
             // 
@@ -410,7 +412,7 @@
             this.Controls.Add(this.nudQuantity);
             this.Controls.Add(this.dgvProducts);
             this.Controls.Add(this.btnSearchProduct);
-            this.Controls.Add(this.txtProductSearch);
+            this.Controls.Add(this.txtSearch);
             this.Name = "SalesControl";
             this.Size = new System.Drawing.Size(1012, 632);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
@@ -426,7 +428,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnSearchProduct;
-        private System.Windows.Forms.TextBox txtProductSearch;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dgvProducts;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
         private System.Windows.Forms.DataGridViewImageColumn ProductImage;

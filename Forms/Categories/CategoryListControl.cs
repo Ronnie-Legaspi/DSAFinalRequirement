@@ -1,4 +1,5 @@
-﻿using DSAFinalRequirement.Database.Connections;
+﻿using DSAFinalRequirement.Classes.Helpers;
+using DSAFinalRequirement.Database.Connections;
 using DSAFinalRequirement.Forms.Dashboard;
 using System;
 using System.Data.OleDb;
@@ -13,18 +14,63 @@ namespace DSAFinalRequirement.Forms.Categories
         public CategoryListControl()
         {
             InitializeComponent();
-            LoadCategories();
+            RoleType();
 
-            // Wire events
+            cmbCategories.SelectedIndexChanged += CmbCategories_SelectedIndexChanged;
+
+            // Wire buttons
             btnDeleteCategory.Click += BtnDeleteCategory_Click;
             btnAddCategory.Click += btnAddCategory_Click;
             btnEditCategory.Click += btnEditCategory_Click;
+
+            LoadCategories(); // initial load of combo and grid
+        }
+
+        private void RoleType()
+        {
+            pnlCrudButtons.Visible = RoleHelper.IsAdmin();
         }
 
         /// ------------------------------
-        /// Load categories dgv
+        /// Load ComboBox and initial DataGridView
         /// ------------------------------
         private void LoadCategories()
+        {
+            // Load ComboBox
+            cmbCategories.Items.Clear();
+            cmbCategories.Items.Add("All Categories"); // optional "All"
+
+            try
+            {
+                using (OleDbConnection conn = DatabaseConnection.GetConnection())
+                {
+                    string query = "SELECT CategoryName FROM Categories ORDER BY CategoryName";
+                    using (OleDbCommand cmd = new OleDbCommand(query, conn))
+                    using (OleDbDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string name = reader["CategoryName"].ToString();
+                            cmbCategories.Items.Add(name);
+                        }
+                    }
+                }
+
+                cmbCategories.SelectedIndex = 0; // default: "All Categories"
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading categories: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            // Load all categories in DataGridView initially
+            LoadCategoryGrid();
+        }
+
+        /// ------------------------------
+        /// Load DataGridView filtered by ComboBox selection
+        /// ------------------------------
+        private void LoadCategoryGrid(string selectedCategory = "")
         {
             dgvCategories.Rows.Clear();
             dgvCategories.Columns.Clear();
@@ -49,37 +95,46 @@ namespace DSAFinalRequirement.Forms.Categories
                 using (OleDbConnection conn = DatabaseConnection.GetConnection())
                 {
                     string query = "SELECT * FROM Categories";
+
+                    if (!string.IsNullOrWhiteSpace(selectedCategory) && selectedCategory != "All Categories")
+                        query += " WHERE CategoryName = ?";
+
                     using (OleDbCommand cmd = new OleDbCommand(query, conn))
-                    using (OleDbDataReader reader = cmd.ExecuteReader())
                     {
-                        string projectRoot = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\.."));
+                        if (!string.IsNullOrWhiteSpace(selectedCategory) && selectedCategory != "All Categories")
+                            cmd.Parameters.AddWithValue("@p1", selectedCategory);
 
-                        while (reader.Read())
+                        using (OleDbDataReader reader = cmd.ExecuteReader())
                         {
-                            int categoryId = Convert.ToInt32(reader["CategoryID"]);
-                            string imgFile = reader["CategoryImage"]?.ToString() ?? "";
-                            string categoryName = reader["CategoryName"].ToString();
-                            string description = reader["Description"].ToString();
-                            string dateCreated = reader["DateCreated"].ToString();
+                            string projectRoot = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\.."));
 
-                            // Load image
-                            Image categoryImage = null;
-                            if (!string.IsNullOrEmpty(imgFile))
+                            while (reader.Read())
                             {
-                                string imgPath = Path.Combine(projectRoot, "Assets", "Images", "CategoryImages", imgFile);
-                                if (File.Exists(imgPath))
-                                    categoryImage = Image.FromFile(imgPath);
-                            }
+                                int categoryId = Convert.ToInt32(reader["CategoryID"]);
+                                string imgFile = reader["CategoryImage"]?.ToString() ?? "";
+                                string categoryName = reader["CategoryName"].ToString();
+                                string description = reader["Description"].ToString();
+                                string dateCreated = reader["DateCreated"].ToString();
 
-                            // fallback image
-                            if (categoryImage == null)
-                            {
-                                string fallback = Path.Combine(projectRoot, "Assets", "Icons", "BrokenImage.png");
-                                if (File.Exists(fallback))
-                                    categoryImage = Image.FromFile(fallback);
-                            }
+                                // Load image
+                                Image categoryImage = null;
+                                if (!string.IsNullOrEmpty(imgFile))
+                                {
+                                    string imgPath = Path.Combine(projectRoot, "Assets", "Images", "CategoryImages", imgFile);
+                                    if (File.Exists(imgPath))
+                                        categoryImage = Image.FromFile(imgPath);
+                                }
 
-                            dgvCategories.Rows.Add(categoryId, categoryImage, categoryName, description, dateCreated);
+                                // fallback image
+                                if (categoryImage == null)
+                                {
+                                    string fallback = Path.Combine(projectRoot, "Assets", "Icons", "BrokenImage.png");
+                                    if (File.Exists(fallback))
+                                        categoryImage = Image.FromFile(fallback);
+                                }
+
+                                dgvCategories.Rows.Add(categoryId, categoryImage, categoryName, description, dateCreated);
+                            }
                         }
                     }
                 }
@@ -91,9 +146,17 @@ namespace DSAFinalRequirement.Forms.Categories
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error loading Categories:\n" + ex.Message,
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error loading categories: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        // ------------------------------
+        // ComboBox selection changed
+        // ------------------------------
+        private void CmbCategories_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selected = cmbCategories.SelectedItem?.ToString() ?? "";
+            LoadCategoryGrid(selected);
         }
 
         // ------------------------------
@@ -106,8 +169,7 @@ namespace DSAFinalRequirement.Forms.Categories
             {
                 LoadCategories();
                 var dash = (MainDashboardForm)Application.OpenForms["MainDashboardForm"];
-                if (dash != null)
-                    dash.ShowStatus("Category Added Successfully!");
+                dash?.ShowStatus("Category Added Successfully!");
             }
         }
 
@@ -129,8 +191,7 @@ namespace DSAFinalRequirement.Forms.Categories
             {
                 LoadCategories();
                 var dash = (MainDashboardForm)Application.OpenForms["MainDashboardForm"];
-                if (dash != null)
-                    dash.ShowStatus("Category updated successfully!");
+                dash?.ShowStatus("Category updated successfully!");
             }
         }
 
@@ -152,8 +213,7 @@ namespace DSAFinalRequirement.Forms.Categories
             {
                 LoadCategories();
                 var dash = (MainDashboardForm)Application.OpenForms["MainDashboardForm"];
-                if (dash != null)
-                    dash.ShowStatus("Category deleted successfully!");
+                dash?.ShowStatus("Category deleted successfully!");
             }
         }
 
@@ -173,6 +233,11 @@ namespace DSAFinalRequirement.Forms.Categories
             {
                 return null;
             }
+        }
+
+        private void cmbCategories_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

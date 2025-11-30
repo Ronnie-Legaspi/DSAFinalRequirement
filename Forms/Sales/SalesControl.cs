@@ -1,10 +1,13 @@
-﻿using DSAFinalRequirement.Database.Connections;
+﻿using DSAFinalRequirement.Classes.Helpers;
+using DSAFinalRequirement.Database.Connections;
+
+using DSAFinalRequirement.Forms.Reports;
 using System;
 using System.Data.OleDb;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
-using DSAFinalRequirement.Classes.Helpers;
 
 namespace DSAFinalRequirement.Forms.Sales
 {
@@ -24,9 +27,30 @@ namespace DSAFinalRequirement.Forms.Sales
 
             btnAddToCart.Click += BtnAddToCart_Click;
             btnRemove.Click += BtnRemove_Click;
-            //btnRefresh.Click += BtnRefresh_Click;
             btnCompleteTransaction.Click += BtnCompleteTransaction_Click;
             btnNewSale.Click += BtnNewSale_Click;
+
+            txtSearch.TextChanged += txtSearch_TextChanged;
+
+            // Set placeholder
+            txtSearch.ForeColor = Color.Gray;
+            txtSearch.Text = "Search Product";
+            txtSearch.GotFocus += (s, e) =>
+            {
+                if (txtSearch.ForeColor == Color.Gray)
+                {
+                    txtSearch.Text = "";
+                    txtSearch.ForeColor = Color.Black;
+                }
+            };
+            txtSearch.LostFocus += (s, e) =>
+            {
+                if (string.IsNullOrWhiteSpace(txtSearch.Text))
+                {
+                    txtSearch.Text = "Search Product";
+                    txtSearch.ForeColor = Color.Gray;
+                }
+            };
         }
 
         // Prevent default crash dialog
@@ -63,9 +87,9 @@ namespace DSAFinalRequirement.Forms.Sales
         }
 
         // -----------------------------
-        // LOAD PRODUCTS
+        // LOAD PRODUCTS (with optional search)
         // -----------------------------
-        private void LoadProducts()
+        private void LoadProducts(string searchTerm = "")
         {
             dgvProducts.Rows.Clear();
             dgvProducts.Columns.Clear();
@@ -102,45 +126,58 @@ namespace DSAFinalRequirement.Forms.Sales
                             ON P.CategoryID = C.CategoryID
                     ";
 
-                    using (OleDbCommand cmd = new OleDbCommand(query, conn))
-                    using (OleDbDataReader reader = cmd.ExecuteReader())
+                    // Add search filter
+                    if (!string.IsNullOrEmpty(searchTerm))
                     {
-                        string projectRoot = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\.."));
+                        query += " WHERE P.ProductName LIKE @search OR C.CategoryName LIKE @search";
+                    }
 
-                        while (reader.Read())
+                    using (OleDbCommand cmd = new OleDbCommand(query, conn))
+                    {
+                        if (!string.IsNullOrEmpty(searchTerm))
                         {
-                            int productId = Convert.ToInt32(reader["ProductID"]);
-                            string imgFile = reader["ProductImage"]?.ToString() ?? "";
-                            string name = reader["ProductName"].ToString();
-                            string category = reader["CategoryName"].ToString();
-                            decimal price = Convert.ToDecimal(reader["SellingPrice"]);
-                            int stock = Convert.ToInt32(reader["StockQuantity"]);
+                            cmd.Parameters.AddWithValue("@search", $"%{searchTerm}%");
+                        }
 
-                            Image productImage = null;
+                        using (OleDbDataReader reader = cmd.ExecuteReader())
+                        {
+                            string projectRoot = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\.."));
 
-                            // Load image safely
-                            if (!string.IsNullOrEmpty(imgFile))
+                            while (reader.Read())
                             {
-                                string imgPath = Path.Combine(projectRoot, "Assets", "Images", "ProductImages", imgFile);
-                                if (File.Exists(imgPath))
-                                {
-                                    using (var temp = Image.FromFile(imgPath))
-                                        productImage = new Bitmap(temp);
-                                }
-                            }
+                                int productId = Convert.ToInt32(reader["ProductID"]);
+                                string imgFile = reader["ProductImage"]?.ToString() ?? "";
+                                string name = reader["ProductName"].ToString();
+                                string category = reader["CategoryName"].ToString();
+                                decimal price = Convert.ToDecimal(reader["SellingPrice"]);
+                                int stock = Convert.ToInt32(reader["StockQuantity"]);
 
-                            // Fallback image
-                            if (productImage == null)
-                            {
-                                string fallback = Path.Combine(projectRoot, "Assets", "Icons", "BrokenImage.png");
-                                if (File.Exists(fallback))
-                                {
-                                    using (var temp = Image.FromFile(fallback))
-                                        productImage = new Bitmap(temp);
-                                }
-                            }
+                                Image productImage = null;
 
-                            dgvProducts.Rows.Add(productId, productImage, name, category, price, stock);
+                                // Load image safely
+                                if (!string.IsNullOrEmpty(imgFile))
+                                {
+                                    string imgPath = Path.Combine(projectRoot, "Assets", "Images", "ProductImages", imgFile);
+                                    if (File.Exists(imgPath))
+                                    {
+                                        using (var temp = Image.FromFile(imgPath))
+                                            productImage = new Bitmap(temp);
+                                    }
+                                }
+
+                                // Fallback image
+                                if (productImage == null)
+                                {
+                                    string fallback = Path.Combine(projectRoot, "Assets", "Icons", "BrokenImage.png");
+                                    if (File.Exists(fallback))
+                                    {
+                                        using (var temp = Image.FromFile(fallback))
+                                            productImage = new Bitmap(temp);
+                                    }
+                                }
+
+                                dgvProducts.Rows.Add(productId, productImage, name, category, price, stock);
+                            }
                         }
                     }
                 }
@@ -211,14 +248,6 @@ namespace DSAFinalRequirement.Forms.Sales
         }
 
         // -----------------------------
-        // REFRESH PRODUCTS
-        // -----------------------------
-        private void BtnRefresh_Click(object sender, EventArgs e)
-        {
-            LoadProducts();
-        }
-
-        // -----------------------------
         // UPDATE SUMMARY
         // -----------------------------
         private void UpdateSummary()
@@ -251,7 +280,7 @@ namespace DSAFinalRequirement.Forms.Sales
         }
 
         // -----------------------------
-        // COMPLETE TRANSACTION (ONLY Transactions)
+        // COMPLETE TRANSACTION
         // -----------------------------
         private void BtnCompleteTransaction_Click(object sender, EventArgs e)
         {
@@ -280,23 +309,31 @@ namespace DSAFinalRequirement.Forms.Sales
 
             try
             {
-                // Insert into Transactions
                 InsertTransaction(currentUserID, grandTotal);
-
                 MessageBox.Show("Transaction completed and saved!");
+
+                // Refresh Transactions DGV
+                var transactionsControl = Application.OpenForms
+                    .OfType<Form>()
+                    .SelectMany(f => f.Controls.OfType<TransactionsControl>())
+                    .FirstOrDefault();
+
+                if (transactionsControl != null)
+                {
+                    transactionsControl.LoadTransactions(); // <-- This reloads the dgv immediately
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error saving transaction:\n" + ex.Message);
             }
 
-            // Reset sale
             BtnNewSale_Click(null, null);
         }
 
+
         private void InsertTransaction(int userId, decimal totalAmount)
         {
-            // Assume DatabaseConnection.GetConnection() is already open
             OleDbConnection conn = DatabaseConnection.GetConnection();
 
             string query = @"
@@ -326,6 +363,17 @@ namespace DSAFinalRequirement.Forms.Sales
             lblVatAmount.Text = "0.00";
             lblGrandTotal.Text = "0.00";
             lblTotalItems.Text = "0";
+        }
+
+        // -----------------------------
+        // PRODUCT SEARCH HANDLER
+        // -----------------------------
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (txtSearch.ForeColor == Color.Gray)
+                return;
+
+            LoadProducts(txtSearch.Text.Trim());
         }
     }
 }

@@ -31,15 +31,15 @@ namespace DSAFinalRequirement.Forms.Dashboard
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lblWelcom = new System.Windows.Forms.Label();
             this.panelLowStocksCount = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -62,6 +62,7 @@ namespace DSAFinalRequirement.Forms.Dashboard
             this.lblpnlDailySalesCount = new System.Windows.Forms.Label();
             this.btnReports = new System.Windows.Forms.Button();
             this.btnOpenSales = new System.Windows.Forms.Button();
+            this.pnlButtons = new System.Windows.Forms.Panel();
             this.panelLowStocksCount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnlTotalProductsCount.SuspendLayout();
@@ -197,17 +198,17 @@ namespace DSAFinalRequirement.Forms.Dashboard
             // 
             // chartLowStocks
             // 
-            chartArea7.Name = "ChartArea1";
-            this.chartLowStocks.ChartAreas.Add(chartArea7);
+            chartArea4.Name = "ChartArea1";
+            this.chartLowStocks.ChartAreas.Add(chartArea4);
             this.chartLowStocks.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend7.Name = "Legend1";
-            this.chartLowStocks.Legends.Add(legend7);
+            legend4.Name = "Legend1";
+            this.chartLowStocks.Legends.Add(legend4);
             this.chartLowStocks.Location = new System.Drawing.Point(0, 0);
             this.chartLowStocks.Name = "chartLowStocks";
-            series7.ChartArea = "ChartArea1";
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.chartLowStocks.Series.Add(series7);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chartLowStocks.Series.Add(series4);
             this.chartLowStocks.Size = new System.Drawing.Size(284, 263);
             this.chartLowStocks.TabIndex = 0;
             this.chartLowStocks.Text = "chart1";
@@ -223,17 +224,17 @@ namespace DSAFinalRequirement.Forms.Dashboard
             // 
             // chartProductsByCategory
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chartProductsByCategory.ChartAreas.Add(chartArea8);
+            chartArea5.Name = "ChartArea1";
+            this.chartProductsByCategory.ChartAreas.Add(chartArea5);
             this.chartProductsByCategory.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend8.Name = "Legend1";
-            this.chartProductsByCategory.Legends.Add(legend8);
+            legend5.Name = "Legend1";
+            this.chartProductsByCategory.Legends.Add(legend5);
             this.chartProductsByCategory.Location = new System.Drawing.Point(0, 0);
             this.chartProductsByCategory.Name = "chartProductsByCategory";
-            series8.ChartArea = "ChartArea1";
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            this.chartProductsByCategory.Series.Add(series8);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chartProductsByCategory.Series.Add(series5);
             this.chartProductsByCategory.Size = new System.Drawing.Size(284, 177);
             this.chartProductsByCategory.TabIndex = 0;
             this.chartProductsByCategory.Text = "chart1";
@@ -249,17 +250,17 @@ namespace DSAFinalRequirement.Forms.Dashboard
             // 
             // chartDailySales
             // 
-            chartArea9.Name = "ChartArea1";
-            this.chartDailySales.ChartAreas.Add(chartArea9);
+            chartArea6.Name = "ChartArea1";
+            this.chartDailySales.ChartAreas.Add(chartArea6);
             this.chartDailySales.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend9.Name = "Legend1";
-            this.chartDailySales.Legends.Add(legend9);
+            legend6.Name = "Legend1";
+            this.chartDailySales.Legends.Add(legend6);
             this.chartDailySales.Location = new System.Drawing.Point(0, 0);
             this.chartDailySales.Name = "chartDailySales";
-            series9.ChartArea = "ChartArea1";
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            this.chartDailySales.Series.Add(series9);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chartDailySales.Series.Add(series6);
             this.chartDailySales.Size = new System.Drawing.Size(684, 387);
             this.chartDailySales.TabIndex = 0;
             this.chartDailySales.Text = "chart1";
@@ -336,6 +337,13 @@ namespace DSAFinalRequirement.Forms.Dashboard
             this.btnOpenSales.UseVisualStyleBackColor = false;
             this.btnOpenSales.Click += new System.EventHandler(this.btnOpenSales_Click_1);
             // 
+            // pnlButtons
+            // 
+            this.pnlButtons.Location = new System.Drawing.Point(18, 568);
+            this.pnlButtons.Name = "pnlButtons";
+            this.pnlButtons.Size = new System.Drawing.Size(684, 53);
+            this.pnlButtons.TabIndex = 1;
+            // 
             // DashboardControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -350,6 +358,7 @@ namespace DSAFinalRequirement.Forms.Dashboard
             this.Controls.Add(this.btnAddProduct);
             this.Controls.Add(this.btnOpenSales);
             this.Controls.Add(this.btnReports);
+            this.Controls.Add(this.pnlButtons);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "DashboardControl";
             this.Size = new System.Drawing.Size(1012, 632);
@@ -395,5 +404,6 @@ namespace DSAFinalRequirement.Forms.Dashboard
         private System.Windows.Forms.DataVisualization.Charting.Chart chartDailySales;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartProductsByCategory;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartLowStocks;
+        private Panel pnlButtons;
     }
 }

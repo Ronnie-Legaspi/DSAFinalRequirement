@@ -5,7 +5,7 @@ using System;
 using System.Data;
 using System.Data.OleDb;
 using System.Windows.Forms;
-
+using DSAFinalRequirement.Classes.Helpers;
 namespace DSAFinalRequirement.Forms.Inventory
 {
     public partial class InventoryAdjustmentListControl : UserControl
@@ -13,9 +13,14 @@ namespace DSAFinalRequirement.Forms.Inventory
         public InventoryAdjustmentListControl()
         {
             InitializeComponent();
+            RoleType();
             LoadInventoryAdjustments();
 
             btnDeleteAdjustMent.Click += BtnDeleteAdjustment_Click;
+        }
+        public void RoleType()
+        {
+            btnDeleteAdjustMent.Visible = RoleHelper.IsAdmin();
         }
 
         /// ------------------------------

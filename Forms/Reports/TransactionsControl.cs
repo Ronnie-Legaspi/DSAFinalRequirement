@@ -1,4 +1,5 @@
-﻿using DSAFinalRequirement.Database.Connections;
+﻿using DSAFinalRequirement.Classes.Helpers;
+using DSAFinalRequirement.Database.Connections;
 using DSAFinalRequirement.Forms.Categories;
 using DSAFinalRequirement.Forms.Dashboard;
 using System;
@@ -13,15 +14,20 @@ namespace DSAFinalRequirement.Forms.Reports
         public TransactionsControl()
         {
             InitializeComponent();
+            RoleType();
             LoadTransactions();
 
             btnDeleteTransaction.Click += BtnDeleteTransaction_Click;
+        }
+        public void RoleType()
+        {
+            btnDeleteTransaction.Visible = RoleHelper.IsAdmin();
         }
 
         /// ------------------------------
         /// Load Transactions into dgv
         /// ------------------------------
-        private void LoadTransactions()
+        public void LoadTransactions()
         {
             try
             {
@@ -47,7 +53,7 @@ namespace DSAFinalRequirement.Forms.Reports
 
                         // Set column headers
                         dgvTransactions.Columns["TransactionID"].HeaderText = "ID";
-                        dgvTransactions.Columns["UserID"].HeaderText = "User ID";
+                        dgvTransactions.Columns["UserID"].HeaderText = "Staff / Seller ID";
                         dgvTransactions.Columns["TotalAmount"].HeaderText = "Total Amount";
                         dgvTransactions.Columns["DateOfSale"].HeaderText = "Date of Sale";
                         dgvTransactions.Columns["Remarks"].HeaderText = "Remarks";
