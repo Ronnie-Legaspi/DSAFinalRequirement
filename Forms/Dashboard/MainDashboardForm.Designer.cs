@@ -31,7 +31,6 @@
             this.pnlSideNav = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -45,22 +44,22 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.btnSettings = new System.Windows.Forms.Button();
             this.btnTransactions = new System.Windows.Forms.Button();
-            this.btnSales = new System.Windows.Forms.Button();
             this.btnSuppliers = new System.Windows.Forms.Button();
             this.btnCategories = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.btnInventory = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
+            this.btnSales = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblStatus = new System.Windows.Forms.Label();
             this.pnlMainContent = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pbNotification = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.pnlSideNav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -72,11 +71,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNotification)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSideNav
             // 
-            this.pnlSideNav.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.pnlSideNav.BackColor = System.Drawing.Color.Red;
             this.pnlSideNav.Controls.Add(this.panel1);
             this.pnlSideNav.Controls.Add(this.pictureBox13);
             this.pnlSideNav.Controls.Add(this.pictureBox12);
@@ -126,17 +126,6 @@
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 20;
             this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox12.Image = global::DSAFinalRequirement.Properties.Resources.icons8_dashboard_48;
-            this.pictureBox12.Location = new System.Drawing.Point(13, 566);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 19;
-            this.pictureBox12.TabStop = false;
             // 
             // pictureBox11
             // 
@@ -287,21 +276,6 @@
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.UseVisualStyleBackColor = false;
             // 
-            // btnSettings
-            // 
-            this.btnSettings.BackColor = System.Drawing.Color.Transparent;
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.Location = new System.Drawing.Point(3, 563);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.btnSettings.Size = new System.Drawing.Size(221, 53);
-            this.btnSettings.TabIndex = 7;
-            this.btnSettings.Text = "Settings";
-            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.UseVisualStyleBackColor = false;
-            // 
             // btnTransactions
             // 
             this.btnTransactions.BackColor = System.Drawing.Color.Transparent;
@@ -316,21 +290,6 @@
             this.btnTransactions.Text = "Transactions";
             this.btnTransactions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTransactions.UseVisualStyleBackColor = false;
-            // 
-            // btnSales
-            // 
-            this.btnSales.BackColor = System.Drawing.Color.Transparent;
-            this.btnSales.FlatAppearance.BorderSize = 0;
-            this.btnSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSales.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSales.Location = new System.Drawing.Point(6, 150);
-            this.btnSales.Name = "btnSales";
-            this.btnSales.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.btnSales.Size = new System.Drawing.Size(221, 53);
-            this.btnSales.TabIndex = 5;
-            this.btnSales.Text = "Sales";
-            this.btnSales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSales.UseVisualStyleBackColor = false;
             // 
             // btnSuppliers
             // 
@@ -407,26 +366,27 @@
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.UseVisualStyleBackColor = false;
             // 
+            // btnSales
+            // 
+            this.btnSales.BackColor = System.Drawing.Color.Transparent;
+            this.btnSales.FlatAppearance.BorderSize = 0;
+            this.btnSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSales.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSales.Location = new System.Drawing.Point(6, 150);
+            this.btnSales.Name = "btnSales";
+            this.btnSales.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnSales.Size = new System.Drawing.Size(221, 53);
+            this.btnSales.TabIndex = 5;
+            this.btnSales.Text = "Sales";
+            this.btnSales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSales.UseVisualStyleBackColor = false;
+            // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Location = new System.Drawing.Point(765, 77);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(0, 0);
             this.flowLayoutPanel2.TabIndex = 4;
-            // 
-            // lblStatus
-            // 
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.BackColor = System.Drawing.Color.MintCream;
-            this.lblStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.ForeColor = System.Drawing.Color.LimeGreen;
-            this.lblStatus.Location = new System.Drawing.Point(6, 16);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(182, 31);
-            this.lblStatus.TabIndex = 18;
-            this.lblStatus.Text = "Login Successful";
-            this.lblStatus.Visible = false;
-            this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
             // 
             // pnlMainContent
             // 
@@ -456,6 +416,47 @@
             this.pbNotification.TabIndex = 1;
             this.pbNotification.TabStop = false;
             // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox12.Image = global::DSAFinalRequirement.Properties.Resources.icons8_dashboard_48;
+            this.pictureBox12.Location = new System.Drawing.Point(13, 566);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 19;
+            this.pictureBox12.TabStop = false;
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.BackColor = System.Drawing.Color.Transparent;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.Location = new System.Drawing.Point(3, 563);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnSettings.Size = new System.Drawing.Size(221, 53);
+            this.btnSettings.TabIndex = 7;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.UseVisualStyleBackColor = false;
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblStatus.Enabled = false;
+            this.lblStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblStatus.Location = new System.Drawing.Point(6, 16);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(182, 31);
+            this.lblStatus.TabIndex = 18;
+            this.lblStatus.Text = "Login Successful";
+            this.lblStatus.Visible = false;
+            this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
+            // 
             // MainDashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -474,7 +475,6 @@
             this.pnlSideNav.ResumeLayout(false);
             this.pnlSideNav.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -487,6 +487,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNotification)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -500,7 +501,6 @@
         private System.Windows.Forms.Button btnSuppliers;
         public System.Windows.Forms.Button btnSales;
         public System.Windows.Forms.Button btnTransactions;
-        private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.PictureBox pbUserImage;
         private System.Windows.Forms.Label lblEmail;
@@ -510,7 +510,6 @@
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox9;
@@ -519,9 +518,11 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblStatus;
         public System.Windows.Forms.Panel pnlMainContent;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Button btnSettings;
+        private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.PictureBox pbNotification;
     }
 

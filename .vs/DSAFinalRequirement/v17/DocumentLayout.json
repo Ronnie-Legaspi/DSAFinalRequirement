@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\dashboard\\maindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\dashboard\\maindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\dashboard\\dashboardcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\dashboard\\dashboardcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\dashboard\\maindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\dashboard\\maindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\categories\\categorylistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\categories\\categorylistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\users\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\users\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|c:\\users\\ronni\\desktop\\dsafinalrequirement\\forms\\reports\\transactionscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\reports\\transactionscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -17,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\sales\\salescontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\sales\\salescontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\dashboard\\dashboardcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\dashboard\\dashboardcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\products\\productslistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -87,16 +103,8 @@
       "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\categories\\categorylistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\categories\\categorylistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\categories\\categorylistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\products\\productslistcontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\products\\productslistcontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\dashboard\\maindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\dashboard\\maindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\dashboard\\dashboardcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -129,10 +137,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\reports\\transactionscontrol.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\reports\\transactionscontrol.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\dashboard\\maindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\dashboard\\maindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\reports\\salesreportcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -221,10 +225,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\users\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\users\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\users\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|solutionrelative:forms\\users\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37289D8C-029B-4717-AC94-09516FD7C583}|DSAFinalRequirement.csproj|C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\forms\\users\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -398,7 +398,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "TransactionsControl.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Reports\\TransactionsControl.cs",
               "RelativeDocumentMoniker": "Forms\\Reports\\TransactionsControl.cs",
@@ -412,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "DashboardControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\DashboardControl.cs",
               "RelativeDocumentMoniker": "Forms\\Dashboard\\DashboardControl.cs",
@@ -420,11 +420,12 @@
               "RelativeToolTip": "Forms\\Dashboard\\DashboardControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-24T13:09:35.14Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "ProductsListControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Products\\ProductsListControl.cs",
               "RelativeDocumentMoniker": "Forms\\Products\\ProductsListControl.cs",
@@ -437,6 +438,56 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainDashboardForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\MainDashboardForm.cs",
+              "RelativeDocumentMoniker": "Forms\\Dashboard\\MainDashboardForm.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\MainDashboardForm.cs [Design]",
+              "RelativeToolTip": "Forms\\Dashboard\\MainDashboardForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T10:44:44.796Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainDashboardForm.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\MainDashboardForm.cs",
+              "RelativeDocumentMoniker": "Forms\\Dashboard\\MainDashboardForm.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\MainDashboardForm.cs",
+              "RelativeToolTip": "Forms\\Dashboard\\MainDashboardForm.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T05:56:47.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryListControl.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\CategoryListControl.cs",
+              "RelativeDocumentMoniker": "Forms\\Categories\\CategoryListControl.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\CategoryListControl.cs",
+              "RelativeToolTip": "Forms\\Categories\\CategoryListControl.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAkwKsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T09:22:32.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Forms\\Users\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\LoginForm.cs [Design]",
+              "RelativeToolTip": "Forms\\Users\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T08:55:46.518Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "TransactionsControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Reports\\TransactionsControl.cs",
               "RelativeDocumentMoniker": "Forms\\Reports\\TransactionsControl.cs",
@@ -448,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "TransactionControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\TransactionControl.cs",
               "RelativeDocumentMoniker": "Forms\\Sales\\TransactionControl.cs",
@@ -459,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "SalesControl.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\SalesControl.cs",
               "RelativeDocumentMoniker": "Forms\\Sales\\SalesControl.cs",
@@ -471,7 +522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "SalesControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\SalesControl.cs",
               "RelativeDocumentMoniker": "Forms\\Sales\\SalesControl.cs",
@@ -482,7 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "TransactionControl.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\TransactionControl.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Sales\\TransactionControl.Designer.cs",
@@ -494,7 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "InventoryAdjustmentListControl.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Inventory\\InventoryAdjustmentListControl.cs",
               "RelativeDocumentMoniker": "Forms\\Inventory\\InventoryAdjustmentListControl.cs",
@@ -506,7 +557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "InventoryAdjustmentListControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Inventory\\InventoryAdjustmentListControl.cs",
               "RelativeDocumentMoniker": "Forms\\Inventory\\InventoryAdjustmentListControl.cs",
@@ -517,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "LowStocksAlertControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Inventory\\LowStocksAlertControl.cs",
               "RelativeDocumentMoniker": "Forms\\Inventory\\LowStocksAlertControl.cs",
@@ -528,7 +579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "SalesForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\SalesForm.cs",
               "RelativeDocumentMoniker": "Forms\\Sales\\SalesForm.cs",
@@ -539,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "TransactionDetailControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\TransactionDetailControl.cs",
               "RelativeDocumentMoniker": "Forms\\Sales\\TransactionDetailControl.cs",
@@ -550,7 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "UserManagementControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\UserManagementControl.cs",
               "RelativeDocumentMoniker": "Forms\\Users\\UserManagementControl.cs",
@@ -561,7 +612,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "UserManagementControl.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\UserManagementControl.cs",
               "RelativeDocumentMoniker": "Forms\\Users\\UserManagementControl.cs",
@@ -573,7 +624,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "UserManagementControl.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\UserManagementControl.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Users\\UserManagementControl.Designer.cs",
@@ -585,7 +636,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "SupplierListControl.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Suppliers\\SupplierListControl.cs",
               "RelativeDocumentMoniker": "Forms\\Suppliers\\SupplierListControl.cs",
@@ -597,7 +648,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "ProductsListControl.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Products\\ProductsListControl.cs",
               "RelativeDocumentMoniker": "Forms\\Products\\ProductsListControl.cs",
@@ -609,7 +660,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "SupplierListControl.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Suppliers\\SupplierListControl.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Suppliers\\SupplierListControl.Designer.cs",
@@ -621,7 +672,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "SupplierListControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Suppliers\\SupplierListControl.cs",
               "RelativeDocumentMoniker": "Forms\\Suppliers\\SupplierListControl.cs",
@@ -632,30 +683,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "CategoryListControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\CategoryListControl.cs",
               "RelativeDocumentMoniker": "Forms\\Categories\\CategoryListControl.cs",
               "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\CategoryListControl.cs [Design]",
               "RelativeToolTip": "Forms\\Categories\\CategoryListControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:58:41.822Z"
+              "WhenOpened": "2025-11-28T03:58:41.822Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CategoryListControl.cs",
-              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\CategoryListControl.cs",
-              "RelativeDocumentMoniker": "Forms\\Categories\\CategoryListControl.cs",
-              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\CategoryListControl.cs",
-              "RelativeToolTip": "Forms\\Categories\\CategoryListControl.cs",
-              "ViewState": "AgIAANwAAAAAAAAAAAAlwO8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T09:22:32.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "ProductsListControl.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Products\\ProductsListControl.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Products\\ProductsListControl.Designer.cs",
@@ -667,18 +707,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "MainDashboardForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\MainDashboardForm.cs",
-              "RelativeDocumentMoniker": "Forms\\Dashboard\\MainDashboardForm.cs",
-              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\MainDashboardForm.cs [Design]",
-              "RelativeToolTip": "Forms\\Dashboard\\MainDashboardForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T10:44:44.796Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "DashboardControl.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\DashboardControl.cs",
               "RelativeDocumentMoniker": "Forms\\Dashboard\\DashboardControl.cs",
@@ -686,11 +715,12 @@
               "RelativeToolTip": "Forms\\Dashboard\\DashboardControl.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAxwCoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T13:12:54.459Z"
+              "WhenOpened": "2025-11-24T13:12:54.459Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "DatabaseConnection.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Database\\Connections\\DatabaseConnection.cs",
               "RelativeDocumentMoniker": "Database\\Connections\\DatabaseConnection.cs",
@@ -702,7 +732,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "QueryHelper.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Database\\Queries\\QueryHelper.cs",
               "RelativeDocumentMoniker": "Database\\Queries\\QueryHelper.cs",
@@ -714,7 +744,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "TransactionsControl.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Reports\\TransactionsControl.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Reports\\TransactionsControl.Designer.cs",
@@ -727,7 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "RoleHelper.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Classes\\Helpers\\RoleHelper.cs",
               "RelativeDocumentMoniker": "Classes\\Helpers\\RoleHelper.cs",
@@ -739,7 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -751,7 +781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "Session.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Classes\\Helpers\\Session.cs",
               "RelativeDocumentMoniker": "Classes\\Helpers\\Session.cs",
@@ -763,7 +793,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "TransactionsControl.resx",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Reports\\TransactionsControl.resx",
               "RelativeDocumentMoniker": "Forms\\Reports\\TransactionsControl.resx",
@@ -775,19 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "MainDashboardForm.cs",
-              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\MainDashboardForm.cs",
-              "RelativeDocumentMoniker": "Forms\\Dashboard\\MainDashboardForm.cs",
-              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\MainDashboardForm.cs",
-              "RelativeToolTip": "Forms\\Dashboard\\MainDashboardForm.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAkwGcAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T05:56:47.838Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "SalesReportControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Reports\\SalesReportControl.cs",
               "RelativeDocumentMoniker": "Forms\\Reports\\SalesReportControl.cs",
@@ -798,7 +816,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "TransactionControl.resx",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\TransactionControl.resx",
               "RelativeDocumentMoniker": "Forms\\Sales\\TransactionControl.resx",
@@ -809,7 +827,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "TransactionControl.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\TransactionControl.cs",
               "RelativeDocumentMoniker": "Forms\\Sales\\TransactionControl.cs",
@@ -821,7 +839,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "SalesControl.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\SalesControl.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Sales\\SalesControl.Designer.cs",
@@ -833,7 +851,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "CategoryListControl.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\CategoryListControl.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Categories\\CategoryListControl.Designer.cs",
@@ -841,11 +859,12 @@
               "RelativeToolTip": "Forms\\Categories\\CategoryListControl.Designer.cs",
               "ViewState": "AgIAAN0AAAAAAAAAAAAmwPMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T03:37:57.885Z"
+              "WhenOpened": "2025-11-27T03:37:57.885Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "InventoryAdjustmentListControl.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Inventory\\InventoryAdjustmentListControl.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Inventory\\InventoryAdjustmentListControl.Designer.cs",
@@ -857,7 +876,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "AddCategoryForm.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\AddCategoryForm.cs",
               "RelativeDocumentMoniker": "Forms\\Categories\\AddCategoryForm.cs",
@@ -869,7 +888,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "AddCategoryForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\AddCategoryForm.cs",
               "RelativeDocumentMoniker": "Forms\\Categories\\AddCategoryForm.cs",
@@ -880,7 +899,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "AddCategoryForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\AddCategoryForm.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Categories\\AddCategoryForm.Designer.cs",
@@ -892,7 +911,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "EditCategoryForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\EditCategoryForm.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Categories\\EditCategoryForm.Designer.cs",
@@ -904,7 +923,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "DeleteCategoryForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\DeleteCategoryForm.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Categories\\DeleteCategoryForm.Designer.cs",
@@ -916,7 +935,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "DeleteCategoryForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Categories\\DeleteCategoryForm.cs",
               "RelativeDocumentMoniker": "Forms\\Categories\\DeleteCategoryForm.cs",
@@ -927,7 +946,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "MainDashboardForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\MainDashboardForm.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Dashboard\\MainDashboardForm.Designer.cs",
@@ -935,11 +954,12 @@
               "RelativeToolTip": "Forms\\Dashboard\\MainDashboardForm.Designer.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwPUBAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T06:03:51.399Z"
+              "WhenOpened": "2025-11-22T06:03:51.399Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "DeleteTransactionForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Reports\\DeleteTransactionForm.cs",
               "RelativeDocumentMoniker": "Forms\\Reports\\DeleteTransactionForm.cs",
@@ -950,7 +970,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "DashboardControl.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Dashboard\\DashboardControl.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Dashboard\\DashboardControl.Designer.cs",
@@ -958,11 +978,12 @@
               "RelativeToolTip": "Forms\\Dashboard\\DashboardControl.Designer.cs",
               "ViewState": "AgIAAD0BAAAAAAAAAAAQwEIBAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T14:09:49.616Z"
+              "WhenOpened": "2025-11-24T14:09:49.616Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "LoadingScreenControl.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Shared\\LoadingScreenControl.cs",
               "RelativeDocumentMoniker": "Forms\\Shared\\LoadingScreenControl.cs",
@@ -974,7 +995,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "LoadingScreenControl.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Shared\\LoadingScreenControl.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Shared\\LoadingScreenControl.Designer.cs",
@@ -986,7 +1007,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "LoadingScreenControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Shared\\LoadingScreenControl.cs",
               "RelativeDocumentMoniker": "Forms\\Shared\\LoadingScreenControl.cs",
@@ -997,7 +1018,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "SalesForm.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Sales\\SalesForm.cs",
               "RelativeDocumentMoniker": "Forms\\Sales\\SalesForm.cs",
@@ -1009,7 +1030,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "AddProductForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Products\\AddProductForm.cs",
               "RelativeDocumentMoniker": "Forms\\Products\\AddProductForm.cs",
@@ -1020,7 +1041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "AddProductForm.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Products\\AddProductForm.cs",
               "RelativeDocumentMoniker": "Forms\\Products\\AddProductForm.cs",
@@ -1040,11 +1061,12 @@
               "RelativeToolTip": "Forms\\Users\\LoginForm.Designer.cs",
               "ViewState": "AgIAAOgAAAAAAAAAAAAAAPcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T08:51:10.719Z"
+              "WhenOpened": "2025-11-23T08:51:10.719Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\LoginForm.cs",
               "RelativeDocumentMoniker": "Forms\\Users\\LoginForm.cs",
@@ -1052,18 +1074,8 @@
               "RelativeToolTip": "Forms\\Users\\LoginForm.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAowA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T09:15:50.671Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Forms\\Users\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\LoginForm.cs [Design]",
-              "RelativeToolTip": "Forms\\Users\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T08:55:46.518Z"
+              "WhenOpened": "2025-11-23T09:15:50.671Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1494,7 +1506,8 @@
               "ToolTip": "C:\\Users\\ronni\\Desktop\\DSAFinalRequirement\\Forms\\Users\\LoginForm.resx",
               "RelativeToolTip": "Forms\\Users\\LoginForm.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-11-23T08:51:13.728Z"
+              "WhenOpened": "2025-11-23T08:51:13.728Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

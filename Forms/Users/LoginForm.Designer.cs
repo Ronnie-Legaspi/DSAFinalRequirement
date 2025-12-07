@@ -3,16 +3,9 @@
     partial class LoginForm
     {
         private System.ComponentModel.IContainer components = null;
-
-        // === UI CONTROL DECLARATIONS ===
-        private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Panel panelLoginCard;
-
-        private System.Windows.Forms.PictureBox pbAppLogo;
         private System.Windows.Forms.PictureBox pbUserIcon;
         private System.Windows.Forms.PictureBox pbPassIcon;
-
-        private System.Windows.Forms.Label lblSystemTitle;
         private System.Windows.Forms.Label lblLoginTitle;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblPassword;
@@ -40,9 +33,6 @@
 
         private void InitializeComponent()
         {
-            this.panelHeader = new System.Windows.Forms.Panel();
-            this.pbAppLogo = new System.Windows.Forms.PictureBox();
-            this.lblSystemTitle = new System.Windows.Forms.Label();
             this.panelLoginCard = new System.Windows.Forms.Panel();
             this.lblLoginTitle = new System.Windows.Forms.Label();
             this.pbUserIcon = new System.Windows.Forms.PictureBox();
@@ -55,43 +45,10 @@
             this.rbStaff = new System.Windows.Forms.RadioButton();
             this.btnLogin = new System.Windows.Forms.Button();
             this.lblErrorMessage = new System.Windows.Forms.Label();
-            this.panelHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAppLogo)).BeginInit();
             this.panelLoginCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPassIcon)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panelHeader
-            // 
-            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(226)))));
-            this.panelHeader.Controls.Add(this.pbAppLogo);
-            this.panelHeader.Controls.Add(this.lblSystemTitle);
-            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeader.Location = new System.Drawing.Point(0, 0);
-            this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(650, 70);
-            this.panelHeader.TabIndex = 0;
-            // 
-            // pbAppLogo
-            // 
-            this.pbAppLogo.Location = new System.Drawing.Point(20, 10);
-            this.pbAppLogo.Name = "pbAppLogo";
-            this.pbAppLogo.Size = new System.Drawing.Size(50, 50);
-            this.pbAppLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAppLogo.TabIndex = 0;
-            this.pbAppLogo.TabStop = false;
-            // 
-            // lblSystemTitle
-            // 
-            this.lblSystemTitle.AutoSize = true;
-            this.lblSystemTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 18F);
-            this.lblSystemTitle.ForeColor = System.Drawing.Color.White;
-            this.lblSystemTitle.Location = new System.Drawing.Point(80, 18);
-            this.lblSystemTitle.Name = "lblSystemTitle";
-            this.lblSystemTitle.Size = new System.Drawing.Size(301, 41);
-            this.lblSystemTitle.TabIndex = 1;
-            this.lblSystemTitle.Text = "INVENTORY SYSTEM";
             // 
             // panelLoginCard
             // 
@@ -108,7 +65,7 @@
             this.panelLoginCard.Controls.Add(this.rbStaff);
             this.panelLoginCard.Controls.Add(this.btnLogin);
             this.panelLoginCard.Controls.Add(this.lblErrorMessage);
-            this.panelLoginCard.Location = new System.Drawing.Point(125, 120);
+            this.panelLoginCard.Location = new System.Drawing.Point(242, 172);
             this.panelLoginCard.Name = "panelLoginCard";
             this.panelLoginCard.Size = new System.Drawing.Size(400, 330);
             this.panelLoginCard.TabIndex = 1;
@@ -197,6 +154,7 @@
             this.rbStaff.Size = new System.Drawing.Size(104, 24);
             this.rbStaff.TabIndex = 8;
             this.rbStaff.Text = "Staff";
+            this.rbStaff.Visible = false;
             // 
             // btnLogin
             // 
@@ -224,16 +182,12 @@
             // 
             // LoginForm
             // 
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(650, 500);
-            this.Controls.Add(this.panelHeader);
+            this.BackColor = System.Drawing.Color.Purple;
+            this.ClientSize = new System.Drawing.Size(909, 681);
             this.Controls.Add(this.panelLoginCard);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.panelHeader.ResumeLayout(false);
-            this.panelHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAppLogo)).EndInit();
             this.panelLoginCard.ResumeLayout(false);
             this.panelLoginCard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserIcon)).EndInit();
